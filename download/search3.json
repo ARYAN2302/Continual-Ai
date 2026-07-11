@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://neo4j.com/blog/developer/unstructured-text-to-knowledge-graph",
+    "name": "How to convert unstructured text to knowledge graphs using LLMs",
+    "snippet": "In this blog post, you will learn how to extract information from unstructured data to construct a knowledge graph using LLMs.",
+    "host_name": "neo4j.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net/publication/400131845_From_Literature_to_Knowledge_Graphs_Automated_Extraction_and_Retrieval_of_Life_Cycle_Assessment_Data_with_Large_Language_Models",
+    "name": "Automated Extraction and Retrieval of Life Cycle Assessment Data with",
+    "snippet": "From Literature to Knowledge Graphs: Automated Extraction and Retrieval of Life Cycle Assessment Data with Large Language Models. January 2026.",
+    "host_name": "www.researchgate.net",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/yellowberard/GraphifyPDF",
+    "name": "GraphifyPDF is an AI Agents-powered framework for turning raw PDF text",
+    "snippet": "GraphifyPDF is an AI Agents-powered framework for turning raw PDF text into rich knowledge graphs—making document understanding, querying, and visualization ...",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.tandfonline.com/doi/full/10.1080/17538947.2024.2449185",
+    "name": "An automated construction method of 3D knowledge graph based on",
+    "snippet": "The method involves designing a multiagent system to extract entities and relationships hidden in virtual geographic scenes. In addition, a ...",
+    "host_name": "www.tandfonline.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/pdf/2604.04948",
+    "name": "[PDF] From PDF to RAG-Ready: Evaluating Document Conversion Frameworks",
+    "snippet": "Visualization of the knowledge graph after entity deduplication using 3d-force-graph. (a) Overview showing 17,494 entity nodes, 25,674 edges ...",
+    "host_name": "arxiv.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=O-T_6KOXML4",
+    "name": "Extracting Knowledge Graphs From Text With GPT4o - YouTube",
+    "snippet": "... Neo4j LLM Knowledge Graph Builder 10:37 - Project tutorial - Creating KGs with OpenAI GPT4o in Python 22:46 - Conclusions #ai #python #graph.",
+    "host_name": "www.youtube.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://memgraph.com/blog/unstructured2graph-agent-ai-rag-toolkit",
+    "name": "How to Use Unstructured2Graph RAG Tool - Memgraph",
+    "snippet": "With Unstructured2Graph, part of the Memgraph AI Toolkit, you can turn that unstructured text into a connected knowledge graph that LLMs can ...",
+    "host_name": "memgraph.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2589004226005626",
+    "name": "Enabling system-level target discovery through full-path reasoning on a",
+    "snippet": "To bridge this gap, we introduce TargetMap, an AI-driven knowledge graph platform powered by an LLM-based full-path graph reasoning algorithm.",
+    "host_name": "www.sciencedirect.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://mockflow.com/ai/create-knowledge-graph-with-ai",
+    "name": "Create Knowledge Graph with AI on Your Whiteboard - MockFlow",
+    "snippet": "Yes! You can convert Knowledge Graph into mindmaps, ER diagrams, flowcharts, documents, and other whiteboard components using AI Convert — making your graph ...",
+    "host_name": "mockflow.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/langchain_pdfs-knowledge-graphs-the-pdf-to-knowledge-activity-7202689736119836672-fArv",
+    "name": "LangChain's Post - LinkedIn",
+    "snippet": "Incredible innovation from LangChain! Turning PDFs into knowledge graphs is a huge step forward in data management and utilization. Like.",
+    "host_name": "www.linkedin.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

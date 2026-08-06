@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://nousresearch.com/nous-psyche",
+    "name": "Democratizing AI: The Psyche Network Architecture",
+    "snippet": "May 14, 2025 — Psyche is an open infrastructure that democratizes AI development by decentralizing training across underutilized hardware.\nMay 14, 2025 — Psyche changes how we develop AI by creating a decentralized infrastructure that allows anyone to participate in training large language models. Read more",
+    "host_name": "nousresearch.com",
+    "rank": 0,
+    "date": "May 14, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmqmr8/nous_psyche_distributed_training_of_a_new_40b",
+    "name": "Nous Psyche, distributed training of a new 40B base model",
+    "snippet": "Psyche is an open infrastructure that democratizes AI development by decentralizing training across underutilized hardware. Building on DisTrO ... Read more\nBuilding on DisTrO and its predecessor DeMo, Psyche reduces data transfer by several orders of magnitude , making distributed training practical. Read more",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.iroh.computer/solutions/distributed-ai",
+    "name": "Distributed AI, Training to Inference",
+    "snippet": "Psyche is Nous's distributed training framework . It brings the bandwidth requirements between each machine down from 10Gbps to just 1Gbps—making internet-based",
+    "host_name": "www.iroh.computer",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/NousResearch/status/1922744496342593580",
+    "name": "Nous Research on X: \"Psyche's initial training infrastructure",
+    "snippet": "We plan to integrate full post training stages - supervised finetuning and reinforcement learning workloads, inference, and other parallelizable ... Read more",
+    "host_name": "x.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.spheron.network/blog/decentralized-llm-training-pluralis-prime-intellect-nous-psyche",
+    "name": "Pluralis, Prime Intellect, and Nous Psyche (2026 Guide)",
+    "snippet": "Jun 4, 2026 — Nous Psyche coordinates training through the Solana blockchain . Each contributing node is identified by a Solana wallet keypair. Psyche's ...",
+    "host_name": "www.spheron.network",
+    "rank": 4,
+    "date": "Jun 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://nousresearch.com/the-next-phase-of-psyche",
+    "name": "The Next Phase of Psyche",
+    "snippet": "Sep 29, 2025 — Starting today, Psyche will train a number of new models in parallel , all aimed at creating useful, novel open source AI. Read more",
+    "host_name": "nousresearch.com",
+    "rank": 5,
+    "date": "Sep 29, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://kyeuns.medium.com/nous-research-0f65c7c26c7a",
+    "name": "Nous Research - Kyeuns - Medium",
+    "snippet": "Psyche aims to integrate distributed reinforcement learning (RL) methodologies , where inferences are an integral part of the training process. Read more",
+    "host_name": "kyeuns.medium.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.galaxy.com/insights/research/decentralized-ai-training",
+    "name": "Decentralized AI Training: How Crypto Can Power Open AI",
+    "snippet": "Sep 15, 2025 — Psyche divides training into two distinct intervals, epochs and steps . This creates natural entry and exit points for clients, allowing them to ...\nSep 15, 2025 — In May, Nous unveiled Psyche , a framework for coordinating decentralized training that further innovates on the DeMO and DisTrO optimizer ... Read more",
+    "host_name": "www.galaxy.com",
+    "rank": 7,
+    "date": "Sep 15, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.lambdaclass.com/lambdas-new-strategic-partnership-with-nous-research-decentralized-artificial-intelligence",
+    "name": "Lambda's new strategic partnership with Nous Research",
+    "snippet": "May 6, 2025 — Psyche is a Rust-based decentralized training system that uses peer-to-peer networking to coordinate multiple training runs across devices. Read more",
+    "host_name": "blog.lambdaclass.com",
+    "rank": 8,
+    "date": "May 6, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://aiunderstanding.org/sw/learn/nous-research",
+    "name": "Nous Research Guide - AI Understanding",
+    "snippet": "The Psyche network is used to experiment with training models across geographically distributed volunteer GPUs.",
+    "host_name": "aiunderstanding.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

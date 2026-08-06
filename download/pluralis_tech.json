@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://epoch.ai/gradient-updates/how-far-can-decentralized-training-over-the-internet-scale",
+    "name": "How far can decentralized training over the internet scale? - Epoch AI",
+    "snippet": "Dec 29, 2025 · Pluralis' Protocol Models further optimize pipeline parallelism by constraining each layer's activations to a small subspace, for up to a 100x ...",
+    "host_name": "epoch.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pluralis.ai",
+    "name": "Pluralis Research",
+    "snippet": "Pluralis Research works on Protocol Learning — decentralized, communication-efficient model-parallel training for foundation models.",
+    "host_name": "pluralis.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.galaxy.com/insights/research/decentralized-ai-training",
+    "name": "Decentralized AI Training: How Crypto Can Power Open AI | Galaxy",
+    "snippet": "Sep 15, 2025 · Pluralis Research tackles decentralized training with an approach called Protocol Learning, which it describes as “low-bandwidth ...",
+    "host_name": "www.galaxy.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.spheron.network/blog/decentralized-llm-training-pluralis-prime-intellect-nous-psyche",
+    "name": "Pluralis, Prime Intellect, and Nous Psyche (2026 Guide) - Spheron",
+    "snippet": "Jun 4, 2026 · Decentralized training protocols like Prime Intellect and Pluralis are designed for geographically distributed nodes. Spheron's on-demand ...",
+    "host_name": "www.spheron.network",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/AlexanderLong/status/1845265973714223564",
+    "name": "Alexander Long on X",
+    "snippet": "Oct 13, 2024 · The decentralized training race is now underway which I expect to be the major theme of AI research in 2025, create a new field and kick off ...",
+    "host_name": "x.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=DmRG-Xac_Gg",
+    "name": "How Pluralis Developed a Fully AI Decentralized Training System",
+    "snippet": "Jul 10, 2025 · What will the future of AI governance and decentralized training look like? The interview was originally recorded last summer, this episode ...",
+    "host_name": "www.youtube.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pluralis.ai/blog/decentralized-training-looms",
+    "name": "Decentralized Training Looms - Pluralis Research",
+    "snippet": "Decentralized training is the creation of foundation models over loosely-connected, heterogeneous swarms of consumer-grade compute.",
+    "host_name": "pluralis.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2506.01260v1",
+    "name": "Scaling Decentralized Training with Communication-Efficient Model",
+    "snippet": "Jun 2, 2025 · MP includes tensor parallelism, which splits individual layers, and pipeline parallelism, which distributes layers across devices; the latter is ...",
+    "host_name": "arxiv.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@0xjacobzhao/the-holy-grail-of-crypto-ai-frontier-exploration-on-decentralized-training-88584f6422a6",
+    "name": "The Holy Grail of Crypto AI: Frontier Exploration on Decentralized",
+    "snippet": "Jun 10, 2025 · In June 2025, Pluralis Research released a new paper extending its decentralized training framework from model pretraining to the fine-tuning ...",
+    "host_name": "medium.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://startupintros.com/orgs/pluralis-research",
+    "name": "Pluralis Research: Funding, Team & Investors | Startup Intros",
+    "snippet": "Jul 13, 2026 · Their approach focuses on decentralized, communication-efficient model-parallel training, enabling collaborative development and inference ...",
+    "host_name": "startupintros.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

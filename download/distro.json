@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://github.com/NousResearch/DisTrO",
+    "name": "NousResearch/DisTrO: Distributed Training Over-The-",
+    "snippet": "This is the repository for DisTrO ( Distributed Training Over-The-Internet), a family of low latency distributed optimizers that reduce inter-GPU communication ... Read more\nThis is the repository for DisTrO (Distributed Training Over-The-Internet), a family of low latency distributed optimizers that reduce inter-GPU communication requirements by three to four orders of magnitude.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "Aug 26, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/NousResearch/status/1828121648383566270?lang=en",
+    "name": "Nous Research (@NousResearch) on X",
+    "snippet": "DisTrO (Distributed Training Over-the-Internet) a family of architecture-agnostic and network-agnostic distributed optimizers that reduces the ...",
+    "host_name": "x.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1h52qat/nous_distro_distributed_training_framework_update",
+    "name": "Nous DisTrO (distributed training framework) update",
+    "snippet": "The bandwidth usage is a lot lower than I would've expected. This is really cool. I imagine the hardware needs are beyond \"donating time on ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://simonwillison.net/2024/Aug/27/distro",
+    "name": "NousResearch/DisTrO",
+    "snippet": "Aug 27, 2024 — DisTrO stands for Distributed Training Over-The-Internet - it's \"a family of low latency distributed optimizers that reduce inter-GPU ... Read more",
+    "host_name": "simonwillison.net",
+    "rank": 3,
+    "date": "Aug 27, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=41371083",
+    "name": "DisTrO – a family of low latency distributed optimizers",
+    "snippet": "Aug 27, 2024 — This enables low-latency training of large neural networks on slow internet bandwidths with heterogeneous networking hardware. > DisTrO can ... Read more",
+    "host_name": "news.ycombinator.com",
+    "rank": 4,
+    "date": "Aug 27, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://nousresearch.com/nous-psyche",
+    "name": "Democratizing AI: The Psyche Network Architecture",
+    "snippet": "May 14, 2025 — Second, we further reduced the bandwidth of our previous implementation of DisTrO by \"quantizing\" the Discrete Cosine Transform of our momentums ... Read more",
+    "host_name": "nousresearch.com",
+    "rank": 5,
+    "date": "May 14, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.lambdaclass.com/introducing-demo-decoupled-momentum-optimization-for-efficient-distributed-llm-training",
+    "name": "Introducing DeMo: Decoupled Momentum Optimization for",
+    "snippet": "Dec 6, 2024 — Nous Research released DeMo , showing how to reduce these communication costs by orders of magnitude, decreasing costs and enabling training ... Read more",
+    "host_name": "blog.lambdaclass.com",
+    "rank": 6,
+    "date": "Dec 6, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://venturebeat.com/business/nous-research-is-training-an-ai-model-using-machines-distributed-across-the-internet",
+    "name": "Nous Research is training an AI model using machines",
+    "snippet": "Dec 2, 2024 — DisTrO reduces inter-GPU communication bandwidth requirements by up to 10,000X during pre-training. This innovation allows models to be trained ...",
+    "host_name": "venturebeat.com",
+    "rank": 7,
+    "date": "Dec 2, 2024",
+    "favicon": ""
+  }
+]

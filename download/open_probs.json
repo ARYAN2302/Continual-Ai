@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://x.com/jbrukh/status/2062129269212332124",
+    "name": "Going to aggressively differ with the characterization",
+    "snippet": "The fundamental technology for that is decentralized AI training, which is an immensely difficult state-of-the-art advancing problem *in AI*.",
+    "host_name": "x.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://substack.com/home/post/p-209002820",
+    "name": "Why Pacing the AI Frontier Will Not Work",
+    "snippet": "We know major frontier labs have lobbied against open source to minimize competition and now they appear to be doubling down. I agree with the ...",
+    "host_name": "substack.com",
+    "rank": 1,
+    "date": "Jul 30, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://epoch.ai/gradient-updates/how-far-can-decentralized-training-over-the-internet-scale",
+    "name": "How far can decentralized training over the internet scale?",
+    "snippet": "Frontier companies are unlikely to pursue internet decentralized training, since they can afford to build more efficient data centers. So ...",
+    "host_name": "epoch.ai",
+    "rank": 2,
+    "date": "Dec 29, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=o5t77-JZRpw",
+    "name": "Who Owns the Intelligence? Open vs. Closed AI | Intelligence",
+    "snippet": "Six people currently sit on OpenAI's board. Those six people make decisions about one of the most powerful technologies ever built.",
+    "host_name": "www.youtube.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/kirill-balakhonov_hyperscalers-monopoly-on-frontier-models-activity-7400131031602896897-dUlx",
+    "name": "decentralized RL actually works! | Kirill A. B.",
+    "snippet": "Hyperscalers' monopoly on frontier models is cracking: decentralized RL actually works! I still can't fully wrap my head around the fact ...",
+    "host_name": "www.linkedin.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.galaxy.com/insights/research/decentralized-ai-training",
+    "name": "Decentralized AI Training: How Crypto Can Power Open AI",
+    "snippet": "This report explores the underlying architectures of decentralized AI protocols, the technical problems they aim to solve, and the prospects ...",
+    "host_name": "www.galaxy.com",
+    "rank": 5,
+    "date": "Sep 15, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2606.24722v1",
+    "name": "Decentralised AI Training and Inference with BlockTrain",
+    "snippet": "Frontier AI training is increasingly shaped by access to dense, centrally controlled accelerator clusters. makes open or independent AI efforts",
+    "host_name": "arxiv.org",
+    "rank": 6,
+    "date": "Jun 23, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.symbolic.capital/writing/frontier-training",
+    "name": "Frontier Training | Sam Lehman - Symbolic Capital",
+    "snippet": "Decentralized training is a new way to generate AI models through distributing workloads across a network of GPUs that are not physically co- ...",
+    "host_name": "www.symbolic.capital",
+    "rank": 7,
+    "date": "Jan 6, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2096720924000770",
+    "name": "Unlocking potential of open source model training in",
+    "snippet": "by E Pavlova · 2025 · Cited by 6 — This study explores the integration of blockchain technology, smart contracts, and publicly verifiable secret sharing within a DFL framework. Our investigation ...",
+    "host_name": "www.sciencedirect.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.prompt20.com/posts/decentralized-ai",
+    "name": "Decentralized AI in 2026: The Complete Guide to the Stack",
+    "snippet": "Decentralized inference already undercuts hyperscalers on price; decentralized training is the genuine frontier research problem; decentralized data and verification are quietly the most defensible use cases.",
+    "host_name": "blog.prompt20.com",
+    "rank": 9,
+    "date": "Jun 12, 2026",
+    "favicon": ""
+  }
+]

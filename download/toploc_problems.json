@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.primeintellect.ai/blog/toploc",
+    "name": "TOPLOC: A Locality Sensitive Hashing Scheme for",
+    "snippet": "Jan 28, 2025 — We introduce TOPLOC , a novel method for verifiable inference. TOPLOC employs a compact locality sensitive hashing mechanism for intermediate ...\nWe introduce TOPLOC, a novel method for verifiable inference. TOPLOC employs a compact locality sensitive hashing mechanism for intermediate activations, which can detect unauthorized modifications to models, prompts, or compute precision with 100% accuracy in our empirical evaluations.",
+    "host_name": "www.primeintellect.ai",
+    "rank": 0,
+    "date": "Jan 28, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2501.16007v1",
+    "name": "TopLoc: A Locality Sensitive Hashing Scheme for Trustless",
+    "snippet": "Jan 27, 2025 — TopLoc leverages a compact locality sensitive hashing mechanism for intermediate activations which can detect unauthorized modifications to ...",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "Jan 27, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/PrimeIntellect/status/1937272181848945139",
+    "name": "Prime Intellect on X: \"Verification with TOPLOC v2 To trust",
+    "snippet": "Verification with TOPLOC v2 To trust results from thousands of permissionless compute nodes, we must verify their generations cheaply.",
+    "host_name": "x.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://primeintellect.ai",
+    "name": "Prime Intellect - The Open Superintelligence Stack",
+    "snippet": "Train, deploy, and continuously improve your own models on an integrated compute, training, inference, and sandbox stack.",
+    "host_name": "primeintellect.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=SJc1y5z5wwM",
+    "name": "Prime Intellect's Will Brown & Johannes Hagemann",
+    "snippet": "Will Brown and Johannes Hagemann of Prime Intellect discuss the shift from static prompting to \"environment-based\" AI development, and their ...",
+    "host_name": "www.youtube.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.delltechnologiescapital.com/resources/prime-intellect-building-the-open-super-intelligence-stack",
+    "name": "Prime Intellect: Building the Open Super Intelligence Stack",
+    "snippet": "Jul 8, 2026 — Dell Tech Capital's Radhika Malik shares why she invested in Prime Intellect's $130M Series A and its vision for an open superintelligence ...",
+    "host_name": "www.delltechnologiescapital.com",
+    "rank": 5,
+    "date": "Jul 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/PrimeIntellect-ai/toploc",
+    "name": "TOPLOC: is a novel method for verifiable inference",
+    "snippet": "TOPLOC : is a novel method for verifiable inference that enables users to verify that LLM providers are using the correct model configurations and settings ...\nTOPLOC: A Locality Sensitive Hashing Scheme for Trustless Verifiable Inference TOPLOC leverages locality sensitive hashing of intermediate activations to verify that LLM providers are using authorized model configurations and settings.",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net/forum?id=8PJmKfeDdp",
+    "name": "TOPLOC: A Locality Sensitive Hashing Scheme for",
+    "snippet": "by JM Ong · Cited by 11 — TOPLOC leverages a compact locality-sensitive hashing mechanism for intermediate activations, which can detect unauthorized modifications to ...",
+    "host_name": "openreview.net",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/johannes-hagemann-393b72142_toploc-a-locality-sensitive-hashing-scheme-activity-7290196881349996545-HCd_",
+    "name": "Johannes Hagemann's Post - TOPLOC",
+    "snippet": "Jan 28, 2025 — Today, we release TOPLOC : A Locality Sensitive Hashing Scheme for Verifiable Inference - Detects modifications to models, prompts, ...",
+    "host_name": "www.linkedin.com",
+    "rank": 8,
+    "date": "Jan 28, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://deepwiki.com/PrimeIntellect-ai/toploc",
+    "name": "PrimeIntellect-ai/toploc | DeepWiki",
+    "snippet": "This workflow demonstrates how TOPLOC processes neural network activations into compact proofs and later verifies new activations against these proofs to confirm computational integrity.",
+    "host_name": "deepwiki.com",
+    "rank": 9,
+    "date": "Apr 25, 2025",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2542660526000570",
+    "name": "Sybil attack defense in blockchain-based industrial IoT",
+    "snippet": "by F Erfan · 2026 · Cited by 4 — This work presents a decentralized framework for detecting and preventing Sybil attacks in IIoT networks that combines decentralized federated learning",
+    "host_name": "www.sciencedirect.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mdpi.com/2076-3417/16/14/6929",
+    "name": "Threat Landscape in Decentralized Systems: Sybil Attacks",
+    "snippet": "by AA Bordeianu · 2026 — Sybil attack occurs when an adversary creates and controls a large number of pseudonymous identities within a distributed network to undermine protocols. Sybil ...\nBlockchain technology has profoundly revolutionized decentralized applications across financial systems, global supply chains, and applied informatics. However, it remains susceptible to systemic security hazards. This systematic review comprehensively evaluates core architectural vulnerabilities within blockchain infrastructures, consensus mechanisms, and peer-to-peer (P2P) network layers ...",
+    "host_name": "www.mdpi.com",
+    "rank": 1,
+    "date": "Jul 10, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://purl.stanford.edu/hj860vc2584",
+    "name": "Analyzing Sybil Resistance in Quadratic Voting Mechanisms",
+    "snippet": "We first show that using indirect Sybil Attack through wallet creation an attacker can devolve Quadratic Voting into a linear voting system.",
+    "host_name": "purl.stanford.edu",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hacken.io/insights/sybil-attacks",
+    "name": "Sybil Attack in Blockchain: Examples & Prevention",
+    "snippet": "Jun 30, 2025 — A Sybil Attack is a form of online security violation where an entity has numerous fake identities on a blockchain for malicious reasons.",
+    "host_name": "hacken.io",
+    "rank": 3,
+    "date": "Jun 30, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://gov.gitcoin.co/t/knowledge-transfer-characterizing-the-sybil-resistance-problem/11235",
+    "name": "Knowledge Transfer: Characterizing the Sybil Resistance",
+    "snippet": "Aug 6, 2022 — On challenge with building a system that can address sybil attacks is to manage identity information. Identity information is essential to ... Read more",
+    "host_name": "gov.gitcoin.co",
+    "rank": 4,
+    "date": "Aug 6, 2022",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/legal-trap-could-make-you-liable-ai-crime-mohit-sewak-ph-d--73cec",
+    "name": "The Legal Trap That Could Make You Liable for AI Crime",
+    "snippet": "identity-free autonomous agent networks are highly susceptible to Sybil attacks , allowing deterministic scripts to manipulate consensus",
+    "host_name": "www.linkedin.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hal.science/hal-05002718/document",
+    "name": "Mitigation of Sybil-based Poisoning Attacks in",
+    "snippet": "by BAM González · 2025 · Cited by 2 — In decentralized learning, the Sybil -based Poisoning Attack . (SPA) has not received sufficient attention. Most works focus on sybil -tolerant ... Read more",
+    "host_name": "hal.science",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cyfrin.io/blog/understanding-sybil-attacks-in-blockchain-and-smart-contracts",
+    "name": "What is Sybil Resistance? Keys to Understanding",
+    "snippet": "Mar 4, 2024 — A Sybil attack is a malicious act in which an attacker creates multiple fake identities or nodes to gain disproportionate influence or control ... Read more",
+    "host_name": "www.cyfrin.io",
+    "rank": 7,
+    "date": "Mar 4, 2024",
+    "favicon": ""
+  }
+]

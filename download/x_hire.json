@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://x.com/mattshumer_/status/2021256989876109403",
+    "name": "Matt Shumer (@mattshumer_) on X",
+    "snippet": "I've spent six years building an AI startup and investing in the space. The AI labs made a deliberate choice. They focused on making it. These ...",
+    "host_name": "x.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+    "name": "Skill Issue: Andrej Karpathy on Code Agents, AutoResearch",
+    "snippet": "What happens when AI agents can design experiments, collect data, and improve — without a human in the loop? Andrej Karpathy joins Sarah Guo ...",
+    "host_name": "www.youtube.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://redmonk.com/videos/angie-byron",
+    "name": "“Don't Submit Code You Don't Understand”: Angie Byron on AI",
+    "snippet": "Open source has a new problem: you often can't tell whether the contributor on the other end is a person or an agent working on their behalf.",
+    "host_name": "redmonk.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/alexeyf_just-built-an-ai-agent-that-creates-twitter-activity-7350784375019499520-gZWv",
+    "name": "Built an AI to create Twitter threads in minutes",
+    "snippet": "Just built an AI agent that creates Twitter threads in minutes . After digging through X(fka Twitter)'s open-source codebase, here's how your “ ...",
+    "host_name": "www.linkedin.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=GTXCjMu0hdI",
+    "name": "This AUTOMATED Social Media AI Agent is INSANE: Full",
+    "snippet": "In this video I help you set up an AI agent that does research on Twitter and writes you endless content. Full Demo and Beginner's Guide",
+    "host_name": "www.youtube.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.instagram.com/p/DTI8agtDC8p",
+    "name": "In a post on X, software engineer Jaana Dogan said her",
+    "snippet": "In a post on X, software engineer Jaana Dogan said her team had spent nearly a year building a distributed agent orchestration system at ...",
+    "host_name": "www.instagram.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/nick.krempasky/posts/metas-head-of-ai-safety-had-her-ai-agent-go-rogue-heres-what-happenedsummer-yue-/26185384217723353",
+    "name": "Meta AI safety director's OpenClaw agent goes rogue",
+    "snippet": "Meta's director of AI safety and alignment at its superintelligence lab had to physically run to her computer to stop an AI agent from ...",
+    "host_name": "www.facebook.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.businessinsider.com/openai-meta-superintelligence-labs-tips-getting-hired-phd-llm-interview-2025-10",
+    "name": "From OpenAI to Meta: My Tips for Landing a Job at a Top",
+    "snippet": "Oct 28, 2025 — An applied researcher who moved from OpenAI to Meta Superintelligence Labs tells BI what it takes to get hired at a top AI lab .",
+    "host_name": "www.businessinsider.com",
+    "rank": 7,
+    "date": "Oct 28, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/PrajwalTomar_/status/2024823117563195838",
+    "name": "I built a 5-agent AI content team using OpenClaw",
+    "snippet": "I built a 5-agent AI content team using OpenClaw that works for me 24/7. Here's how it works: → Employee #1 scrapes Twitter and YouTube ... Read more",
+    "host_name": "x.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/AndrewYNg",
+    "name": "Andrew Ng (@AndrewYNg) / Posts / X",
+    "snippet": "I'm teaching a new course, AI Prompting for Everyone, to help you become an AI power user — whatever your current skill level. It covers skills that apply ... Read more",
+    "host_name": "x.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://x.com/henrythe9ths/with_replies",
+    "name": "Henry Shi (@henrythe9ths) / Posts and Replies / X",
+    "snippet": "I help founders, write about AI and. You can catch up to the public AI research frontier in just 2 weeks. scale open models into AI that you can own. to 16 ...",
+    "host_name": "x.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/_avichawla/article/2049037299334472015",
+    "name": "How top AI labs are building RL agents in 2026 (using",
+    "snippet": "Apr 28, 2026 — How Anthropic, OpenAI, and DeepSeek are converging on a single idea of using the system prompt as the reward function.",
+    "host_name": "x.com",
+    "rank": 1,
+    "date": "Apr 28, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=fw4m6hFTdIU",
+    "name": "Build an AI Social Media Content Generator in 20 Minutes",
+    "snippet": "In this tutorial, we'll build an AI system using LangChain and Groq that transforms technical content into social media posts.",
+    "host_name": "www.youtube.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/mattshumer_?lang=en",
+    "name": "Matt Shumer (@mattshumer_) / Posts / X",
+    "snippet": "I've spent six years building an AI startup. On February 5th, 2026 , new models arrived that made everything before them feel like a different era. The AI ...",
+    "host_name": "x.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.madrona.com/twitter-ex-ceo-web-built-for-humans-make-it-work-for-ai-agents-nikita-shamgunov-parag-agrawal",
+    "name": "Twitter's Ex-CEO: The Web Was Built for Humans",
+    "snippet": "Mar 18, 2026 — AI agents are replacing humans as the primary customers of internet infrastructure … 2026 Twitter's Ex-CEO: The Web Was Built for Humans. ...",
+    "host_name": "www.madrona.com",
+    "rank": 4,
+    "date": "Mar 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=9-EJuW-Y9ls",
+    "name": "OpenAI's Agent Hire + Managers Are Disappearing + AI",
+    "snippet": "Feb 17, 2026 : AI is everywhere… so why isn't productivity showing up in the numbers? And why are supervisor roles quietly disappearing?",
+    "host_name": "www.youtube.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/a10networks/videos/ai-agents-interpret-prompt-intent-through-probabilistic-text-prediction-rather-t/2529809230766642",
+    "name": "AI agents interpret prompt intent through probabilistic text",
+    "snippet": "These agents can create documents, update databases, search connected tools, and execute multi-step workflows automatically.",
+    "host_name": "www.facebook.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/hyungjin_chung?lang=en",
+    "name": "Hyungjin Chung (@hyungjin_chung) / Posts / X",
+    "snippet": "underlying AI R&D. Lessons and What They Mean for Hiring AI Talent in 2026 A behind-the-scenes look at the first KRAFTON AI R&D Hackathon.",
+    "host_name": "x.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://opentweet.io/blog/openclaw-build-in-public-twitter-agent",
+    "name": "Build in Public on Twitter with OpenClaw",
+    "snippet": "Feb 19, 2026 — The idea is simple. You have an AI agent (OpenClaw, in this case). You give it the ability to post to X through OpenTweet's API. You tell it ...\nFeb 19, 2026 — Here's how to fix that with an AI agent that handles the posting while you handle the building . It writes the tweet, checks your limits, and ...",
+    "host_name": "opentweet.io",
+    "rank": 8,
+    "date": "Feb 19, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/mikesoylu",
+    "name": "Mike Soylu (@mikesoylu) / Posts / X",
+    "snippet": "People don't seem to understand that the majority of AI training today comes from the model trying things and finding out ( rl )",
+    "host_name": "x.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

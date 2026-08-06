@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.primeintellect.ai/blog/rlm",
+    "name": "Recursive Language Models: the paradigm of 2026",
+    "snippet": "Jan 1, 2026 — RLM allows an LLM to use a persistent Python REPL to inspect and transform its input data, and to call sub a standard Python tool.",
+    "host_name": "www.primeintellect.ai",
+    "rank": 0,
+    "date": "Jan 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2512.24601v3",
+    "name": "Recursive Language Models",
+    "snippet": "May 11, 2026 — We discuss observable behavior in small and large LLMs as RLMs to understand how we can steer and improve their performance and efficiency ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "May 11, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://alexzhang13.github.io/blog/2025/rlm",
+    "name": "Recursive Language Models | Alex L. Zhang",
+    "snippet": "Oct 15, 2025 — We propose Recursive Language Models (RLMs), an inference strategy where language models can decompose and recursively interact with input ...\nAn example of a recursive language model (RLM) call, which acts as a mapping from text → text, but is more flexible than a standard language model call and can scale to near-infinite context lengths.",
+    "host_name": "alexzhang13.github.io",
+    "rank": 2,
+    "date": "Oct 15, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1rdglh2/p_a_minimalist_implementation_for_recursive",
+    "name": "[P] A minimalist implementation for Recursive Language",
+    "snippet": "[P] A simple pretraining pipeline for small language models ... I built a TypeScript implementation of Recursive Large Language Models ( RLM ). Read more",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=umbtFGPzdAM",
+    "name": "MIT CSAIL Explains: Recursive Language Models",
+    "snippet": "What is a Recursive Language Model ? How does a RLM keep errors from compounding over many steps? 12:28 - How do RLMs fit into a multi-agent ...",
+    "host_name": "www.youtube.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://wheremachinesthink.substack.com/p/recursive-language-models-can-a-simple",
+    "name": "Recursive Language Models: Can a simple method potentially",
+    "snippet": "The LLM+scaffolding makes up the recursive language model ( RLM ). The heart of the scaffolding is something called a Read-Eval-Print-Loop (REPL) ... Read more",
+    "host_name": "wheremachinesthink.substack.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://machinelearningmastery.com/everything-you-need-to-know-about-recursive-language-models",
+    "name": "Everything You Need to Know About Recursive Language",
+    "snippet": "Mar 18, 2026 — In this article, you will learn what recursive language models are, why they matter for long-input reasoning, and how they differ from ... Read more",
+    "host_name": "machinelearningmastery.com",
+    "rank": 6,
+    "date": "Mar 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@jain.sm/recursive-language-models-explained-from-first-principles-ddaf73b78632",
+    "name": "Recursive Language Models explained from first principles",
+    "snippet": "In this demo we demonstrate Recursive Language Models using a simple but revealing needle-in-a-haystack task. We generate a very large block of ... Read more",
+    "host_name": "medium.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2512.24601v1",
+    "name": "Recursive Language Models - arXiv.org",
+    "snippet": "Figure 2: A Recursive Language Model (RLM) treats prompts as part of the environment. It loads the input prompt as a variable inside a Python REPL environment $ℰ$ and writes code to peek into, decompose, and invoke itself recursively over programmatic snippets of the variable.",
+    "host_name": "arxiv.org",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2512.24601",
+    "name": "[2512.24601] Recursive Language Models - arXiv.org",
+    "snippet": "At a small scale, we post-train the first model around the RLM. Our model, RLM-Qwen3-8B, outperforms the underlying Qwen3-8B model by 28.3% on average and even approaches the quality of vanilla GPT-5 on three long-context tasks. Code is available at this https URL.",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Dec 31, 2025",
+    "favicon": ""
+  }
+]

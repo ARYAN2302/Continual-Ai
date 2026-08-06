@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://cameronrwolfe.substack.com/p/rl-continual-learning",
+    "name": "Continual Learning with RL for LLMs",
+    "snippet": "Continual learning , which refers to the ability of an AI model to learn from new tasks and data over time, has become a popular topic in the ...",
+    "host_name": "cameronrwolfe.substack.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1t72u1r/people_interested_in_continual_learning_researchr",
+    "name": "People Interested in Continual Learning Research[R]",
+    "snippet": "What are open unsolved interesting problems in machine learning ? 65 70 Continual Learning In 2026 . What does continual learning actually mean? ...",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/DeepNetGroup/posts/2747858565607008",
+    "name": "Continual learning with reinforcement learning for llms",
+    "snippet": "Finally, we highlight open problems and challenges in bridging the gap between the current state of continual RL and findings in neuroscience.",
+    "host_name": "www.facebook.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lesswrong.com/posts/qZrbhoaEALFTmyidr/perspectives-on-continual-learning-survey-results-and",
+    "name": "Perspectives on Continual Learning: Survey Results and",
+    "snippet": "Jun 24, 2026 — This UK AISI paper identifies 8 indicators of progress against current AI limitations that may be necessary for achieving AGI , and how much ...",
+    "host_name": "www.lesswrong.com",
+    "rank": 3,
+    "date": "Jun 24, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/tanayj/article/2064092147842740567",
+    "name": "Towards Continual Learning | Tanay Jaipuria (@tanayj) on X",
+    "snippet": "Jun 8, 2026 — Keeping a model both stable and plastic at the same time is an open research problem which is why you can't simply just fine-tune on every ...",
+    "host_name": "x.com",
+    "rank": 4,
+    "date": "Jun 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cs.uic.edu/~liub/lifelong-learning.html",
+    "name": "Lifelong and Continual Learning",
+    "snippet": "It is now common knowledge that continaul machine learning or simply continual learning (a.k.a lifelong learning ) is necessary for Artificial General ...",
+    "host_name": "www.cs.uic.edu",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=PROWwgwvYPA",
+    "name": "Google DeepMind advisor on AI continual learning, AGI, and",
+    "snippet": "Is in-context learning (ICL) better than continual learning? Will we have AGI by 2026 ? Will AGI get nationalized? Catch these talks live and ...",
+    "host_name": "www.youtube.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@adnanmasood/continual-learning-the-missing-capability-for-reliable-ai-at-scale-c225e1a523de",
+    "name": "Continual Learning: The Missing Capability for Reliable AI",
+    "snippet": "Open research questions include: threat models (benign vs poisoned adaptation), formalization of “alignment retention,” and mechanisms that ...",
+    "host_name": "medium.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://zylos.ai/en/research/2026-04-09-continual-learning-catastrophic-forgetting-ai-agents",
+    "name": "Continual Learning and Catastrophic Forgetting Prevention in",
+    "snippet": "For teams building production agents in 2026, the practical question is no longer whether to support continual learning — users expect agents to remember and improve — but rather which strategy best matches their update frequency, privacy constraints, and acceptable compute budget.",
+    "host_name": "zylos.ai",
+    "rank": 8,
+    "date": "Apr 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nextbigfuture.com/2026/04/2026-is-breakthrough-year-for-reliable-ai-world-models-and-continual-learning-prototypes.html",
+    "name": "2026 is Breakthrough Year for Reliable AI World Models and",
+    "snippet": "Hassabis views AGI as plausible in the next 5–10 years (roughly 2030–2035 window, with a distribution around the lower end), driven by these advances plus relentless progress on Gemini-like models.",
+    "host_name": "www.nextbigfuture.com",
+    "rank": 9,
+    "date": "Apr 10, 2026",
+    "favicon": ""
+  }
+]

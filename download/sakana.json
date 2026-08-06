@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://sakana.ai/ctm",
+    "name": "Introducing Continuous Thought Machines",
+    "snippet": "May 12, 2025 — The Continuous Thought Machine is a new kind of artificial neural network which uses the synchronization between neuron dynamics to solve tasks. Read more",
+    "host_name": "sakana.ai",
+    "rank": 0,
+    "date": "May 12, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://zylos.ai/research/2026-04-09-continual-learning-catastrophic-forgetting-ai-agents",
+    "name": "Continual Learning and Catastrophic Forgetting Prevention",
+    "snippet": "Apr 9, 2026 — For teams building AI agent platforms in 2026 , continual learning is moving from a nice-to-have to a core architectural concern.",
+    "host_name": "zylos.ai",
+    "rank": 1,
+    "date": "Apr 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://sakana.ai/cycleqd",
+    "name": "Population-based Model Merging via Quality Diversity",
+    "snippet": "Dec 3, 2024 — This is the first in a series of blog posts presenting the results of Sakana AI's research projects that were supported by the Japanese ... Read more",
+    "host_name": "sakana.ai",
+    "rank": 2,
+    "date": "Dec 3, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.letta.com/blog/continual-learning",
+    "name": "Continual Learning in Token Space",
+    "snippet": "Dec 11, 2025 — At Letta, we believe that learning in token space is the key to building AI agents that truly improve over time. Our interest in this ...\nDec 11, 2025 — At Letta, we believe that learning in token space is the key to building AI agents that truly improve over time. are human-readable.",
+    "host_name": "www.letta.com",
+    "rank": 3,
+    "date": "Dec 11, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://sakana.ai/digital-ecosystem",
+    "name": "Digital Ecosystems: Interactive Multi-Agent Neural Cellular",
+    "snippet": "Apr 19, 2026 — Digital Ecosystems: a browser-based platform for interactive artificial life research. Species that stagnate get nudged to grow .",
+    "host_name": "sakana.ai",
+    "rank": 4,
+    "date": "Apr 19, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://eastondev.com/blog/en/posts/ai/self-evolving-ai-continual-learning",
+    "name": "Self-Evolving AI: 4 Methods for Continual Learning in 2026",
+    "snippet": "Apr 14, 2026 — A deep dive into 2026 continual learning trends—from SDFT self-distillation to MiniMax M2.7's self-evolution pipeline.",
+    "host_name": "eastondev.com",
+    "rank": 5,
+    "date": "Apr 14, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2511.01093",
+    "name": "Continual Learning, Not Training: Online Adaptation For",
+    "snippet": "by A Jaglan · 2025 — Continual Learning (CL) methods have traditionally focused on mitigating catastrophic forgetting through gradient-based retraining, an approach ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/andrewaschoen_fantastic-and-extremely-relevant-work-from-activity-7480327432290349057-ywrl",
+    "name": "Andrew Schoen's Post",
+    "snippet": "Excited to share our paper, “ Learning Multi- Agent Coordination via Sheaf-ADMM” to be presented at # ICML2026 Blog: https://lnkd.in/guRuT5vv ... Read more",
+    "host_name": "www.linkedin.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10914671",
+    "name": "Continual task learning in natural and artificial agents - PMC",
+    "snippet": "by T Flesch · 2023 · Cited by 51 — In this review, we discuss recent theories of task learning in cognitive science, neuroscience, and AI research. We focus on continual learning , that is, the ...",
+    "host_name": "pmc.ncbi.nlm.nih.gov",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.sakana.ai/ctm",
+    "name": "Continuous Thought Machines",
+    "snippet": "The Continuous Thought Machine (CTM) represents a novel step towards bridging computational efficiency with biological plausibility in artificial intelligence .",
+    "host_name": "pub.sakana.ai",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

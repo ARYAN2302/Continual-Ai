@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.instagram.com/reel/DY4zq4gIzQB",
+    "name": "MLOps and LLMOps are related, but they are not the  - Instagram",
+    "snippet": "May 28, 2026 · MLOps focuses on the lifecycle of machine learning models: training, deployment, monitoring, drift detection, and retraining. LLMOps focuses on ...",
+    "host_name": "www.instagram.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2512.04123v1",
+    "name": "Measuring Agents in Production - arXiv",
+    "snippet": "Dec 2, 2025 · Our study documents the current state of practice and bridges the gap between research and deployment: we provide researchers visibility into ...",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.braintrust.dev/articles",
+    "name": "Braintrust articles",
+    "snippet": "Learn what LLM traces are, how tracing differs from logging, and how to start tracing with Braintrust, OpenTelemetry, SDK wrappers, and framework integrations.\nLearn what LLM evaluation is, its role in preventing production failures, and how to implement effective evaluation workflows with metrics, regression testing, ... Read more",
+    "host_name": "www.braintrust.dev",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5aoKtTKZIAM&vl=en-US",
+    "name": "Kyle Corbitt, OpenPipe - Building Reliable Agents with RL - YouTube",
+    "snippet": "Oct 22, 2025 · ... learning can bridge the gap between prototype and production-ready agents. He'll also share lessons from deploying these techniques at ...",
+    "host_name": "www.youtube.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://onereach.ai/blog/llmops-for-ai-agents-in-production",
+    "name": "LLMOps for AI Agents: Monitoring, Testing & Iteration in Production",
+    "snippet": "Rating 4.7 (51) · Free · Business/Productivity Sep 22, 2025 · Discover how LLMOps enables reliable AI agent deployments with monitoring, testing, and iteration frameworks to cut costs, reduce risks, ...",
+    "host_name": "onereach.ai",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/rakeshgohel01_forget-the-hype-these-papers-reveal-the-activity-7328394576690327553-7fli",
+    "name": "these papers reveal the real AI Agent progress | Rakesh Gohel",
+    "snippet": "May 14, 2025 · It is an automated approach to optimize LLM agent configurations by efficiently navigating a combinatorial space of prompting patterns and ...",
+    "host_name": "www.linkedin.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.towardsai.net/the-day-i-caught-my-ai-agent-red-handed-building-production-grade-llm-evaluation-systems-that-6b74f48c4c9a",
+    "name": "Building Production-Grade LLM Evaluation Systems That Actually",
+    "snippet": "Dec 1, 2025 · A complete guide to implementing LLM-as-judge monitoring with Groq, OpenTelemetry, and real-world examples from my research.",
+    "host_name": "pub.towardsai.net",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/tmgthb/Autonomous-Agents",
+    "name": "Autonomous Agents (LLMs) research papers. Updated Daily. - GitHub",
+    "snippet": "The framework utilizes CPT, SFT, and RL to develop a world model that serves as either a decoupled environment simulator or a unified agent foundation model.",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://wandb.ai/site/resources/events/the-ai-agent-workshop-berlin",
+    "name": "The AI Agent Workshop: BERLIN - Weights & Biases - Wandb",
+    "snippet": "Build and evaluate an open-source LLM-powered agent on real-world tasks; Apply serverless reinforcement learning (RL) continuously improve agent performance and ...",
+    "host_name": "wandb.ai",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://futureagi.com/blog/real-time-learning-in-large-language-models-llms",
+    "name": "Real-Time Learning in LLMs 2026: Methods Compared - Future AGI",
+    "snippet": "Dec 5, 2024 · “Real-time learning in LLMs” is one of the most overloaded phrases in the field. The headline implies live, continuous weight updates from ...\nDec 5, 2024 — Real-time learning in LLMs covers any method that updates model behavior from new data without the months-long pretraining loop.",
+    "host_name": "futureagi.com",
+    "rank": 9,
+    "date": "Dec 5, 2024",
+    "favicon": ""
+  }
+]

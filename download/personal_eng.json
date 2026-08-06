@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e",
+    "name": "My LLM coding workflow going into 2026 | by Addy Osmani",
+    "snippet": "In this article, I'll share how I plan, code, and collaborate with AI going into 2026 , distilling tips and best practices from my experience ...",
+    "host_name": "medium.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.faros.ai/blog/best-ai-coding-agents-2026",
+    "name": "Best AI Coding Agents for 2026: Real-World Developer",
+    "snippet": "Jan 2, 2026 — TL;DR: The front-runners for 2026 are Cursor , Claude Code, Codex, GitHub Copilot, and Cline, and the right pick depends on whether you want ...",
+    "host_name": "www.faros.ai",
+    "rank": 1,
+    "date": "Jan 2, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1rqnv3a/what_is_your_full_ai_agent_stack_in_2026",
+    "name": "What is your full AI Agent stack in 2026? : r/AI_Agents",
+    "snippet": "For our internal AI agent stack, our big focus for 2026 is making them genuinely reliable and robust. We prioritize continuous stress testing ...",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/orgs/community/discussions/187143",
+    "name": "Best AI Tools for Developers in 2026: What Are Your Must-",
+    "snippet": "Jul 22, 2026 — Agent‐first IDE from Google that coordinates multiple AI agents across your codebase , with a free individual plan in public preview. Strong for ...",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "Jul 22, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://checkmarx.com/learn/ai-security/top-12-ai-developer-tools-in-2026-for-security-coding-and-quality",
+    "name": "Top 12 AI Developer Tools in 2026 for Security, Coding",
+    "snippet": "Mar 11, 2026 — Compare the top AI developer tools for 2026 : AI coding assistants, agentic tools, testing automation, and security guardrails for ...",
+    "host_name": "checkmarx.com",
+    "rank": 4,
+    "date": "Mar 11, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/802532124993016/posts/1503437648235790",
+    "name": "AI coding for non-technical founders in 2026",
+    "snippet": "AI coding in 2026 has 3 levels. You only need Level 1 to start. can autonomously create code for entire engineering jobs, including its own AI ...",
+    "host_name": "www.facebook.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.red-gate.com/simple-talk/ai/the-best-ai-developer-tools-in-2026-from-coding-agents-to-code-review",
+    "name": "The best AI developer tools in 2026: from coding agents to",
+    "snippet": "Jul 15, 2026 — There's no single answer, but Claude Code , Codex, Cursor, and OpenCode are the leading options. Claude Code is best for speed and rapid ...",
+    "host_name": "www.red-gate.com",
+    "rank": 6,
+    "date": "Jul 15, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/gaurav-pandey-ai_i-interviewed-a-developer-today-who-couldnt-activity-7407268416006418432-ga8u",
+    "name": "Developer Skills in AI Era: Fundamentals Over Autopilot",
+    "snippet": "Claude 4.5 in Cursor just became the first AI that actually reads your entire codebase before suggesting changes. The secret? Agent Skills—and ...",
+    "host_name": "www.linkedin.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ExperiencedDevs/comments/1ladiz5/having_an_llm_train_on_your_teams_codebase_good",
+    "name": "Having an LLM train on your team's codebase: good or bad",
+    "snippet": "It doesn't “ learn ” your code base so that it can make bug free changes. It learns the style of your code base , the patterns, what it looks like, ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=S1VWe_JvpHo",
+    "name": "Build an AI Coding Agent That Works While You Sleep (Live",
+    "snippet": "Watch a live build of a self-correcting AI coding agent using Ralph Loops — an agentic workflow pattern that plans, executes, tests, and fixes ...",
+    "host_name": "www.youtube.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

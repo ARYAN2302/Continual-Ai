@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/singularity/comments/1q6attw/continual_learning_in_2026_what_does_continual",
+    "name": "Continual Learning In 2026. What does",
+    "snippet": "People keep saying \"continual learning\" for 2026-era models, but that phrase can mean very different things. When they say continual learning, do they ...",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.seangoedecke.com/continuous-learning",
+    "name": "What's so hard about continuous learning?",
+    "snippet": "Feb 23, 2026 — In a sense, every LLM since GPT-3 is already capable of continuous learning (via RL, RLHF, or whatever). It's just that the continuous learning ...",
+    "host_name": "www.seangoedecke.com",
+    "rank": 1,
+    "date": "Feb 23, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://cameronrwolfe.substack.com/p/rl-continual-learning",
+    "name": "Continual Learning with RL for LLMs",
+    "snippet": "As we will learn, however, continual learning is not disjoint from current LLM research . Rather, existing post-training techniques ...\nContinual learning , which refers to the ability of an AI model to learn from new tasks and data over time, has become a popular topic in the ...",
+    "host_name": "cameronrwolfe.substack.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lesswrong.com/posts/5mCJzimtNZc9o4e26/what-s-continual-learning-and-why-might-we-expect-to-see-it",
+    "name": "What's Continual Learning, and Why Might We Expect To",
+    "snippet": "Jun 12, 2026 — The basic reason to expect effective continual learning (CL) is that it would probably make AI agents better at important tasks on which AI ...\nJun 12, 2026 — The main components of an LLM agent that can receive persistent updates during deployment are model weights, the context window, memory banks ...",
+    "host_name": "www.lesswrong.com",
+    "rank": 3,
+    "date": "Jun 12, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2603.12658v1",
+    "name": "Continual Learning in Large Language Models",
+    "snippet": "Mar 13, 2026 — Continual learning (CL) has emerged as a pivotal paradigm to enable large language models (LLMs) to dynamically adapt to evolving knowledge ...",
+    "host_name": "arxiv.org",
+    "rank": 4,
+    "date": "Mar 13, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://zylos.ai/research/2026-04-09-continual-learning-catastrophic-forgetting-ai-agents",
+    "name": "Continual Learning and Catastrophic Forgetting Prevention",
+    "snippet": "Apr 9, 2026 — . For teams building production agents in 2026 , the practical question is no longer whether to support continual learning . Benchmark ...",
+    "host_name": "zylos.ai",
+    "rank": 5,
+    "date": "Apr 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/continual-learning-ai-agents-how-actually-build-soheil-feizi-krdfe",
+    "name": "Continual Learning for AI Agents: How to Actually Build It",
+    "snippet": "A lifelong learning engine that needs billions of tokens to improve one issue is not a learning engine. It is a research demo with a cloud bill.\nIdeally, learning environments should not only come from production logs, teams can synthesize realistic scenarios, study agent behavior, and ...",
+    "host_name": "www.linkedin.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/oneill_c/article/2077453217609453784",
+    "name": "Trying to actually define continual learning",
+    "snippet": "Jul 15, 2026 — How do we make that model continually learn everything it needs to know to get better at its job? Humans are at least a proof of existence for ...",
+    "host_name": "x.com",
+    "rank": 7,
+    "date": "Jul 15, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.aviso.com/blog/the-next-frontier-in-ai-continuous-learning-llms-at-aviso-ai",
+    "name": "The Next Frontier in AI: Continuous Learning LLMs at Aviso",
+    "snippet": "Sep 25, 2025 — Discover how continuous learning LLMs at Aviso AI adapt in real time, improve forecasts, personalize engagement, and power next-gen AI ...",
+    "host_name": "www.aviso.com",
+    "rank": 8,
+    "date": "Sep 25, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/continual-ai/continual-learning-for-production-systems-304cc9f60603",
+    "name": "Continual Learning for Production Systems",
+    "snippet": "Agile and Scrum models became the standard the facto for software development these days. “ Continual Learning ”, where the basic idea is to  ...",
+    "host_name": "medium.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

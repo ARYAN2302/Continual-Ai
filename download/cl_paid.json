@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2402.01364v2",
+    "name": "Continual Learning for Large Language Models: A Survey",
+    "snippet": "Feb 7, 2024 — Continual pre- training updates domain knowledge ... Efficient continual pre- training for building domain specific large language models .",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Feb 7, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.seangoedecke.com/continuous-learning",
+    "name": "What's so hard about continuous learning?",
+    "snippet": "Feb 23, 2026 — “ Continuous learning ” — the ability for a model to update its own weights over time — is thus often described as the bottleneck for AGI.",
+    "host_name": "www.seangoedecke.com",
+    "rank": 1,
+    "date": "Feb 23, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/efficient-continual-pre-training-llms-for-financial-domains",
+    "name": "Efficient continual pre-training LLMs for financial domains",
+    "snippet": "Mar 28, 2024 — Continual pre-training can help models acquire domain-specific knowledge without incurring the cost of pre-training from scratch because you pre ...",
+    "host_name": "aws.amazon.com",
+    "rank": 2,
+    "date": "Mar 28, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@prem_studio/continual-learning-how-ai-models-stay-smarter-over-time-d3790c8de182",
+    "name": "Continual Learning: How AI Models Stay Smarter Over Time",
+    "snippet": "Continual Learning is the process of regularly updating a trained model with new or refined data so that it stays accurate, relevant, and ...",
+    "host_name": "medium.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/singularity/comments/14o1cc0/can_an_ml_model_be_continuously_updated_with_new",
+    "name": "Can an ML model be continuously \"updated\" with new",
+    "snippet": "ML models that can be continuously updated with new data at cheap cost. continual learning is one of the biggest subfields of ML research.",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.arcee.ai/blog/case-study-innovating-domain-adaptation-through-continual-pre-training-and-model-merging",
+    "name": "Innovating Domain Adaptation through Continual Pre",
+    "snippet": "This case study delves into how Arcee harnesses Continual Pre- Training (CPT) and Model Merging for cost-effective domain adaptation,",
+    "host_name": "www.arcee.ai",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.leewayhertz.com/how-to-train-domain-specific-llms",
+    "name": "Train foundation model for domain-specific language model",
+    "snippet": "Discover how to train open-source foundation models domain - specific LLMs, while exploring the benefits, challenges, and a detailed case study of ...",
+    "host_name": "www.leewayhertz.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/Wang-ML-Lab/llm-continual-learning-survey",
+    "name": "Continual Learning of Large Language Models: A",
+    "snippet": "This is an updating survey for Continual Learning of Large Language Models (CL-LLMs), a constantly updated and extended version. Case Study in Japanese ...",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.amazon.science/publications/efficient-continual-pre-training-for-building-domain-specific-large-language-models",
+    "name": "Efficient continual pre-training for building domain specific",
+    "snippet": "by Y Xie · 2024 · Cited by 120 — In this work, we explore an alternative strategy of continual pre- training as a means to develop domain - specific LLMs over an existing open-domain LLM. We ...",
+    "host_name": "www.amazon.science",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.splunk.com/en_us/blog/learn/continual-learning.html",
+    "name": "Continual Learning in AI: How It Works & Why AI Needs It",
+    "snippet": "Jul 19, 2024 — Continual learning enables AI systems to consistently update and expand knowledge in rapidly changing environments. In machine learning ... Read more",
+    "host_name": "www.splunk.com",
+    "rank": 9,
+    "date": "Jul 19, 2024",
+    "favicon": ""
+  }
+]

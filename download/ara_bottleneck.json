@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2606.13662v1",
+    "name": "EurekAgent: Agent Environment Engineering is All You",
+    "snippet": "Jun 11, 2026 — As model capabilities continue to improve, we argue that the bottleneck for autonomous scientific discovery is shifting from prescribing agent ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Jun 11, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://galileo.ai/blog/multi-agent-ai-failures-prevention",
+    "name": "Why Multi-Agent AI Systems Fail and How to Fix Them",
+    "snippet": "Dec 21, 2025 — When your autonomous agents coordinate autonomously, you face failure modes fundamentally different from single- agent architectures. Read more",
+    "host_name": "galileo.ai",
+    "rank": 1,
+    "date": "Dec 21, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://kirangarimella.substack.com/p/what-ai-agents-still-cannot-do",
+    "name": "What AI Agents Still Cannot Do - Kiran Garimella",
+    "snippet": "Fully autonomous agents like OpenClaw fail silently on many open -world tasks like paywalled links, and have a ton of edge cases which compound.",
+    "host_name": "kirangarimella.substack.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://alignment.anthropic.com/2026/automated-w2s-researcher",
+    "name": "Automated Weak-to-Strong Researcher",
+    "snippet": "We built autonomous AI agents that propose ideas, run experiments, and iterate on an open research problem : how to train a strong model using only a weaker ... Read more",
+    "host_name": "alignment.anthropic.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lesswrong.com/posts/8KrTuCAzL2fdYHNrv/human-guided-agentic-research-a-research-agenda",
+    "name": "Human-Guided Agentic Research: A Research Agenda",
+    "snippet": "Jun 29, 2026 — Human Failure Modes Where a human researcher gives an agent wrong or sub-optimal guidance because of overwhelm, decision fatigue, choice ...",
+    "host_name": "www.lesswrong.com",
+    "rank": 4,
+    "date": "Jun 29, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.praetorian.com/blog/deterministic-ai-orchestration-a-platform-architecture-for-autonomous-development",
+    "name": "Deterministic AI Orchestration: A Platform Architecture for",
+    "snippet": "Feb 5, 2026 — The primary bottleneck in autonomous software development is not model intelligence, but context management and architectural determinism. Read more",
+    "host_name": "www.praetorian.com",
+    "rank": 5,
+    "date": "Feb 5, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.quora.com/What-are-the-most-common-failure-modes-in-multi-agent-AI-architectures",
+    "name": "What are the most common failure modes in multi-agent AI",
+    "snippet": "This conversational loop is the most frequent architectural failure mode . Unlike human workers who know when a transaction is complete, ... Read more\nCross-domain reasoning—where finance, ops, marketing, and people-strategy interact—is still a major bottleneck for autonomous AI systems.",
+    "host_name": "www.quora.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1rtiplc/running_ai_agents_in_production_what_does_your",
+    "name": "Running AI agents in production what does your stack look",
+    "snippet": "Hey everyone, I’m curious about how people are actually running AI agents in production.\n\nThere’s a lot of hype about AI giving solo builders and ...",
+    "host_name": "www.reddit.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/akshay-pachaar_karpathy-just-open-sourced-autoresearch-activity-7436396819368124416-4zXk",
+    "name": "Karpathy's Autoresearch: Open-Source AI Training Agent",
+    "snippet": "Curious what the failure mode looks like at scale: does the agent converge on local optima (and stop exploring), or does the 5-min constraint ... Read more",
+    "host_name": "www.linkedin.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2508.13143v1",
+    "name": "A Closer Look at Why They Fail When Completing Tasks",
+    "snippet": "Aug 18, 2025 — This study investigates autonomous agent systems, focusing on their collaboration mechanisms and the reasons behind their failures in ...",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Aug 18, 2025",
+    "favicon": ""
+  }
+]

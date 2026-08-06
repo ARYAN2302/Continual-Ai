@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1dcl6bv/can_multiple_small_ai_agents_surpass_a_single",
+    "name": "Can multiple small AI agents surpass a single large model",
+    "snippet": "I'm curious about the potential benefits of using multiple small (8b, let's say) AI agents that communicate with each other for brainstorming and ...",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2601.11327v1",
+    "name": "Can Small Agent Collaboration Beat a Single Big LLM?",
+    "snippet": "SLMs are often perceived as fundamentally limited by weaker reasoning and planning abilities compared to frontier-scale models. limited- ...",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "Jan 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666389925002181",
+    "name": "Toward large reasoning models: A survey of reinforced",
+    "snippet": "by F Xu · 2025 · Cited by 239 — This survey synthesizes the rapidly expanding body of research into a coherent framework for what we term “large reasoning models” (LRMs).",
+    "host_name": "www.sciencedirect.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.ibm.com/think/topics/reasoning-model",
+    "name": "What Is a Reasoning Model? | IBM",
+    "snippet": "A reasoning model is a large language model (LLM) fine-tuned to break complex problems into smaller chain-of-thought (CoT) steps,",
+    "host_name": "www.ibm.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/rakeshgohel01_you-can-build-better-reasoning-ai-agents-activity-7292912659585282050-uwzI",
+    "name": "You \"can\" build better reasoning AI Agents with Smaller",
+    "snippet": "MAD ( Multi-Agent Debate) is one of the few processes that utilize smaller language models to improve reasoning. Its process adapts a few core ...",
+    "host_name": "www.linkedin.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://machinelearning.apple.com/research/illusion-of-thinking",
+    "name": "The Illusion of Thinking: Understanding the Strengths and",
+    "snippet": "While these models demonstrate improved performance on reasoning benchmarks, their fundamental capabilities, scaling properties, and limitations remain ...",
+    "host_name": "machinelearning.apple.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/research/blog/new-methods-boost-reasoning-in-small-and-large-language-models",
+    "name": "New methods boost reasoning in large language models",
+    "snippet": "This limitation becomes especially pronounced in smaller models, where limited capacity makes strong reasoning even harder.",
+    "host_name": "www.microsoft.com",
+    "rank": 6,
+    "date": "Jun 17, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=AyO6wyu4DEg",
+    "name": "Stanford CS329A Self-Improving AI Agents | Part 9",
+    "snippet": "Agentic AI professional education program: has led frontier model training end-to-end, Self-Improvement and Deep Research Agents",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "Aug 3, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.liquid.ai/research/lfm-1b-math-can-small-models-be-concise-reasoners",
+    "name": "LFM-1B-Math: Can Small Models Be Concise Reasoners?",
+    "snippet": "Small models, in particular, are limited in their zero-shot capabilities and may need several explorative attempts before solving hard questions ...",
+    "host_name": "www.liquid.ai",
+    "rank": 8,
+    "date": "Jun 24, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2512.08296v1",
+    "name": "Towards a Science of Scaling Agent Systems",
+    "snippet": "Dec 9, 2025 — We define this scaling as the interplay between the number of agents , coordination structure, model capability , and task properties.",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Dec 9, 2025",
+    "favicon": ""
+  }
+]

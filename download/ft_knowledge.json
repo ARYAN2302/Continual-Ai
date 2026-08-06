@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/13wimi0/can_finetuning_an_llm_add_new_knowledge_or_just",
+    "name": "Can finetuning an LLM add new knowledge or just teach it",
+    "snippet": "Hi all, I have a question regarding fine-tuning of LLMs. I wanted to add some new content/knowledge to an LLM by fine-tuning it, but through some searches, ...",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://machine-learning-made-simple.medium.com/fine-tuning-llms-is-a-huge-waste-of-time-bd0b98fcc282",
+    "name": "Fine-Tuning LLMs is a Huge Waste of Time - Devansh - Medium",
+    "snippet": "Fine-tuning isn't knowledge injection — it's knowledge overwrite. For advanced LLMs, neurons are no longer neutral placeholders; they're highly ... Read more",
+    "host_name": "machine-learning-made-simple.medium.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://community.openai.com/t/what-does-fine-tuning-actually-do-fine-tuning-vs-knowledge-retrieval/709710",
+    "name": "What does fine tuning actually do? (Fine tuning vs.",
+    "snippet": "Apr 7, 2024 — Fine-tuning changes the AI behavior but must not be used to learn specific information. It is unreliable and will lead to failure. Fine-tuning ...",
+    "host_name": "community.openai.com",
+    "rank": 2,
+    "date": "Apr 7, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.ibm.com/think/topics/fine-tuning",
+    "name": "What is Fine-Tuning? | IBM",
+    "snippet": "Fine-tuning is an essential part of the LLM development cycle , allowing the raw linguistic capabilities of base foundation models to be adapted for a variety of ... Read more\nThe datasets used for fine - tuning convey the specific domain knowledge , style, tasks or use cases for which the pre-trained model is being fine-tuned. For ... Read more",
+    "host_name": "www.ibm.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.towardsai.net/fine-tuning-an-llm-is-educational-but-not-very-useful-still-for-knowledge-ingestion-3e32328c78bb",
+    "name": "Fine Tuning an LLM is Educational But not Very Useful Still",
+    "snippet": "Apr 11, 2026 — Fine-tuning is absolutely worth doing — for learning . It teaches you: model internals; optimization trade-offs; memory constraints; data quality ... Read more",
+    "host_name": "pub.towardsai.net",
+    "rank": 4,
+    "date": "Apr 11, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://joseparreogarcia.substack.com/p/llms-explained-part-4-llm-fine-tuning-how-it-works",
+    "name": "Making LLMs Useful: Fine-Tuning Explained",
+    "snippet": "Fine-tuning teaches LLMs to follow instructions . Instead of retraining from scratch, fine-tuning adapts a pre-trained model to specific tasks ...",
+    "host_name": "joseparreogarcia.substack.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=44242737",
+    "name": "Fine-tuning LLMs is a waste of time",
+    "snippet": "Jun 11, 2025 — When you do full finetuning ( or SFT with no frozen parameters ), it will alter all the parameters , and results in gain of new knowledge at the ... Read more",
+    "host_name": "news.ycombinator.com",
+    "rank": 6,
+    "date": "Jun 11, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ezdIOLbUSWg",
+    "name": "Fine Tuning LLM Explained Simply",
+    "snippet": "Let's understand what is fine tuning llm in a very simple language. Do you want to learn technology from me?",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ai.meta.com/blog/when-to-fine-tune-llms-vs-other-techniques",
+    "name": "To fine-tune or not to fine-tune",
+    "snippet": "Aug 7, 2024 — In this post, we'll discuss the following question: “ When should we fine -tune, and when should we consider other techniques?”\nAug 7, 2024 — Does your application require external knowledge? Fine-tuning is typically not helpful for injecting new knowledge . Does your application ... Read more",
+    "host_name": "ai.meta.com",
+    "rank": 8,
+    "date": "Aug 7, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/17s3jkd/finetuning_llms_does_it_add_new_knowledge_to",
+    "name": "Finetuning LLMs: Does it add new knowledge to model or",
+    "snippet": "Can you share your experiences?",
+    "host_name": "www.reddit.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

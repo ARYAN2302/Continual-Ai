@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.interconnects.ai/p/contra-dwarkesh-on-continual-learning",
+    "name": "Contra Dwarkesh on Continual Learning",
+    "snippet": "Aug 15, 2025 — But the fundamental problem is that LLMs don't get better over time the way a human would. The lack of continual learning is a huge huge problem ...",
+    "host_name": "www.interconnects.ai",
+    "rank": 0,
+    "date": "Aug 15, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2603.12658v1",
+    "name": "Continual Learning in Large Language Models",
+    "snippet": "Mar 13, 2026 — Despite notable progress, continual learning still faces two fundamental challenges: catastrophic forgetting and limited knowledge transfer.",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "Mar 13, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://cameronrwolfe.substack.com/p/rl-continual-learning",
+    "name": "Continual Learning with RL for LLMs",
+    "snippet": "Continual learning , which refers to the ability of an AI model to learn from new tasks and data over time, has become a popular topic",
+    "host_name": "cameronrwolfe.substack.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/DeepNetGroup/posts/2747858565607008",
+    "name": "Continual learning with reinforcement learning for llms",
+    "snippet": "The lack of continual learning is a huge huge problem . The LLM baseline at many tasks might be higher than an average human's.",
+    "host_name": "www.facebook.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/singularity/comments/1pu9og6/continual_learning_is_solved_in_2026",
+    "name": "Continual Learning is Solved in 2026 : r/singularity",
+    "snippet": "Continual Learning is Solved in 2026 . Continual learning is still going to be a hard problem, Regularization mostly delays forgetting rather ...",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@adnanmasood/continual-learning-the-missing-capability-for-reliable-ai-at-scale-c225e1a523de",
+    "name": "Continual Learning: The Missing Capability for Reliable AI",
+    "snippet": "Continual learning is the problem of learning sequentially without catastrophic forgetting under resource constraints . [1] For LLMs, continual ...",
+    "host_name": "medium.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://zylos.ai/research/2026-04-09-continual-learning-catastrophic-forgetting-ai-agents",
+    "name": "Continual Learning and Catastrophic Forgetting Prevention",
+    "snippet": "Apr 9, 2026 — The 2026 ICLR Workshop on Memory for LLM -Based Agentic Systems (MemAgents) explicitly calls out hippocampal-neocortical consolidation mechanisms ...",
+    "host_name": "zylos.ai",
+    "rank": 6,
+    "date": "Apr 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=FyRwcYXAWGg",
+    "name": "Real-Time Continual Learning Has Been Unlocked",
+    "snippet": "Most AI models forget previous knowledge when updated — but this new approach unlocks persistent memory and online learning without ...",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dl.acm.org/doi/abs/10.1145/3735633",
+    "name": "Continual Learning of Large Language Models",
+    "snippet": "by H Shi · 2025 · Cited by 426 — In this survey, we provide a comprehensive overview and detailed discussion of the current research progress on LLMs within the context of CL. Besides the ...",
+    "host_name": "dl.acm.org",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2603.12658",
+    "name": "[2603.12658] Continual Learning in Large Language Models",
+    "snippet": "Continual learning (CL) has emerged as a pivotal paradigm to enable large language models (LLMs) to dynamically adapt to evolving knowledge and sequential tasks while mitigating catastrophic forgetting-a critical limitation of the static pre-training paradigm inherent to modern LLMs.",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Mar 13, 2026",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2605.27276v2",
+    "name": "SIA: Self Improving AI with Harness & Weight Updates",
+    "snippet": "May 28, 2026 — We propose SIA, a self - improving loop in which a language-model agent (the Feedback- Agent ) updates both the harness and the weights of a task- ... Read more\nMay 28, 2026 — Further scaffold iterations produced no meaningful improvement , prompting the Feedback- Agent to switch to weight updates.",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "May 28, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.techrxiv.org/doi/10.36227/techrxiv.175744083.37752625",
+    "name": "Toward Weight-level Self-improving Agents with Meta-",
+    "snippet": "by T Zhang · 2025 · Cited by 1 — In this paper, we argue that the autonomous self - improving AI systems should learn weights from diverse neural networks, e. g., LLMs, and treat their own ... Read more",
+    "host_name": "www.techrxiv.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.traversaal.ai/self-improving-ai-agents-product-leaders-guide",
+    "name": "Self-Improving AI Agents: What They Are, How They Work,",
+    "snippet": "Jul 22, 2026 — Self - improving AI agents are reshaping product development. Learn how autonomous feedback loops work — and how to govern them safely.\nJul 22, 2026 — Self - improvement is a feedback loop: agents update their own behavior based on what they learn while doing their actual job. Compounding ...",
+    "host_name": "blog.traversaal.ai",
+    "rank": 2,
+    "date": "Jul 22, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/OpenAI/comments/1lbadjv/llms_can_now_selfimprove_by_updating_their_own",
+    "name": "LLMs can now self-improve by updating their own weights",
+    "snippet": "An LLM can't improve much by training on its own data. It's like inbreeding, just reinforces existing behaviour - the good and the bad. Stuff ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.technology.org/2026/03/02/self-improving-ai-agents-reinforcement-continual-learning",
+    "name": "Self-Improving AI Agents: RL and Continual Learning",
+    "snippet": "Mar 2, 2026 — The core limitation of RL is that it assumes a reasonably stable environment. When conditions change significantly, the learned policy can ... Read more",
+    "host_name": "www.technology.org",
+    "rank": 4,
+    "date": "Mar 2, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://yoheinakajima.com/better-ways-to-build-self-improving-ai-agents",
+    "name": "Better Ways to Build Self-Improving AI Agents",
+    "snippet": "Dec 5, 2025 — No weight updates ; cheap to adopt for any LLM. Strong empirical gains across code and reasoning. Cons: Improvements are ephemeral unless ... Read more\nDec 5, 2025 — Self -reflection and in-loop feedback (prompt-level improvement without changing weights ). Self -generated data and curricula",
+    "host_name": "yoheinakajima.com",
+    "rank": 5,
+    "date": "Dec 5, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/FeiziSoheil/article/2061845962981544346",
+    "name": "Continual Learning for AI Agents: How to Actually Build It",
+    "snippet": "Feb 6, 2026 — A self - improving agent should not treat failures and near-misses as isolated bugs. It should treat them as training signal. The goal is to build ... Read more",
+    "host_name": "x.com",
+    "rank": 6,
+    "date": "Feb 6, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://lsl.zone/blog/2026/a-taxonomy-of-self-evolving-agents",
+    "name": "A Taxonomy of Self-evolving Agents",
+    "snippet": "Jul 8, 2026 — Model training is expensive, so a natural question is whether we can improve agents after deployment without updating model weights . The ... Read more",
+    "host_name": "lsl.zone",
+    "rank": 7,
+    "date": "Jul 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7a6mCGDeGco",
+    "name": "New Self Improving Hyperagents Break Limits Of AI",
+    "snippet": "Meta is pushing self improving systems, LeCun is redefining how models learn physics, and Claude is turning AI into a digital worker inside your ...",
+    "host_name": "www.youtube.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1s63az9/i_spent_months_trying_to_make_my_agents",
+    "name": "I spent months trying to make my agents recursively self",
+    "snippet": "Most agent \" self - improvement \" claims fall apart if you don't sanity check with solid evals. agents work together to improve each other's results",
+    "host_name": "www.reddit.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

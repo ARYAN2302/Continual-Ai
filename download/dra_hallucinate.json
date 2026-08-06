@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2604.03173v1",
+    "name": "Detecting and Correcting Reference Hallucinations in",
+    "snippet": "Apr 3, 2026 — Large language models and deep research agents supply citation URLs to support their claims, yet the reliability of these citations has not been ...\nApr 3, 2026 — Deep research agents generate substantially more citations per query than search-augmented LLMs but hallucinate URLs at higher rates. Domain ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Apr 3, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.clarityarc.com/insights/ai-hallucination-grounding-citation",
+    "name": "AI Hallucination and Grounding | How Citation Actually",
+    "snippet": "May 12, 2026 — A grounded model can still misrepresent the evidence it was given. It can still generate claims that are not actually supported by the retrieved ...\nMay 12, 2026 — The fundamental cause of hallucination is that large language models are not knowledge retrieval systems . They are prediction systems.",
+    "host_name": "www.clarityarc.com",
+    "rank": 1,
+    "date": "May 12, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://futureagi.com/blog/llm-hallucination-deep-dive-2026",
+    "name": "LLM Hallucination Deep Dive 2026",
+    "snippet": "May 20, 2026 — Hallucination is four distinct failure modes: factual, grounding , citation , reasoning. Each needs a different detector and a different fix, ...",
+    "host_name": "futureagi.com",
+    "rank": 2,
+    "date": "May 20, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/singularity/comments/1iqjmng/warning_about_perplexity_ai_deep_research_it",
+    "name": "Warning about Perplexity AI \"Deep Research\", it",
+    "snippet": "This is incredibly dangerous and renders the entire point of \" Deep Research \" rather pointless, because you will need to go and personally verify ...\nOpenAI Deep Research generates allegedly based on that source is not supported by the source material. Yes, they will *always* hallucinate ...",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net/publication/400339686_Why_Your_Deep_Research_Agent_Fails_On_Hallucination_Evaluation_in_Full_Research_Trajectory",
+    "name": "Why Your Deep Research Agent Fails? On Hallucination",
+    "snippet": "May 26, 2026 — An early hallucination that was later recognized and corrected by the agent is NOT the root cause.\nMay 26, 2026 — Leveraging this framework to isolate 100 distinctively hallucination -prone tasks including adversarial scenarios, we curate DeepHalluBench. Read more",
+    "host_name": "www.researchgate.net",
+    "rank": 4,
+    "date": "May 26, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://technologuy.medium.com/grounded-theory-for-ai-agent-error-analysis-part-1-618ec859e12c",
+    "name": "Grounded Theory for AI Agent Error Analysis [Part 1] - Medium",
+    "snippet": "You missed that “ hallucination ” in your agent isn't random confabulation — it's a specific response to tool data insufficiency that could be ...",
+    "host_name": "technologuy.medium.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/domien-van-damme_ai-does-not-have-a-hallucination-problem-activity-7377661214237249536-VlpV",
+    "name": "AI does not have a hallucination problem",
+    "snippet": "AI does not have a hallucination problem It has a grounding problem The fix is Retrieval-Augmented Generation (RAG)",
+    "host_name": "www.linkedin.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.firecrawl.dev/glossary/web-search-apis/reduce-hallucinations-search-grounded-llm-responses",
+    "name": "Reduce LLM hallucinations by grounding responses",
+    "snippet": "Feb 16, 2026 — Hallucinations occur when LLMs generate plausible but false information. Search grounding mitigates hallucinations by providing verifiable web ...\nFeb 16, 2026 — Hallucinations occur when LLMs generate plausible but false information. Search grounding mitigates hallucinations by providing verifiable web ... Read more",
+    "host_name": "www.firecrawl.dev",
+    "rank": 7,
+    "date": "Feb 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://promethium.ai/guides/building-ai-agents-that-dont-hallucinate-enterprise-data",
+    "name": "Building AI Agents That Don't Hallucinate on Enterprise Data",
+    "snippet": "Mar 5, 2026 — AI agent hallucination isn't an LLM problem —it's a data architecture problem. Learn how unified metadata, semantic layers, and query ...",
+    "host_name": "promethium.ai",
+    "rank": 8,
+    "date": "Mar 5, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@Nexumo_/rag-grounding-11-tests-that-expose-fake-citations-30d84140831a",
+    "name": "RAG Grounding: 11 Tests That Expose Fake Citations",
+    "snippet": "Citation-shaped hallucinations are not just model errors. They are system design errors . They appear when retrieval is treated as a branding ... Read more",
+    "host_name": "medium.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

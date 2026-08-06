@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+    "name": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog",
+    "snippet": "2 days ago — LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. AUG 4, 2026\nToday, we release LFM2.5-2.6B, an agentic model that runs entirely on-device. It is small enough to run on a phone, fast enough to stay responsive on a CPU, and capable enough to power agentic workflows: planning, calling tools, and tackling multi-step tasks.",
+    "host_name": "www.liquid.ai",
+    "rank": 0,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.liquid.ai/models",
+    "name": "Liquid Foundation Models",
+    "snippet": "Latest model releases. Read more · AUG 4, 2026 Models. LFM2.5-2.6B: Deploy Agents Everywhere . 07.28. 07.28 Models. LFM2.5-Encoders: Fast at Long Context, Even ... Read more",
+    "host_name": "www.liquid.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.liquid.ai/news/models",
+    "name": "Models",
+    "snippet": "Latest from Liquid AI — model launches, customer stories, company news, and research. Research AUG 4, 2026 Models LFM2.5-2.6B : Deploy Agents Everywhere. LFM2-2 ...",
+    "host_name": "www.liquid.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfh1sn/lfm2526b_is_out",
+    "name": "LFM2.5-2.6B is out : r/LocalLLaMA",
+    "snippet": "LFM2.5-2.6B is out New Model Released today, LFM2.5-2.6B is the fastest model we tested, with decode speeds of 220 tokens/s on an M5 Max and ...",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.marktechpost.com/2025/12/27/liquid-ais-lfm2-2-6b-exp-uses-pure-reinforcement-learning-rl-and-dynamic-hybrid-reasoning-to-tighten-small-model-behavior",
+    "name": "Liquid AI's LFM2-2.6B-Exp Uses Pure Reinforcement",
+    "snippet": "Dec 27, 2025 — The 2.6B model uses 30 layers, with 22 convolution layers and 8 attention layers. It reaches 82.41 percent on GSM8K and 79.56 percent on IFEval.",
+    "host_name": "www.marktechpost.com",
+    "rank": 4,
+    "date": "Dec 27, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/LiquidAI/LFM2-2.6B-Exp-GGUF",
+    "name": "LiquidAI/LFM2-2.6B-Exp-GGUF",
+    "snippet": "4 days ago — LFM2 is a new generation of hybrid models developed by Liquid AI , specifically designed for edge AI and on-device deployment.",
+    "host_name": "huggingface.co",
+    "rank": 5,
+    "date": "Aug 2, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.liquid.ai",
+    "name": "Liquid AI — Device-native foundation models.",
+    "snippet": "LFM2.5-2.6B: Deploy Agents Everywhere 07.28. AUG 4, 2026 Models LFM2.5-2.6B: Deploy Agents Everywhere Read the announcement Latest news. We build efficient, ...",
+    "host_name": "www.liquid.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://daily.dev/posts/liquid-ai-s-lfm2-5-2-6b-runs-local-agents-on-phones-and-laptops-vspjopwi8",
+    "name": "Liquid AI's LFM2.5-2.6B runs local agents on phones and",
+    "snippet": "2 days ago — Liquid AI has released LFM2.5-2.6B , a 2.6B parameter model designed for on-device agentic tasks. It supports tool calling and multi-step ...",
+    "host_name": "daily.dev",
+    "rank": 7,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+    "name": "Deploy local agents everywhere with LFM2.5-2.6B - Hugging Face",
+    "snippet": "Due to its efficient LFM2 architecture, LFM2.5-2.6B is the fastest model we tested, with decode speeds of 220 tokens/s on an M5 Max and 113 tokens/s on a Ryzen AI Max+ 395.",
+    "host_name": "huggingface.co",
+    "rank": 8,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+    "name": "LFM2.5-2.6B - Liquid Docs",
+    "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI’s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling.",
+    "host_name": "docs.liquid.ai",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

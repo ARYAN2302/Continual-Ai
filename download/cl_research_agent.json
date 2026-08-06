@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://snorkel.ai/blog/continual-learning-ai-agents-explained",
+    "name": "Continual Learning Benchmark for AI Agents",
+    "snippet": "Continual Learning Bench evaluates whether agent systems can retain experience, use memory, and improve across ordered task sequences.",
+    "host_name": "snorkel.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.letta.com/blog/continual-learning",
+    "name": "Continual Learning in Token Space",
+    "snippet": "Understanding how agents can refine, consolidate, and share learned context opens up fundamental questions about the nature of learning itself: ...",
+    "host_name": "www.letta.com",
+    "rank": 1,
+    "date": "Dec 11, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://zylos.ai/research/2026-04-09-continual-learning-catastrophic-forgetting-ai-agents",
+    "name": "Continual Learning and Catastrophic Forgetting Prevention",
+    "snippet": "As agents accumulate user data through continual learning, deletion requests become complicated. Standard fine-tuning entangles information ...",
+    "host_name": "zylos.ai",
+    "rank": 2,
+    "date": "Apr 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://radical.vc/the-promise-and-perils-of-continual-learning",
+    "name": "The Promise and Perils of Continual Learning",
+    "snippet": "For enterprise use cases that require persistent, shared knowledge that accumulates over time, in-context learning is insufficient.",
+    "host_name": "radical.vc",
+    "rank": 3,
+    "date": "Feb 23, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2501.07278v1",
+    "name": "Lifelong Learning of Large Language Model based Agents",
+    "snippet": "They continuously learn and store knowledge from multiple modalities (e.g., visual, textual, sensory data), enabling real-time adaptation and ...",
+    "host_name": "arxiv.org",
+    "rank": 4,
+    "date": "Jan 13, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/continual-learning-ai-agents-how-actually-build-soheil-feizi-krdfe",
+    "name": "Continual Learning for AI Agents: How to Actually Build It",
+    "snippet": "A credible continual learning system makes every improvement verifiable: tested before it is trusted, and regression-aware as it optimizes, not ...",
+    "host_name": "www.linkedin.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nb-data.com/p/advancing-ai-lifelong-learning-roadmap",
+    "name": "Advancing AI: Lifelong Learning Roadmap for LLM-Based",
+    "snippet": "By embedding lifelong learning capabilities into LLM agents, we can create AI systems that accumulate knowledge and effectively apply it across ...",
+    "host_name": "www.nb-data.com",
+    "rank": 6,
+    "date": "Jan 20, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/agi/comments/1rlcob5/why_we_dont_need_continual_learning_for_agi_the",
+    "name": "Why we don't need continual learning for AGI. The top labs",
+    "snippet": "Many people think that we won't reach AGI or even ASI if LLM's don't have something called \"continual learning\". Basically, continual learning is the ...",
+    "host_name": "www.reddit.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

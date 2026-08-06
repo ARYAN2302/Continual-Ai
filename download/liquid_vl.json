@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.liquid.ai/models",
+    "name": "Liquid Foundation Models",
+    "snippet": "Multimodal models using vision. LFM2-2.6B-Exp . Designed for millisecond latency, on-device resilience, and data privacy, LFMs unlock the full potential of ...",
+    "host_name": "www.liquid.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.spheron.network/blog/liquid-foundation-models-lfm-deployment-gpu-cloud-2026",
+    "name": "Deploy Liquid AI LFM2 Models (LFM2-8B-A1B, LFM2-2.6B)",
+    "snippet": "May 29, 2026 — LFM2's hybrid architecture reduces KV cache at long context compared to a same-sized pure transformer. Of the 24 layers in LFM2-8B-A1B, ...\nThis guide covers the full deployment path for LFM2-8B-A1B and LFM2-2.6B on Spheron GPU instances: architecture background, VRAM sizing, native vLLM setup, and cost math.",
+    "host_name": "www.spheron.network",
+    "rank": 1,
+    "date": "May 29, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2511.23404v1",
+    "name": "LFM2 Technical Report",
+    "snippet": "Nov 28, 2025 — Multimodal scope. LFM2 - VL and LFM2-Audio are the first multimodal extensions of the LFM2 backbone, aimed at vision and speech on edge devices.",
+    "host_name": "arxiv.org",
+    "rank": 2,
+    "date": "Nov 28, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.liquid.ai/shoutouts?86550c33_page=5",
+    "name": "Liquid Shoutouts",
+    "snippet": "Liquid AI announced LFM2 - VL , fast and lightweight vision models (450M & 1.6B). 2 models based on the hybrid LFM2 architecture : LFM2 - VL -450M and LFM2 - VL -1.6B.",
+    "host_name": "www.liquid.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.marktechpost.com/2025/10/24/liquid-ais-lfm2-vl-3b-brings-a-3b-parameter-vision-language-model-vlm-to-edge-class-devices",
+    "name": "Liquid AI's LFM2-VL-3B Brings a 3B Parameter Vision",
+    "snippet": "Oct 24, 2025 — The language tower is LFM2-2.6B, a hybrid convolution plus attention backbone . The vision tower is SigLIP2 NaFlex at 400M parameters, it ...",
+    "host_name": "www.marktechpost.com",
+    "rank": 4,
+    "date": "Oct 24, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/LiquidAI/LFM2-VL-3B",
+    "name": "LiquidAI/LFM2-VL-3B",
+    "snippet": "Nov 28, 2025 — Liquid AI's multimodal LFM2-VL series , designed to process text and images with variable resolutions. Language model tower (LFM2-2.6B) up to ...",
+    "host_name": "huggingface.co",
+    "rank": 5,
+    "date": "Nov 28, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.liquid.ai/shoutouts",
+    "name": "Shoutouts — Liquid AI",
+    "snippet": "Liquid AI announced LFM2-VL , fast and lightweight vision models based on the hybrid LFM2 architecture: LFM2-2.6B-Exp is quite powerful and fast on Apple ...",
+    "host_name": "www.liquid.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://skywork.ai/blog/models/liquidai-lfm2-2-6b-free-chat-online",
+    "name": "LiquidAI/LFM2-2.6B Free Chat Online",
+    "snippet": "LFM2-2.6B employs a hybrid architecture that alternates Grouped Query Attention (GQA) with short convolutional layers, rather than using pure transformer blocks ...",
+    "host_name": "skywork.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+    "name": "Introducing LFM2: The Fastest On-Device Foundation Models on",
+    "snippet": "Built on a new hybrid architecture, LFM2 delivers 2x faster decode and prefill performance than Qwen3 on CPU. It also significantly outperforms models in each size class, making them ideal for powering efficient AI agents.",
+    "host_name": "www.liquid.ai",
+    "rank": 8,
+    "date": "Jul 10, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models",
+    "name": "LFM2-VL: Efficient Vision-Language Models — Blog — Liquid AI",
+    "snippet": "Today, we release LFM2-VL, our first series of vision-language foundation models. These multimodal models are designed for low-latency and device-aware deployment.",
+    "host_name": "www.liquid.ai",
+    "rank": 9,
+    "date": "Aug 12, 2025",
+    "favicon": ""
+  }
+]

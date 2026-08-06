@@ -1,0 +1,399 @@
+# LiquidResearcher v5 — Full Build Document
+
+> **Status:** Authoritative spec for v5. Supersedes v4. v4's split retrieval+generation architecture was abandoned when we couldn't get bulk retrieval to produce useful trajectories — the frontier-teacher outputs (Gemini Deep Research + Qwen Max) were rich enough that distillation works directly off them without an intermediate retrieval step.
+> **Last updated:** 2026-06-19 (v5)
+> **What changed from v4 → v5:**
+> - **Training method: plain SFT (LIMA-style).** Dropped ORPO (commit 3f78efd) — ORPO requires preference pairs and we only have positive demonstrations. LIMA proved 1,000 curated SFT examples is enough for GPT-4-competitive behavior. We have 260 (130 planner_executor + 130 synthesizer after 10×/3× weighting).
+> - **Data: 21 frontier seeds (10 new + 11 archive).** No more 1485-prompt bulk generation. We use the 10 manual seeds (5 Gemini Deep Research + 5 Qwen Max) plus 11 archive seeds from past Gemini Deep Research runs. Parser (`parse_frontier_seed.py`) now handles BOTH Gemini format ("I am..." traces + "Opens in a new window" markers) AND Qwen format (emoji-prefixed traces 🔍📚📊 + "Visited URLs" blocks + `arXiv:NNNN.NNNNN` citations). Bug fix: archive tagging now uses `Path.is_relative_to()` instead of string-matching "archive" in the path.
+> - **Filtering: 1 degenerate seed dropped.** `filter_trajectories.py` removes seed 13.md (0 words, 0 sections, 0 sources — truly empty file). Final dataset: 20 trajectories (10 frontier_seed + 10 frontier_seed_archive).
+> - **Modal: A100 40GB, ~$5, ~2h.** Single volume mounted at `/data` (Modal forbids mounting the same volume at multiple paths). Trajectories at `/data/trajectories_validated.jsonl`, checkpoints at `/data/checkpoints/{planner_executor,synthesizer}_adapter/`. Modal entrypoint fixed to use `@app.local_entrypoint()` (the old `app.run()` SDK pattern was invisible to `modal run` CLI).
+> - **train_lora.py bug fix:** `quality_prompt` is now a dict (v3 parser output), not a string. The old `question[:2000]` slicing crashed with `KeyError: slice(None, 2000, None)` on dict. Now coerces dict → string via `objective` field with `sub_questions` fallback.
+> - **Cost so far: $0** until first Modal training run kicks off. Expected total: ~$5 (vs v4's $11-17).
+> **What changed from v3 → v4:** Split architecture: retrieval (free, laptop) separated from generation (paid, Modal). Dropped Gemini Flash + Groq API approach entirely (rate limits made 1485-prompt batch infeasible). New Phase 1 (`bulk_retrieve.py`) does all SearXNG search + page fetching on laptop for $0, stores to disk. New Phase 2 (`modal_batch_generate.py`) deploys Qwen3-235B-A22B-Instruct-AWQ on Modal A100 80GB via vLLM for batch generation — no rate limits, no API keys, ~$4 for ~1 hour, frontier-class quality (87 MMLU). 1485 augmented trajectories + 60 frontier seeds (10 new with traces + 50 archive without traces). 3-tier quality weighting in training: frontier_seed 5×, frontier_seed_archive 3×, seed_augmented 1×. Total cost: ~$11-17 out of $20 Modal credits. Timeline: ~1 day (2-3h retrieval + 1h generation + 6-7h training).
+> **What changed from v2.3 → v3:** Training data is now prompt-driven, not question-driven. Inputs are *engineered quality prompts* (objective + context + numbered sub-questions + search query templates + anti-fabrication rule + output format spec), not generic "What is X?" questions. 10 manual frontier seeds (5 Gemini Deep Research + 5 Qwen Max) collected as full raw outputs (plan + reasoning traces + sources + final report). 1485 augmented trajectories generated via Gemini 2.5 Flash (1500 req/day free) + Groq Llama 3.3 70B (1000 req/day free) fallback. Quality bar raised: 3000+ char answers, 8+ sections, 15+ source domains, explicit reasoning traces required. The student learns prompt→output mapping at frontier quality.
+> **What changed from v1 → v2:** 2 heads instead of 3 for v1, explicit Research-only / Research+experiment modes, plan-approval gate, SANDBOX_RUN action, concrete trace-buffer policy, hard trajectory-quality filters, zero-shot diagnostic before training, reviewer-agent panel in eval, safety section.
+> **What changed from v2 → v2.1:** EVALUATE redefined as procedural heuristic (not meta-cognitive judgment), trajectory count 500→1500, Level-1 enhancer CUT from v1 (rule-based cleaner instead), benchmark expectations tightened (25-35% primary, 40-50% stretch), DuckDuckGo caching required + 4-6s delay, Modal budget $8→$11, EVALUATE runtime safety net added, no_lora-baseline risk acknowledged.
+> **What changed from v2.1 → v2.2:** SEARCH backend moved from DuckDuckGo-only to SearXNG self-hosted primary + DDG fallback. Trajectory generation redesigned as 4-phase pipeline: collect questions (500 easy / 700 medium / 300 hard) → run GPT-Researcher as frontier teacher → convert frontier outputs to LRC trajectories → validate.
+> **What changed from v2.2 → v2.3:** Adapter method upgraded from vanilla LoRA to **DoRA** (drop-in via PEFT, +2-4% quality). Base model extended: **LFM2.5-1.2B-Thinking (primary) + LFM2-1.2B (fallback)** — the Thinking variant is RL-trained for on-device reasoning and gives us reasoning traces for free. New Phase 2.5: **DPO refinement** using preference pairs generated from validation-rejected trajectories. New scripts: generate_preference_pairs.py, train_dpo.py. Two new baselines in eval matrix: LFM2-Thinking-only (no fine-tuning) and LRC v2.3 full-stack (DoRA + Thinking + DPO). Cost $5-11 → $6-13 (DPO adds ~1h on A10G).
+
+---
+
+## v5 Pipeline (current)
+
+The v5 pipeline is dramatically simpler than v4. No retrieval, no batch generation, no DPO. Just:
+
+```
+1. Collect 10 manual frontier seeds (5 Gemini Deep Research + 5 Qwen Max)
+   + 11 archive seeds from past Gemini Deep Research runs
+   ↓ (data/10_with_traces/, data/Without_traces/)
+2. parse_frontier_seed.py
+   → data/trajectories_validated.jsonl (21 rows)
+   Handles Gemini format + Qwen format + arXiv IDs
+   ↓
+3. filter_trajectories.py --min_sources 3
+   → data/trajectories_filtered.jsonl (20 rows, drops 1 empty)
+   ↓
+4. modal run scripts/modal_train.py --trajectories data/trajectories_filtered.jsonl
+   - Uploads trajectories to Modal Volume 'lrc-data' at /data/
+   - Spins up A100 40GB container with image 'liquid-researcher-v5'
+   - train_lora.py parses trajectories → 260 SFT examples (after 10×/3× weighting)
+   - Trains planner_executor_adapter (~30 min)
+   - Trains synthesizer_adapter (~45 min)
+   - Saves to /data/checkpoints/{role}_adapter/
+   - Commits volume
+   ↓ (~2h, ~$5)
+5. bash scripts/sync_modal_volume.sh pull-dir checkpoints/
+   → local checkpoints/{planner_executor,synthesizer}_adapter/
+   ↓
+6. python scripts/research_loop.py --question "..." --mode research
+   - Loads LFM2.5-1.2B-Thinking base + both LoRA adapters
+   - Plan → Execute (SEARCH/READ/NOTE/EVALUATE) → Synthesize
+```
+
+### v5 Scripts (in scripts/)
+
+| Script | Role |
+|---|---|
+| `parse_frontier_seed.py` | Parse raw .md frontier outputs → JSONL trajectories. Handles Gemini + Qwen formats. |
+| `filter_trajectories.py` | Drop degenerate seeds (empty / no sources). `--min_sources N` for citation-quality floor. |
+| `train_lora.py` | Parse trajectories → SFT examples (with 10×/3×/1× weighting) → train DoRA adapter. Has tool-sanity callback every 25 steps. |
+| `modal_train.py` | Modal CLI entrypoint (`modal run`). Uploads data, kicks off remote_train, commits checkpoints. |
+| `research_loop.py` | Runtime: load base + adapters, run Plan→Execute→Synthesize loop. |
+| `evaluate.py` | Eval matrix on DeepResearch Bench + FRAMES. |
+| `zero_shot_diag.py` | Sanity check: run base LFM2 on a few questions before training, to confirm training actually improves. |
+| `sync_modal_volume.sh` | Push/pull files to/from Modal Volume. |
+
+### v5 Data (in data/)
+
+| Path | What |
+|---|---|
+| `data/10_with_traces/` | 10 manual frontier seeds (5 Gemini + 5 Qwen), raw .md files |
+| `data/Without_traces/` | 11 archive seeds (past Gemini Deep Research, no traces) |
+| `data/trajectories_validated.jsonl` | Parsed trajectories (21 rows, gitignored — large data) |
+| `data/trajectories_filtered.jsonl` | Filtered trajectories (20 rows, gitignored) |
+
+### v5 Quality Bar (achieved on 20 filtered trajectories)
+
+| Metric | Value | Reference (LIMA) |
+|---|---|---|
+| Total trajectories | 20 | 1,000 |
+| Total reasoning traces | 186 | n/a |
+| Total distinct sources | 495 | n/a |
+| Total report words | 166,438 | n/a |
+| SFT examples (after weighting) | 260 (130 planner + 130 synth) | 1,000 |
+| Effective × 2 roles | 260 | 1,000 |
+
+LIMA worked with 1,000 examples. TinyAgent (tool-use LoRA SFT) uses ~500. We have 260 — comfortable margin for 1.2B parameter model with DoRA adapters.
+
+---
+
+## What We're Building
+
+**Liquid Research Controller v2 (LRC v2)** — a deep research agent that runs entirely on a laptop CPU, powered by Liquid AI's LFM2-1.2B, that **approaches or matches** cloud-based research tools (frontier deep-research agents such as OpenAI- and Gemini-class) on multi-step search-and-synthesize tasks, at $0/month instead of $200/month.
+
+LRC v2 is not just a search-and-summarize loop. It is a structured Plan-and-Execute agent that:
+- **Plans** research as a multi-section outline before touching a single tool
+- **Executes** the plan with explicit tool calls (SEARCH / READ / NOTE / EVALUATE, plus SANDBOX_RUN in Research+experiment mode)
+- **Synthesizes** a long, sectioned, citation-backed report — not a paragraph
+- **Optionally runs small experiments** in coding-agent sandboxes and folds the results back into the report
+
+Two execution modes are first-class:
+- **Mode A — Research-only:** plan → web tools → notes → report. No code runs. Pure deep reading + synthesis.
+- **Mode B — Research + experiment:** same as A, but the plan may include SANDBOX_RUN steps. The Executor writes code, runs it in a controlled sandbox, captures results as NOTES, and the Synthesizer weaves them into the final report alongside web evidence.
+
+**Target demo:** a working on-device research tool that genuinely feels close to the traces frontier deep-research tools produce, but runs on a 1.2B liquid model on CPU instead of a huge cloud stack. The demo, the DeepResearch Bench results, the human-eval slice, and the open-source repo together form the pitch to Liquid AI.
+
+---
+
+## The Honest Claim
+
+We are NOT claiming "1.2B = GPT-5." We ARE claiming:
+
+> For a defined benchmark suite (DeepResearch Bench + FRAMES), under fixed compute constraints (laptop CPU, long research traces), a distilled LFM2-1.2B controller **approaches or matches** cloud deep-research tools on common workloads in terms of answer correctness, citation quality, and process transparency.
+
+The phrase "approaches or matches" is deliberate. If LRC lands at 60-70% of frontier-tool scores on DeepResearch Bench while running on a laptop for $0, that is a cost/compute/context-adjusted victory worth demoing. Frontier tools will still be stronger on hard, weird, long-tail questions — but users rarely notice that if the core workflows (news, tech topics, science, products, basic academic questions) work at a high level of quality, and the agent is fast, local, and inspectable.
+
+Partial-success framing: even if we fall short of benchmark targets, a working CPU-only LFM2 research agent with transparent steps and citations is a meaningful demo and can still ship as an open-source prototype. The benchmark is not the only door.
+
+---
+
+## Architecture: Liquid Research Controller v2
+
+### Identity
+
+LRC v2 is a stack of small brains, not one overloaded model:
+
+1. **Level-1 Prompt Cleaner (v1: rule-based; v2: LFM2-350M SLM)** — sits in front of the main pipeline. Takes messy user text and outputs a cleaned research brief (goal, scope, constraints) + inferred mode (if the user didn't set one). **For v1, this is a rule-based cleaner** (regex strip of pleasantries, few-shot prompt on the LFM2-1.2B base to expand a one-line question into a 3-5 sentence brief). **For v2, this is replaced by a fine-tuned LFM2-350M SLM** that also proposes a rough section outline. The v1 rule-based cleaner is intentionally dumb — adding a third model to train in v1 adds a third failure mode for zero v1 value. Cut it.
+
+2. **Planner + Executor head (combined for v1)** — LFM2-1.2B + a single LoRA adapter that both generates the PLAN and executes against it. v2 splits this into separate Planner and Executor adapters as an ablation only (see "Why 2 heads for v1" below).
+
+3. **Synthesizer head** — LFM2-1.2B + a separate LoRA adapter that writes the final sectioned, cited report.
+
+4. **(Optional, v2.5) Reviewer-agent panel** — 4 reviewer LoRAs (or just prompts on the base model) that critique the synthesizer's output through 4 lenses: Methods, Statistics, Novelty, Clarity. Each is instructed to argue for rejection. Borrowed directly from the Vizuara "reviewer agents" pattern.
+
+All heads share the same frozen liquid base. All trained via trajectory distillation from frontier deep-research agents following the Plan-and-Execute paradigm.
+
+### Why no Level-1 SLM in v1 (rule-based cleaner instead)
+
+The Level-1 prompt enhancer SLM (LFM2-350M) is **explicitly cut from v1**. Replaced by a rule-based cleaner that:
+- Strips leading/trailing whitespace and pleasantries ("hi", "please", "thanks" etc.)
+- If the input is a single sentence < 100 chars, expands it via a few-shot prompt on the LFM2-1.2B base into a 3-5 sentence brief with goal + scope + constraints
+- Infers mode from keyword match ("compare", "state of", "arguments for/against" → research; "test", "prototype", "benchmark" → research+experiment); defaults to research-only
+- Does NOT propose a section outline — that's the Planner's job
+
+This is a hack, but it's a hack that 1.2B + regex can handle without training. The fine-tuned 350M SLM is a v2 upgrade once v1 is shipping.
+
+### Why 2 heads for v1 (instead of 3)
+
+The original v1 spec called for 3 separate LoRA adapters (Planner, Executor, Synthesizer). PDF 1 feedback (and our own smoke-test experience) showed that 3 heads add complexity without clear v1 value:
+
+- The Planner and Executor roles share most of their cognitive work (understanding the question, reasoning about what to do next). Splitting them doubles training cost and adds a coordination surface that can silently go wrong.
+- The Synthesizer role is genuinely different (long-form prose generation vs. short JSON actions), so it earns its own adapter.
+- A 2-head v1 lets us ship faster and ablate the 3-head split later as a research question: "does splitting Planner vs. Executor improve plan quality and evidence use for the same parameter count?"
+
+**v1 heads:**
+- Head A — Planner + Executor combined (emits PLAN, then SEARCH/READ/NOTE/EVALUATE/SANDBOX_RUN)
+- Head B — Synthesizer (emits ANSWER)
+
+**v2 ablation:**
+- Split Head A into Planner and Executor adapters. Compare against v1 on DeepResearch Bench.
+
+### Modes
+
+| Mode | Tools allowed | Use case |
+|---|---|---|
+| **Research-only** | SEARCH, READ, NOTE, EVALUATE, ANSWER | "Summarize the state of X", "Compare A vs B", "What are the main arguments for/against Z" |
+| **Research + experiment** | All of the above + **SANDBOX_RUN** | "Test if approach A scales better than B on synthetic data", "Prototype a small benchmark for X" |
+
+Mode is set by the user at invocation time, or inferred by the Level-1 prompt enhancer. In Research-only mode, the Planner is not allowed to emit SANDBOX_RUN steps; the Executor will refuse them if they appear.
+
+### The Pipeline (full flow)
+
+```
+User input (messy)
+    ↓
+[Level-1 Prompt Enhancer — LFM2-350M]
+    → cleaned research brief + inferred mode + rough outline
+    ↓
+[LFM2-1.2B + Planner/Executor LoRA] → PLAN(sections + steps)
+    ↓
+[Plan-approval gate — user reviews, approves, or edits]
+    ↓
+For each plan step:
+    [LFM2-1.2B + Planner/Executor LoRA] → action JSON
+        SEARCH → DuckDuckGo → results
+        READ   → fetch URL → page text
+        NOTE   → record key finding + source URL
+        EVALUATE → sufficient? if no, continue; if yes, exit loop
+        SANDBOX_RUN (Mode B only) → run code in sandbox → stdout/stderr/JSON
+    ↓
+[LFM2-1.2B + Synthesizer LoRA] → sectioned, cited report
+    ↓
+(Optional) [Reviewer-agent panel — 4 lenses] → critique → revise
+    ↓
+Final report + citations + (Mode B) experiment results
+```
+
+### The Loop (detailed)
+
+The core execution loop is:
+
+1. **Level-1 prompt enhance.** User text → brief + mode + outline. The brief is what the Planner actually sees.
+2. **Plan.** Planner generates a PLAN: a JSON object with `sections` (3-7 high-level themes) and `steps` (concrete tool-call intents, 2-4 per section). The plan is shown to the user.
+3. **Plan-approval gate.** User can approve (`y`), reject (`n`), or edit (paste a revised plan). Execution does not start until approval. This is the autonomy-dial checkpoint from PDF 2 applied at the research level.
+4. **Execute.** For each plan step, the Executor picks ONE action (SEARCH / READ / NOTE / EVALUATE / SANDBOX_RUN) and emits it as JSON. The action is applied to the trace. Loop until EVALUATE(sufficient=true) or max_steps reached.
+5. **Synthesize.** Synthesizer takes the question + all collected NOTES + their source URLs and produces a sectioned, cited report. The report format mirrors the canonical LNN trace (see Appendix A): intro framing → 3-7 thematic sections → future implications.
+6. **(Optional) Review.** Reviewer-agent panel critiques the report from 4 lenses. Synthesizer revises. Optional, off by default in v1.
+7. **Output.** Final report + citations + (Mode B) experiment results.
+
+### Why this works with 1.2B
+
+The model doesn't need to:
+- Memorize facts (search provides them)
+- Generate long reasoning chains (each step is 50-200 tokens of structured JSON)
+- Hold infinite context (LFM2's convolution blocks compress history efficiently)
+
+The model needs to:
+- Output valid JSON tool calls (proven: fine-tuned LFM2-350M reaches 98% tool accuracy)
+- Decide what to search next (learnable from teacher trajectories)
+- Evaluate if evidence is sufficient (binary classification — and we now force this to happen at least once per trajectory)
+- Synthesize a sectioned cited answer from notes (1.2B can do this for 500-1500-token answers, which is what sectioned reports require)
+
+---
+
+## Why LFM2-1.2B (Not Qwen, Not Llama, Not SmolLM2)
+
+The barrier to on-device research isn't the model's IQ — it's the context window. A research agent that searches 5 pages, reads each, and synthesizes generates 10K-50K tokens of context. Standard transformers have KV caches that grow linearly with every token. At 32K+ tokens, they consume gigabytes of RAM and slow to a crawl.
+
+LFM2's hybrid architecture (LIV gated short convolutions + minimal GQA) reduces KV cache by 63-90%. Convolution blocks have zero KV cache. This means LFM2-1.2B can hold 32K-128K tokens of search results, page content, and intermediate notes in memory on a standard laptop, where a transformer of the same size would crash.
+
+Model comparison (from research compiled in PDF 1):
+- **LFM2-1.2B**: 63-90% less KV cache, 239 tok/s on CPU, fine-tuned 350M reached 98% tool accuracy
+- **LFM2-1.2B Thinking variant**: adds RL-trained chain-of-thought for edge reasoning
+- **Qwen 2.5 0.5B**: 10/10 tool use out of box, but standard KV cache (crashes on long context)
+- **SmolLM2-1.7B**: 4/10 tool compatibility, context capped at 2048 tokens (too small)
+- **Llama 3.2 1B**: 25.7% on BFCL V2, degrades to 11% on 4K-token context
+
+LFM2's hybrid layout (10 double-gated convolution blocks + 6 GQA blocks in the 1.2B variant) is the architectural feature that makes a 1.2B on-device research agent plausible. Our job is to show that this advantage is real, measurable, and productizable.
+
+---
+
+## JSON Action Schema (locked)
+
+All actions are emitted as a single JSON object on one line. The schema is locked here so teacher trajectories, student training, and runtime all agree.
+
+```json
+// PLAN — emitted by Planner/Executor head, once per question
+{
+  "action": "PLAN",
+  "sections": ["Mathematical Foundations", "Architectural Innovations", "Edge Economics", "Applications", "Future Work"],
+  "steps": [
+    {"section": 0, "intent": "Search for LIV convolution mathematical formulation"},
+    {"section": 0, "intent": "Read arxiv paper on closed-form continuous-time networks"},
+    {"section": 1, "intent": "Search for LFM2 technical report"},
+    {"section": 1, "intent": "Read Liquid AI blog post on hybrid architecture"}
+    // ... 2-4 steps per section, 3-7 sections total
+  ]
+}
+
+// SEARCH — Executor issues a web search
+{"action": "SEARCH", "query": "<string>", "plan_step": <int>, "section": <int>}
+
+// READ — Executor fetches a URL
+{"action": "READ", "url": "<string>", "plan_step": <int>, "section": <int>}
+
+// NOTE — Executor records a key finding from a recently READ page
+{"action": "NOTE", "text": "<=500 chars>", "source_url": "<string>", "plan_step": <int>, "section": <int>}
+
+// EVALUATE — Executor decides if evidence is sufficient
+// Defined as a PROCEDURAL HEURISTIC, not a meta-cognitive judgment (see "EVALUATE design" below)
+{"action": "EVALUATE", "sufficient": <bool>, "reason": "<string>", "section": <int|null>}
+//   sufficient=true  iff: every PLAN section has ≥1 NOTE AND total NOTES ≥ 3
+//   sufficient=false otherwise, with reason naming the gap (e.g. "section 2 has no NOTE yet")
+//   Model MAY override the heuristic with explicit reason (e.g. "section 4 is optional, skipping")
+
+// SANDBOX_RUN — (Mode B only) Executor writes and runs code
+{"action": "SANDBOX_RUN", "code": "<string>", "env": "python3.11|node20", "plan_step": <int>, "section": <int>}
+
+// ANSWER — Synthesizer emits the final sectioned, cited report
+{
+  "action": "ANSWER",
+  "sections": [
+    {"title": "Mathematical Foundations", "body": "<prose with [n] citations>"},
+    {"title": "Architectural Innovations", "body": "<prose with [n] citations>"},
+    // ...
+  ],
+  "citations": ["<url1>", "<url2>", ...]   // >=2 distinct URLs, every [n] in any section body resolves here
+}
+```
+
+**Hard rules enforced at training and runtime:**
+- `plan_step` must advance as the Executor makes progress (no always-0).
+- `EVALUATE` must appear at least once per trajectory before `ANSWER`.
+- `NOTE` must appear after at least one `READ` (no notes from raw search snippets).
+- `source_url` in a `NOTE` must be a URL that appeared in a previous `READ` action.
+- `citations` in `ANSWER` must be a subset of URLs that appeared in `READ` actions (no hallucinated URLs).
+
+### EVALUATE design (procedural heuristic, not meta-cognitive judgment)
+
+This is the most important architectural decision in v2.1 and deserves its own section.
+
+The EVALUATE action looks like a binary classification ("is evidence sufficient?"). It is not. The cognitive task — "is this evidence sufficient to claim X for an arbitrary research question?" — is a meta-cognitive judgment that 1.2B cannot reliably learn. If we ask it to, we get one of two failure modes: (a) the model always says `sufficient=true` (lazy exit, premature synthesis), or (b) the model always says `sufficient=false` (infinite loop, never synthesizes).
+
+**v2.1 fix: define `sufficient=true` as a procedural heuristic that 1.2B can actually learn.**
+
+Default rule (procedural, what the model learns):
+```
+if every PLAN section has ≥1 NOTE  AND  total NOTES ≥ 3:
+    sufficient = true
+    reason = "all sections covered, ≥3 notes collected"
+else:
+    sufficient = false
+    reason = "section <X> has no NOTE yet"  OR  "need ≥3 NOTES total, have <N>"
+```
+
+Model MAY override the heuristic with an explicit reason when overriding is justified:
+- "section 4 is optional given what we found in section 2, skipping" → sufficient=true with override reason
+- "section 3 sources contradicted each other, need another search" → sufficient=false with override reason
+
+But the default behavior the model learns is the procedural rule, not deep judgment. This is a hack — but it's a hack that 1.2B can learn reliably.
+
+**Runtime safety net (in `research_loop.py`, regardless of training):**
+If `max_steps` is reached without an EVALUATE firing, force-emit `sufficient=true` with reason `"max_steps reached, forcing synthesis"` and proceed to the Synthesizer. This prevents infinite loops even if the student model fails to emit EVALUATE at all (zero-tool-collapse on EVALUATE specifically).
+
+---
+
+## Research Trace Buffer (concrete policy)
+
+The Research Trace Buffer holds everything the agent has seen and done. LFM2's tiny KV footprint is what makes a 32K-token trace survivable on CPU; this policy is what keeps the trace bounded.
+
+**Always keep (full content):**
+- The user question
+- The cleaned brief from the Level-1 prompt enhancer
+- The approved PLAN
+- The last 4-6 tool actions (whichever is more recent), including full page text for READ and full stdout for SANDBOX_RUN
+
+**For older actions:**
+- Keep `NOTE` texts in full (they're already compressed — typically <=500 chars each)
+- Drop raw `READ` page text entirely (it's been summarized into NOTES)
+- Drop `SEARCH` result lists entirely (their URLs are either captured in subsequent READs or were irrelevant)
+- Drop `EVALUATE` reasoning text (keep only the boolean)
+
+**Hard cap: 32K tokens.** Apply the compression policy whenever the trace would exceed 32K. This is the testable claim — LFM2 holds 32K where a transformer of the same size runs out of memory.
+
+**Re-inject before every Planner/Executor call:** the question, the brief, the PLAN, and the current NOTES list. This ensures the model always has the global context even if older raw snippets have been compressed away.
+
+---
+
+## Novelty
+
+Three structural novelties distinguish LRC v2 from prior small-agent work:
+
+**Novelty 1: Multi-head, role-specialized liquid controller.** One frozen LFM2-1.2B base, two LoRA adapters for v1 (Planner/Executor + Synthesizer), ablated to three in v2 (split Planner vs. Executor). At runtime: same base weights, swap which adapter + system prompt based on role. This is the architectural question: does role specialization yield better planning and evidence use for the same parameter count?
+
+**Novelty 2: Plan-first JSON with sectioned reports (beyond ReAct).** We bake Plan-and-Execute into the schema. The Planner emits a multi-section outline (3-7 sections, matching the canonical LNN trace shape), the Executor executes 2-4 tool calls per section, the Synthesizer writes a sectioned report. Existing small-agent work distills flat ReAct-style trajectories. We distill Plan-and-Execute research traces with explicit separation between planning, execution, and synthesis — and we enforce sectioned reports as the output format.
+
+**Novelty 3: Long-context Research Trace Buffer tuned for liquid.** LFM2's hybrid architecture (gated short convolutions + minimal GQA) reduces KV cache by 63-90%. This means LFM2-1.2B can hold 32K-128K tokens of search results, page content, and intermediate notes in memory on a standard laptop, where a transformer of the same size would crash. The Trace Buffer policy (keep last 4-6 raw + compress older to notes + 32K hard cap) is the concrete, testable mechanism that turns this architectural advantage into a product advantage.
+
+**Novelty 4 (v2): Optional sandbox experimentation as a first-class research action.** SANDBOX_RUN lets the agent run small coding experiments inside the research loop, not just read the web. This fuses PDF 1's sandbox idea with PDF 2's coding-agent workflow. No existing deep-research tool treats internal experimentation as a first-class action — they're all retrieval-and-synthesis only.
+
+---
+
+## Training: Trajectory Distillation
+
+### Phase 0: Zero-shot diagnostic (BEFORE any training)
+
+Before we touch training, we measure LFM2-1.2B's baseline. This justifies distillation: if the base model is already decent, we need more careful ablations; if it's weak, distillation is doing real work.
+
+**Script:** `scripts/zero_shot_diag.py`
+
+**Process:**
+1. Load LFM2-1.2B base (no LoRA, no fine-tuning).
+2. Prompt it with the Plan-and-Execute system prompts on ~20 research questions (mix of simple and complex).
+3. Measure:
+   - Valid JSON rate (fraction of model outputs that parse as JSON)
+   - Plan production rate (fraction of runs that produce a non-empty PLAN)
+   - Tool-call validity (fraction of action JSONs that match the schema)
+   - Loop completion rate (fraction of runs that reach ANSWER without crashing or looping forever)
+   - Rough answer quality (manual eyeball on 5 samples)
+
+**Decision rule:**
+- If valid JSON rate < 20% or loop completion < 30%, baseline is weak → distillation is clearly justified.
+- If valid JSON rate > 50% and loop completion > 60%, baseline is decent → we need to design the ablation carefully so the delta from distillation is visible.
+
+**Cost: $0.** Runs on CPU locally.
+
+### Phase 1: Data generation (split architecture: retrieval + generation)
+
+**v4 redesign note:** v3 used free API tiers (Gemini Flash + Groq) for both retrieval AND generation. Rate limits (10 RPM on Gemini free tier) made the 1485-prompt batch infeasible — it would take 37+ hours with constant 503/429 errors. v4 splits the pipeline: retrieval runs free on the laptop (no LLM, no rate limits), generation runs on Modal A100 80GB with Qwen3 235B (no rate limits, no API keys, ~$4 for ~1 hour).
+
+**v3 quality prompt approach (kept in v4):** Inputs are *engineered quality prompts* (objective + context + numbered sub-questions + search query templates + anti-fabrication rule + output format spec), not generic "What is X?" questions. The student learns prompt→output mapping at frontier quality.
+
+**What a quality prompt looks like** (see `quality input.md` in repo root for examples):
+- **Explicit objective statement** — what success looks like
+- **Context paragraph** — why the question matters
+- **Numbered sub-questions (Q1, Q2, Q3...)** — forces multi-perspective analysis
+- **Per-sub-question search query templates** — `"deep research" "too expensive" site:reddit.com`
+- **Hard constraints** — model size, compute budget, data requirements
+- **Anti-fabrication rule** — "Only report papers/repos you can verify exist. If unsure, label 'unverified.'"
+- **Explicit output format** — "Answer each question with: VERIFIED findings (with links), HONEST assessment, YES/NO/UNCLEAR verdict"

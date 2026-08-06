@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://openai.com/index/introducing-deep-research",
+    "name": "Introducing deep research",
+    "snippet": "Feb 2, 2025 — An agent that uses reasoning to synthesize large amounts of online information and complete multi-step research tasks for you.",
+    "host_name": "openai.com",
+    "rank": 0,
+    "date": "Feb 2, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2603.01050v1",
+    "name": "MM-DeepResearch: A Simple and Effective Multimodal",
+    "snippet": "Mar 1, 2026 — We aim to develop a multimodal deep research model equipped with agentic search capabilities, including explicit reasoning and planning, multi- ...\nMar 1, 2026 — Abstract. We aim to develop a multimodal research agent capable of explicit reasoning and planning, multi-tool invocation, and cross-modal ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "Mar 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1dcl6bv/can_multiple_small_ai_agents_surpass_a_single",
+    "name": "Can multiple small AI agents surpass a single large model",
+    "snippet": "I'm curious about the potential benefits of using multiple small (8b, let's say) AI agents that communicate with each other for brainstorming and ...",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/data-science-collective/deep-research-in-ai-the-insight-gap-446118ebe76e",
+    "name": "AI Deep Research: The Insight Gap | Data Science Collective",
+    "snippet": "Yet the fundamental limitation remains: AI systems replicate reasoning rather than truly perform it. At present Deep Research tools do not ...\nYet the fundamental limitation remains: AI systems replicate reasoning rather than truly perform it. At present Deep Research tools do not ... Read more",
+    "host_name": "medium.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lesswrong.com/posts/SLiXeZvEkD4XbX7yy/openai-releases-deep-research-agent",
+    "name": "OpenAI releases deep research agent",
+    "snippet": "Feb 3, 2025 — Deep research is OpenAI's next agent that can do work for you independently—you give it a prompt, and ChatGPT will find, analyze, and synthesize ...\nFeb 3, 2025 — Subjectively, its use as a research tool is limited - it found only 18 sources in a five-minute search … limitation on Google's deep research . ...",
+    "host_name": "www.lesswrong.com",
+    "rank": 4,
+    "date": "Feb 3, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://aclanthology.org/2026.acl-long.609.pdf",
+    "name": "Deep Research Agents are Unreliable at Multi-turn Report",
+    "snippet": "by B Chen · 2026 · Cited by 1 — DRAs reveals a critical limitation : “ Models struggle to maintain consistency or incorporate numerous evidence pieces across many steps.” User “ ... 32 pages\nby B Chen · 2026 · Cited by 1 — Our analysis of five di- verse DRAs reveals a critical limitation : while agents can address most user feedback, they regress on 16–27% of ... Read more 32 pages",
+    "host_name": "aclanthology.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/miaigroup/posts/1825279614909969",
+    "name": "Chia sẻ của tác giả Rakesh Gohel về MAD",
+    "snippet": "⚡ My perspective: You implied that LLMs are necessary for reasoning , but small , focused AI models can also reason well for specific domains.",
+    "host_name": "www.facebook.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://trilogyai.substack.com/p/multi-agent-deep-research-architecture",
+    "name": "Multi-Agent Deep Research Architecture",
+    "snippet": "Reasoning with Deep Models : Employ advanced reasoning models . This differs from current end-to-end agents … could overcome some limitations ...",
+    "host_name": "trilogyai.substack.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.primeintellect.ai/blog/toploc",
+    "name": "TOPLOC: A Locality Sensitive Hashing Scheme for",
+    "snippet": "Jan 28, 2025 — The TOPLOC algorithm encodes and validates the most salient features of the last hidden state tensor using a compact, verifiable proof .\nWe introduce TOPLOC, a novel method for verifiable inference. TOPLOC employs a compact locality sensitive hashing mechanism for intermediate activations, which can detect unauthorized modifications to models, prompts, or compute precision with 100% accuracy in our empirical evaluations.",
+    "host_name": "www.primeintellect.ai",
+    "rank": 0,
+    "date": "Jan 28, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/PrimeIntellect-ai/toploc",
+    "name": "TOPLOC: is a novel method for verifiable inference",
+    "snippet": "TOPLOC : is a novel method for verifiable inference that enables users to verify that LLM providers are using the correct model configurations and settings ...\nTOPLOC: A Locality Sensitive Hashing Scheme for Trustless Verifiable Inference TOPLOC leverages locality sensitive hashing of intermediate activations to verify that LLM providers are using authorized model configurations and settings.",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/synthetic-2",
+    "name": "SYNTHETIC-2",
+    "snippet": "Jun 23, 2025 — Our TOPLOC verifiable inference work employs a compact locality sensitive hashing scheme for intermediate activations, which can detect ...",
+    "host_name": "www.primeintellect.ai",
+    "rank": 2,
+    "date": "Jun 23, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2501.16007v1",
+    "name": "TopLoc: A Locality Sensitive Hashing Scheme for Trustless",
+    "snippet": "Jan 27, 2025 — The TopLoc algorithm encodes and validates the most salient features of a hidden state tensor using a compact, verifiable proof , as detailed in ...\nIn this paper, we present a novel model inference hashing method called TopLoc, which is easy to implement in modern inference engines and efficient enough to be used to generate commits for all model inferences performed by an untrusted compute provider with minimal overhead.",
+    "host_name": "arxiv.org",
+    "rank": 3,
+    "date": "Jan 27, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/PrimeIntellect/status/1937272181848945139",
+    "name": "Prime Intellect on X: \"Verification with TOPLOC v2 To trust",
+    "snippet": "Our TOPLOC verifiable inference work employs a compact locality sensitive hashing scheme for intermediate activations, which can detect ...",
+    "host_name": "x.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/afurg_excellent-work-by-prime-intellects-leonardo-activity-7343109042422108160-j_3q",
+    "name": "Excellent work by Prime Intellect's Leonardo Federico on",
+    "snippet": "SYNTHETIC-2 supports heterogeneous compute with TOPLOC v2 verifiable proofs , ensuring honest competition for all contributors doing meaningful ...",
+    "host_name": "www.linkedin.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net/forum?id=8PJmKfeDdp",
+    "name": "TOPLOC: A Locality Sensitive Hashing Scheme for",
+    "snippet": "by JM Ong · Cited by 11 — Our work introduces TopLoc , an add-on to the model execution that can give users that proof . As the model generates text, TopLoc records ...",
+    "host_name": "openreview.net",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/synthetic-2-release",
+    "name": "Four Million Collaboratively Generated Reasoning Traces",
+    "snippet": "Jul 10, 2025 — TOPLOC TOPLOC v2 ensured honest computation of the distributed inference workers in this run by generating verifiable proofs of computation.",
+    "host_name": "www.primeintellect.ai",
+    "rank": 7,
+    "date": "Jul 10, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=43958898",
+    "name": "Intellect-2 Release: The First 32B Model Trained Through",
+    "snippet": "May 12, 2025 — The whole point of \" proof of work \" is to show (prove) you've lost energy to heat ( work ). That's what makes it costly and thus an honest signal.",
+    "host_name": "news.ycombinator.com",
+    "rank": 8,
+    "date": "May 12, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://deepwiki.com/PrimeIntellect-ai/toploc",
+    "name": "PrimeIntellect-ai/toploc | DeepWiki",
+    "snippet": "The ProofPoly class is the primary data structure in TOPLOC, representing a polynomial-based proof of tensor activation values. It is exposed through the Python API but implemented in C++ for performance.",
+    "host_name": "deepwiki.com",
+    "rank": 9,
+    "date": "Apr 25, 2025",
+    "favicon": ""
+  }
+]

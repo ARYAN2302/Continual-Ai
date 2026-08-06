@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.digitaldividedata.com/blog/why-ai-model-performance-degrades-over-time-and-what-to-do-about-it",
+    "name": "Why AI Model Performance Degrades Over Time And What",
+    "snippet": "May 27, 2026 — A less visible cause of degradation is fine-tuning operations that introduce new capabilities while silently reducing existing ones.",
+    "host_name": "www.digitaldividedata.com",
+    "rank": 0,
+    "date": "May 27, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://futureagi.com/blog/evaluating-fine-tuned-llms-2026",
+    "name": "Evaluating Fine-Tuned LLMs: 2026 Playbook",
+    "snippet": "May 19, 2026 — Catastrophic forgetting is the most common silent regression in fine - tuning . The model gets sharper on the narrow task and dumber on everything ...",
+    "host_name": "futureagi.com",
+    "rank": 1,
+    "date": "May 19, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://bigdataboutique.com/blog/fine-tuning-llms-when-rag-isnt-enough",
+    "name": "Fine-Tuning LLMs in 2026: When RAG Isn't Enough (and",
+    "snippet": "May 10, 2026 — When a hosted provider updates their base model , your adapter may degrade silently . Plan quarterly revalidation. Treat training configs ...",
+    "host_name": "bigdataboutique.com",
+    "rank": 2,
+    "date": "May 10, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://community.openai.com/t/how-do-you-catch-silent-quality-regressions-after-a-model-update-before-users-notice/1388754",
+    "name": "How do you catch silent quality regressions after a model",
+    "snippet": "5 days ago — We had a situation where our AI feature was quietly degrading for about 10 days after a model update. No errors, no crashes — just gradually ...",
+    "host_name": "community.openai.com",
+    "rank": 3,
+    "date": "Aug 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@KingHenryMorgansDiary/i-audited-a-fine-tuned-llm-that-lost-50-percentage-points-after-training-heres-what-i-found-3348bde343b9",
+    "name": "I Audited a Fine-Tuned LLM That Lost 50 Percentage",
+    "snippet": "Audit your training data before fine - tuning . Inspect examples where the assistant's response is not what you want the production model to do.",
+    "host_name": "medium.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=44242737",
+    "name": "Fine-tuning LLMs is a waste of time",
+    "snippet": "Jun 11, 2025 — Now as far as how fine - tuning affects model performance, it is pretty simple: improves fit on the fine - tuning data, decreases fit on original ...",
+    "host_name": "news.ycombinator.com",
+    "rank": 5,
+    "date": "Jun 11, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cognizant.com/us/en/ai-lab/blog/overcoming-forgetting-in-llm-fine-tuning",
+    "name": "How to Prevent Catastrophic Forgetting in LLM Fine-Tuning",
+    "snippet": "Jun 2, 2026 — In some cases, ES can degrade performance on previously learned tasks by comparing base model accuracy to final accuracy after training.",
+    "host_name": "www.cognizant.com",
+    "rank": 6,
+    "date": "Jun 2, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/GeminiAI/comments/1r668zo/is_the_idea_that_llms_performanceintelligence",
+    "name": "Is the idea that \"LLMs performance/intelligence degrade",
+    "snippet": "I feel that some time after launch people start complaining that models degrade but after models launch their weights are fixed ( Dario Amodei said this ...",
+    "host_name": "www.reddit.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2506.17209v1",
+    "name": "Fine-Tuning Lowers Safety and Disrupts Evaluation",
+    "snippet": "Jun 20, 2025 — Fine - tuning on the self-generated Dolly dataset actually improves the safety after one epoch, but ultimately, safety degrades slightly from the ...",
+    "host_name": "arxiv.org",
+    "rank": 8,
+    "date": "Jun 20, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://tianpan.co/blog/2026-05-05-generalization-cliff-fine-tuned-models-capability-regression",
+    "name": "The Generalization Cliff: How Fine-Tuning Creates Silent",
+    "snippet": "Fine-tuning a model on a narrow task silently degrades capabilities on adjacent tasks your team never tested. Here's how to detect, measure, and prevent the generalization cliff.",
+    "host_name": "tianpan.co",
+    "rank": 9,
+    "date": "May 5, 2026",
+    "favicon": ""
+  }
+]

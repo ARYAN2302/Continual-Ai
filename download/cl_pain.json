@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://cameronrwolfe.substack.com/p/rl-continual-learning",
+    "name": "Continual Learning with RL for LLMs",
+    "snippet": "Instead of focusing on continual learning techniques, however, these papers adopt standard LLM training methodologies—supervised finetuning (SFT) ... Read more",
+    "host_name": "cameronrwolfe.substack.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/singularity/comments/1q6attw/continual_learning_in_2026_what_does_continual",
+    "name": "Continual Learning In 2026. What does",
+    "snippet": "People keep saying \"continual learning\" for 2026-era models, but that phrase can mean very different things. When they say continual learning, do they ...",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=FyRwcYXAWGg",
+    "name": "Real-Time Continual Learning Has Been Unlocked",
+    "snippet": "A system where learning a new task doesn't damage performance on previous ones because the representation is genuinely shared.",
+    "host_name": "www.youtube.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2606.24901v1",
+    "name": "LLM Evolution as an Industry-Scale Ecosystem: A Lifecycle",
+    "snippet": "Jun 12, 2026 — Continual learning capability is critical for Industrial LLMs, as deployed models must be continuously updated to meet evolving requirements and ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 3,
+    "date": "Jun 12, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://zylos.ai/research/2026-04-09-continual-learning-catastrophic-forgetting-ai-agents",
+    "name": "Continual Learning and Catastrophic Forgetting Prevention",
+    "snippet": "Apr 9, 2026 — For teams building production agents in 2026 , the practical question is no longer whether to support continual learning — users expect agents to ... Read more",
+    "host_name": "zylos.ai",
+    "rank": 4,
+    "date": "Apr 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lesswrong.com/posts/qChDifwpY8znER7cW/implications-of-continual-learning-for-llm-agents",
+    "name": "Implications of Continual Learning for LLM Agents",
+    "snippet": "Jun 12, 2026 — We highlight the main components of an LLM agent that can receive persistent updates during deployment: Model weights,; The context window,. Read more",
+    "host_name": "www.lesswrong.com",
+    "rank": 5,
+    "date": "Jun 12, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@adnanmasood/continual-learning-the-missing-capability-for-reliable-ai-at-scale-c225e1a523de",
+    "name": "Continual Learning: The Missing Capability for Reliable AI",
+    "snippet": "A particularly important 2025– 2026 development is treating safety degradation during fine-tuning as a continual learning failure mode .",
+    "host_name": "medium.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://futureagi.com/blog/real-time-learning-in-large-language-models-llms",
+    "name": "Real-Time Learning in LLMs 2026: Methods Compared",
+    "snippet": "Dec 5, 2024 — Continual learning is the broader research program: train a model on a sequence of tasks or distributions while avoiding catastrophic forgetting ... Read more",
+    "host_name": "futureagi.com",
+    "rank": 7,
+    "date": "Dec 5, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2511.01093v1",
+    "name": "Continual Learning, Not Training: Online Adaptation for",
+    "snippet": "Nov 2, 2025 — Building on existing work in continual learning, we argue that current approaches fail to support real-time adaptation , as they remain anchored ...",
+    "host_name": "arxiv.org",
+    "rank": 8,
+    "date": "Nov 2, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://infinitefaculty.substack.com/p/what-are-the-real-problems-of-continual",
+    "name": "What are the real problems of continual learning?",
+    "snippet": "While typically catastrophic forgetting works backwards (tasks learned later interfere with earlier tasks), loss of plasticity is instead about ...",
+    "host_name": "infinitefaculty.substack.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

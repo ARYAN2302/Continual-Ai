@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.pymc-labs.com/blog-posts/self-improving-ai-agents",
+    "name": "Self-Improving AI Agents, When Skill Optimization Works - PyMC Labs",
+    "snippet": "Jul 2, 2026 · A self-improving AI agent measures its own performance against a benchmark and rewrites its own guidance to score higher, keeping only the edits ...",
+    "host_name": "www.pymc-labs.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://o-mega.ai/articles/self-improving-ai-agents-the-2026-guide",
+    "name": "Self-Improving AI Agents: The 2026 Guide | Articles - O-mega.ai",
+    "snippet": "Mar 26, 2026 · The catch is that self-improvement has a hard constraint that most practitioners underestimate. A detailed analysis published in early 2026 ...",
+    "host_name": "o-mega.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+    "name": "Building self-improving tax agents with Codex - OpenAI",
+    "snippet": "May 27, 2026 · Practitioners steer the improvement loop through the work they already do: correcting extracted values, reviewing returns, and approving ...",
+    "host_name": "openai.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://gist.github.com/AnthonyAlcaraz/a0b70a4bb5ce521129e93bf9d33f9698",
+    "name": "AI Self-Improvement Only Works Where Outcomes Are Verifiable",
+    "snippet": "Three research teams, working independently across 2025-2026, converged on the same architectural bet: agents that rewrite their own source code to get ...",
+    "host_name": "gist.github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=p7TdPUcPoik",
+    "name": "Stanford CS329A Self-Improving AI Agents | Part 3 - YouTube",
+    "snippet": "3 days ago · -2026.html Follow along with the course schedule and syllabus: https ... working on the development of Claude and Gemini. Her past work ...",
+    "host_name": "www.youtube.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.technology.org/2026/03/02/self-improving-ai-agents-reinforcement-continual-learning",
+    "name": "Self-Improving AI Agents: RL and Continual Learning",
+    "snippet": "Mar 2, 2026 · Learn how reinforcement learning and continual learning power self-improving AI agents that adapt in production without constant retraining.",
+    "host_name": "www.technology.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.traversaal.ai/self-improving-ai-agents-product-leaders-guide",
+    "name": "Self-Improving AI Agents: What They Are, How They Work, and What",
+    "snippet": "Jul 22, 2026 · Self-improving AI agents are reshaping product development. Learn how autonomous feedback loops work — and how to govern them safely.",
+    "host_name": "blog.traversaal.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://labs.adaline.ai/p/self-improving-ai-agent-production-pattern",
+    "name": "The Self-Improving Agent Is A Production Pattern Now - Adaline Labs",
+    "snippet": "Jun 20, 2026 · It is an agent whose harness runs a closed loop on its own behavior, learning from production traffic without changing the weights underneath.",
+    "host_name": "labs.adaline.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arize.com/blog/closing-the-loop-coding-agents-telemetry-and-the-path-to-self-improving-software",
+    "name": "Self-Improving Agents: the Agent Harness for Reliable Code - Arize AI",
+    "snippet": "Feb 17, 2026 · Map to build self-improving agents with harness engineering, telemetry, traces, and eval-driven loops to verify changes and improve. Two Shifts At Once · The Agent Is Not Just A... · What Full Autonomy Could...",
+    "host_name": "arize.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://prefactor.tech/learn/self-improving-agents",
+    "name": "Self-Improving AI Agents: How They Work (and Don't) - Prefactor",
+    "snippet": "Jun 13, 2026 · A self-improving agent is one that gets better over time from its own experience. The term covers two very different things: genuine autonomous ...",
+    "host_name": "prefactor.tech",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://medium.com/data-science-collective/fine-tuning-small-language-models-slms-step-by-step-explanation-of-the-code-with-implementation-e2cab5ee9dad",
+    "name": "Fine-tuning Small Language Models (SLMs): step-by-",
+    "snippet": "In this tutorial, we will demonstrate how to fine-tune a small language model , specifically DistilGPT-2, to handle a medical case study :\nThis blog will walk you through the process of fine-tuning a small language model using the Dataset from Hugging Face, focusing on creating a ...",
+    "host_name": "medium.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.ataccama.com/blog/small-language-models",
+    "name": "Small Language Models: A Beginner's Guide",
+    "snippet": "Nov 19, 2024 — Successful deployment of small language models can be broken down into four phases: design, development, deployment , and management and learning ... Read more",
+    "host_name": "www.ataccama.com",
+    "rank": 1,
+    "date": "Nov 19, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2506.02153v1",
+    "name": "Small Language Models are the Future of Agentic AI",
+    "snippet": "Jun 2, 2025 — Here we lay out the position that small language models (SLMs) are sufficiently powerful, inherently more suitable, and necessarily more ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 2,
+    "date": "Jun 2, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://kili-technology.com/blog/a-guide-to-using-small-language-models",
+    "name": "A Guide to Using Small Language Models for Business",
+    "snippet": "This guide focuses on understanding small language models , their advantages, practical use cases , and how businesses can leverage them efficiently.\nThis guide focuses on understanding small language models , their advantages, practical use cases, and how businesses can leverage them efficiently.",
+    "host_name": "kili-technology.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.salesforce.com/blog/small-language-models",
+    "name": "What are small language models?",
+    "snippet": "Jun 3, 2024 — Small models are typically deployed for a single specific task. They're far less expensive, more efficient, higher performing and, often, more ...",
+    "host_name": "www.salesforce.com",
+    "rank": 4,
+    "date": "Jun 3, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.mit.edu/2025/teaching-large-language-models-to-absorb-new-knowledge-1112",
+    "name": "Teaching large language models how to absorb new",
+    "snippet": "Nov 12, 2025 — MIT researchers developed a technique that enables LLMs to permanently absorb new knowledge by generating study sheets based on data the ...",
+    "host_name": "news.mit.edu",
+    "rank": 5,
+    "date": "Nov 12, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/case-using-small-language-models-randy-bean-xuf1e",
+    "name": "The Case for Using Small Language Models",
+    "snippet": "In this article we explore why SLMs are often better suited for many AI use cases , including agentic AI applications, and what business leaders ... Read more",
+    "host_name": "www.linkedin.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.runpod.io/articles/guides/small-language-models-revolution-deploying-efficient-ai-at-the-edge",
+    "name": "Small Language Models Revolution: Deploying Efficient AI",
+    "snippet": "Jul 25, 2025 — Small language models are punching above their weight. Learn how to deploy efficient, edge-ready AI models on Runpod without a massive ...",
+    "host_name": "www.runpod.io",
+    "rank": 7,
+    "date": "Jul 25, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://machinelearningmastery.com/introduction-to-small-language-models-the-complete-guide-for-2026",
+    "name": "Introduction to Small Language Models: The Complete",
+    "snippet": "Feb 24, 2026 — In this article, you will learn what small language models are, why they matter in 2026, and how to use them effectively in real production ...",
+    "host_name": "machinelearningmastery.com",
+    "rank": 8,
+    "date": "Feb 24, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/singularity/comments/14o1cc0/can_an_ml_model_be_continuously_updated_with_new",
+    "name": "Can an ML model be continuously \"updated\" with new",
+    "snippet": "There are a few work around a to prevent catastrophic forgetting: 1) regularize new training / prevent fine tuning on dataset b from changing ...",
+    "host_name": "www.reddit.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

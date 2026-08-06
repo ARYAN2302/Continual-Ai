@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://montecarlo.ai/blog-rag-vs-fine-tuning",
+    "name": "RAG Vs. Fine Tuning: Which One Should You Choose?",
+    "snippet": "See how RAG and fine -tuning differ for AI accuracy and updates. Learn when to use each approach for current, reliable, and domain-specific answers.\nFine -tuning requires a machine learning training pipeline with different complexities. Teams need to gather labeled datasets and have infrastructure like GPUs  ...",
+    "host_name": "montecarlo.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bigdataboutique.com/blog/fine-tuning-llms-when-rag-isnt-enough",
+    "name": "Fine-Tuning LLMs in 2026: When RAG Isn't Enough (and",
+    "snippet": "May 10, 2026 — Most teams should not fine - tune . This guide explains when fine-tuning actually beats prompting and RAG , why LoRA and QLoRA are the only ...",
+    "host_name": "bigdataboutique.com",
+    "rank": 1,
+    "date": "May 10, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.channel.tel/blog/fine-tuning-vs-rag-when-to-use-which-lora-qlora",
+    "name": "Fine-tuning vs RAG: why most teams pick wrong and how",
+    "snippet": "Mar 8, 2026 — This guide builds both approaches on the same customer support dataset so you can see the difference firsthand. You'll implement a RAG pipeline, ... Read more",
+    "host_name": "www.channel.tel",
+    "rank": 2,
+    "date": "Mar 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.coreweave.com/blog/pretraining-vs-fine-tuning-vs-rag-whats-best-for-your-ai-project",
+    "name": "Pretraining vs. Fine-Tuning vs. RAG: Choosing the Right AI",
+    "snippet": "Sep 10, 2025 — Explore the pros and cons of pretraining, fine-tuning, and RAG for AI projects. Learn which path best balances cost, speed, control, ...\nSep 10, 2025 — All successful models require continuous fine -tuning to introduce new information and stay relevant. You might start with RAG to get value fast ...",
+    "host_name": "www.coreweave.com",
+    "rank": 3,
+    "date": "Sep 10, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/Rag/comments/1r6gzih/how_do_you_decide_to_choose_between_fine_tuning",
+    "name": "How do you decide to choose between fine tuning an LLM",
+    "snippet": "Hi,\n\nSo I was working on my research project. I created my knowledge base using Ollama (Llama 3). For knowledge base, I didn't fine tune my model. Instead, ...",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=N41R9lMLdXk",
+    "name": "Customizing your Models: RAG, Fine-Tuning, and Pre-Training",
+    "snippet": "This talk will guide users along the curve of AI maturity and cover many of the different techniques used to achieve highly perfomant AI ...\nThis talk will guide users along the curve of AI maturity. RAG , Fine -Tuning, and Pre- Training . RAG vs . CAG: Solving Knowledge Gaps in AI Models ...",
+    "host_name": "www.youtube.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.metacto.com/blogs/rag-vs-fine-tuning-vs-other-llm-techniques-choosing-the-right-approach",
+    "name": "RAG vs. Fine-Tuning: 2026 Decision Guide & Comparison",
+    "snippet": "May 26, 2025 — the trade-offs actually fall in 2026 — including the patterns most teams get wrong. The trap most teams fall into Fine -tuning a model on ...",
+    "host_name": "www.metacto.com",
+    "rank": 6,
+    "date": "May 26, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://futureagi.com/blog/real-time-learning-in-large-language-models-llms",
+    "name": "Real-Time Learning in LLMs 2026: Methods Compared",
+    "snippet": "Dec 5, 2024 — The teams that ship “real-time learning ” rarely use one method. A typical 2026 stack: Always. In-context personalization plus RAG for knowledge. Read more",
+    "host_name": "futureagi.com",
+    "rank": 7,
+    "date": "Dec 5, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/synsun/rag-vs-fine-tuning-what-i-actually-learned-after-6-months-of-building-llm-apps-1iac",
+    "name": "RAG vs Fine-Tuning: What I Actually Learned After 6",
+    "snippet": "Mar 5, 2026 — Fine-tuning takes a pre-trained model and continues training it on your dataset . The weights change. The model bakes your domain knowledge into ... Read more",
+    "host_name": "dev.to",
+    "rank": 8,
+    "date": "Mar 5, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.databricks.com/blog/rag-vs-fine-tuning",
+    "name": "RAG vs Fine Tuning: Enterprise Decisions for AI Models",
+    "snippet": "RAG keeps responses. Data Engineers, ML Engineers, and DevOps Engineering teams own the data pipelines feeding both fine tuning datasets and rag retrieval ...",
+    "host_name": "www.databricks.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

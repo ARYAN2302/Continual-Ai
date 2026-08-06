@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.primeintellect.ai/blog/intellect-2",
+    "name": "The First Globally Distributed Reinforcement Learning",
+    "snippet": "Apr 15, 2025 — prime-RL : Our new open-source library. SYNTHETIC-1 & GENESYS: Our library for crowdsourcing task and verifier environments for RL. prime-rl is ...\nToday we are launching INTELLECT-2: the first 32B parameter globally decentralized Reinforcement Learning training run where anyone can permissionlessly contribute their heterogeneous compute resources.",
+    "host_name": "www.primeintellect.ai",
+    "rank": 0,
+    "date": "Apr 15, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/synthetic-1",
+    "name": "Scaling Distributed Synthetic Data Generation for Verified",
+    "snippet": "Feb 6, 2025 — Genesys is our open-source library for synthetic data generation and verification that powers the release of SYNTHETIC-1. It contains efficient ...",
+    "host_name": "www.primeintellect.ai",
+    "rank": 1,
+    "date": "Feb 6, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/synthetic-2-release",
+    "name": "Four Million Collaboratively Generated Reasoning Traces",
+    "snippet": "Jul 10, 2025 — To expand the diversity of our RL environment's ecosystem in prime - rl , we integrated the verifiers repository as our core library for ...",
+    "host_name": "www.primeintellect.ai",
+    "rank": 2,
+    "date": "Jul 10, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/PrimeIntellect/status/1887635142644277692",
+    "name": "Prime Intellect on X: \"Introducing SYNTHETIC-1",
+    "snippet": "Introducing SYNTHETIC-1: Collaboratively generating the largest synthetic dataset of verified reasoning traces for math, coding and science ...",
+    "host_name": "x.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2505.07291v1",
+    "name": "INTELLECT-2: A Reasoning Model Trained Through",
+    "snippet": "May 12, 2025 — We invite everyone to contribute RL environments to prime - rl and are aiming to make it as easy as possible to crowdsource reinforcement ...",
+    "host_name": "arxiv.org",
+    "rank": 4,
+    "date": "May 12, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1nwaoyd/ama_with_prime_intellect_ask_us_anything",
+    "name": "AMA with Prime Intellect — Ask Us Anything! : r/LocalLLaMA",
+    "snippet": "AMA with Prime Intellect — Ask Us Anything! Hi r/LocalLLaMA ! We’re excited for this AMA, thank you for having us. I’m Kalomaze ( u/kindacognizant ...",
+    "host_name": "www.reddit.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/primeintellect-ai_today-we-are-launching-intellect-2-the-activity-7318032913948635137-P07E",
+    "name": "INTELLECT-2: Decentralized AI training with 32B parameters",
+    "snippet": "prime-RL : Our new open-source library. SYNTHETIC-1 & GENESYS: Our library for crowdsourcing task and verifier environments for RL. in INTELLECT ...",
+    "host_name": "www.linkedin.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/general-agent",
+    "name": "General Agent: A Self-Evolving, Synthetic Agent Environment",
+    "snippet": "May 18, 2026 — Prime Agent is our open-source, self-improving coding harness built around two abstractions: the Recursive Language Model (RLM) and the ...",
+    "host_name": "www.primeintellect.ai",
+    "rank": 7,
+    "date": "May 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/PrimeIntellect-ai/prime-rl",
+    "name": "GitHub - PrimeIntellect-ai/prime-rl: Agentic RL Training at",
+    "snippet": "prime-rl is a framework for large-scale reinforcement learning. It is designed to be easy to use and hackable, yet capable of scaling to 1000+ GPUs. Here is what we think sets it apart: Fully asynchronous RL for high-throughput agentic training at scale.",
+    "host_name": "github.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai",
+    "name": "Prime Intellect - The Open Superintelligence Stack",
+    "snippet": "“We worked with Prime Intellect to train Fast Ask on Lab — a small RL-trained subagent that helps the Ramp Sheets agent find answers inside spreadsheets. The result beat the frontier models on accuracy while running at faster speeds and a fraction of the cost.",
+    "host_name": "www.primeintellect.ai",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

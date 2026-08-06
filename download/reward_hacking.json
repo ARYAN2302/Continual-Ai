@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.primeintellect.ai/blog/reward-hacking",
+    "name": "Systematic Reward Hacking and Prime Sprints",
+    "snippet": "May 20, 2026 — Detecting and mitigating reward hacking is one of the key challenges faced when scaling RL, particularly in semi-verifiable domains.\nWe release tunable RL templates that demonstrate reward hacking at 1B scale and introduce Prime Sprints, an open-access program with sponsored runs for community research.",
+    "host_name": "www.primeintellect.ai",
+    "rank": 0,
+    "date": "May 20, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=48219165",
+    "name": "Systematic Reward Hacking and Prime Sprints",
+    "snippet": "Systematic Reward Hacking and Prime Sprints . Systematic Reward Hacking and Prime Sprints (primeintellect.ai) discuss help Guidelines | FAQ | Lists | API | ...",
+    "host_name": "news.ycombinator.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://alphasignal.ai/news/prime-intellect-s-prime-sprints-let-anyone-study-ai-reward-hacking-for-0-64",
+    "name": "Prime Intellect's Prime Sprints Let Anyone Study AI Reward",
+    "snippet": "May 20, 2026 — Prime Sprints that lets anyone run reward hacking experiments for free . The standard fix is to tighten the reward function:\nYou notice something is wrong, reverse-engineer the cause, and patch it. Repeat. Prime Intellect wants to break that cycle with a new research framework, a suite of open environments, and a community program called Prime Sprints that lets anyone run reward hacking experiments for free.",
+    "host_name": "alphasignal.ai",
+    "rank": 2,
+    "date": "May 20, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/PrimeIntellect/status/2057230185339212019",
+    "name": "Prime Intellect",
+    "snippet": "Reward hacking is the hardest problem in RL . We design settings where hacking is predictable, and find patterns between task difficulty and ...",
+    "host_name": "x.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://didierlopes.com/blog/the-model-did-what-i-rewarded-not-what-i-wanted",
+    "name": "The Model Did What I Rewarded, Not What I Wanted",
+    "snippet": "Jun 9, 2026 — This experiment started after reading Prime Intellect's Systematic Reward Hacking and Prime Sprints post. Their setup made reward hacking ...",
+    "host_name": "didierlopes.com",
+    "rank": 4,
+    "date": "Jun 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog?filter=Research",
+    "name": "Prime Intellect | Blog",
+    "snippet": "2026 Systematic Reward Hacking and Prime Sprints General Agent : A Self-Evolving, Synthetic Agent Environment. Prime Intellect, Inc.",
+    "host_name": "www.primeintellect.ai",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://maven.com/p/b10872/reward-hacking-101-keeping-your-agent-honest",
+    "name": "Reward Hacking 101: Keeping Your Agent Honest",
+    "snippet": "Understanding reward hacking equips builders to spot misalignment early, patch loopholes quickly, and ship trustworthy AI systems.",
+    "host_name": "maven.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2604.13602v1",
+    "name": "Reward Hacking in the Era of Large Models: Mechanisms",
+    "snippet": "Apr 15, 2026 — As LLMs become autonomous agents , reward hacking extends to environment-level exploitation, deceptive tool usage, and sophisticated multi-step ...",
+    "host_name": "arxiv.org",
+    "rank": 7,
+    "date": "Apr 15, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://metr.org/blog/2025-06-05-recent-reward-hacking",
+    "name": "Recent Frontier Models Are Reward Hacking",
+    "snippet": "Jun 5, 2025 — When designing these tasks, we tested them on humans and LLM agents to ensure the instructions were clear and to make them robust to cheating.",
+    "host_name": "metr.org",
+    "rank": 8,
+    "date": "Jun 5, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog",
+    "name": "Prime Intellect | Blog",
+    "snippet": "Prime Intellect Joins the NVIDIA Nemotron Coalition to Advance Open Frontier Models ... Releasing Hosted Evaluations: Making benchmarking effortless ... Systematic Reward Hacking and Prime Sprints ... General Agent: A Self-Evolving, Synthetic Agent Environment ... Autonomous AI research for nanogpt speedrun ... renderers: Token-Level Templating ...",
+    "host_name": "www.primeintellect.ai",
+    "rank": 9,
+    "date": "Jul 5, 2026",
+    "favicon": ""
+  }
+]

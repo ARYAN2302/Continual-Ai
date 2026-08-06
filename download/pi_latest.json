@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://primeintellect.ai",
+    "name": "Prime Intellect - The Open Superintelligence Stack",
+    "snippet": "Turn any task into an RL environment . A library of modular components for creating RL environments and training LLM agents. INTELLECT - 2 Release The first 32B ...\nTurn any task into an RL environment . Init, develop, eval, and push with the Prime CLI. 1.1Built on the open-source Verifiers library . Read more",
+    "host_name": "primeintellect.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/intellect-2",
+    "name": "The First Globally Distributed Reinforcement Learning",
+    "snippet": "Apr 15, 2025 — prime-RL : Our new open-source library for fully async distributed reinforcement learning, built on top of our fault-tolerant decentralized ... Read more",
+    "host_name": "www.primeintellect.ai",
+    "rank": 1,
+    "date": "Apr 15, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=V-EDrhIhHzQ",
+    "name": "Modern Post-Training: A Deep Dive — Will Brown, Prime Intellect",
+    "snippet": "Deep dive into Prime Intellect's open-source ecosystem of post-training tools , including the verifiers and prime-rl libraries, as well as the ...",
+    "host_name": "www.youtube.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog",
+    "name": "Prime Intellect | Blog",
+    "snippet": "Harnesses for Agentic. INTELLECT-2 Release : The First 32B Parameter Model Trained Through Globally Distributed Reinforcement Learning",
+    "host_name": "www.primeintellect.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/07/13/prime-intellect-releases-verifiers-v1",
+    "name": "Prime Intellect Releases Verifiers v1",
+    "snippet": "Jul 13, 2026 — Prime Intellect releases verifiers 0.2.0 , decomposing agentic RL environments into composable tasksets, harnesses, and runtimes.",
+    "host_name": "www.marktechpost.com",
+    "rank": 4,
+    "date": "Jul 13, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/PrimeIntellect-ai/prime-rl",
+    "name": "PrimeIntellect-ai/prime-rl: Agentic RL Training at Scale",
+    "snippet": "prime-rl is a framework for large-scale reinforcement learning . It is designed to be easy to use and hackable, yet capable of scaling to 1000+ GPUs. Read more",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/lab",
+    "name": "Introducing Lab: The Full-Stack Platform for Training your",
+    "snippet": "Feb 10, 2026 — The Prime Intellect Lab enables the entire lifecycle of post-training research; from large-scale agentic RL , to inference and evaluation,",
+    "host_name": "www.primeintellect.ai",
+    "rank": 6,
+    "date": "Feb 10, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2512.16144v1",
+    "name": "INTELLECT-3: Technical Report",
+    "snippet": "Dec 18, 2025 — Built for this effort, we introduce prime - rl , an open framework for large-scale asynchronous reinforcement learning, which scales seamlessly ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 7,
+    "date": "Dec 18, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.rl-list.com/vendors/prime-intellect",
+    "name": "Prime Intellect: RL environment vendor profile - RL List",
+    "snippet": "Prime Intellect operates an open-source RL stack - the Environments Hub (2500+ community RL environments ), the Verifiers library and prime - rl trainin.",
+    "host_name": "www.rl-list.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.primeintellect.ai/tutorials-environments/environments",
+    "name": "Overview",
+    "snippet": "Environment implementations are often tied to a specific training RL stack and can be difficult to adapt to a new trainer. Popular evaluation suites (lm_eval, ... Read more",
+    "host_name": "docs.primeintellect.ai",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

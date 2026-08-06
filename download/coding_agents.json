@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.morphllm.com/ai-coding-agent",
+    "name": "Best AI Coding Agent (2026): Ranked by Terminal-Bench",
+    "snippet": "For open source, opencode (193,678 stars, MIT ) is the most-starred agent, ahead of Claude Code (140,331), Gemini CLI (106,374), and OpenAI Codex (104,106). The ...",
+    "host_name": "www.morphllm.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.firecrawl.dev/blog/best-ai-coding-agents",
+    "name": "Best AI Coding Agents in 2026: Harness, Cost, and",
+    "snippet": "3 days ago — A sourced comparison of the 8 best AI coding agents in 2026 , ranked on harness depth, remote agents , token cost, and benchmark accuracy.",
+    "host_name": "www.firecrawl.dev",
+    "rank": 1,
+    "date": "Aug 3, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://thoughts.jock.pl/p/ai-coding-harness-agents-2026",
+    "name": "Claude Code vs Codex vs Aider vs OpenCode vs Pi 2026",
+    "snippet": "Apr 15, 2026 — Devin is the extreme version . The benchmark puts it at 77.3% on SWE-bench, close to Claude Code's 80.8%, and at 3-4x lower token cost. Feels ...",
+    "host_name": "thoughts.jock.pl",
+    "rank": 2,
+    "date": "Apr 15, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.totalum.app/blog/best-ai-coding-agents-2026",
+    "name": "Best AI Coding Agents in 2026: The 8 Picks (and",
+    "snippet": "May 19, 2026 — The best AI coding agents in 2026: ranked picks for Cursor, Claude Code, Codex, Cline, Devin , Copilot, Devin for autonomous engineering tickets ...",
+    "host_name": "www.totalum.app",
+    "rank": 3,
+    "date": "May 19, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.swebench.com",
+    "name": "SWE-bench Leaderboards",
+    "snippet": "Introducing CodeClash, our new evaluation where LMs compete head to head to write the best codebase! We use mini- SWE - agent to evaluate all models with the same ...\nmini- SWE - agent scores up to 74% on SWE - bench Verified in 100 lines of Python code . We use mini- SWE - agent to evaluate all models with the same harness (details).",
+    "host_name": "www.swebench.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1bu9lbf/we_can_beat_devin_recap_of_recent_open_source",
+    "name": "\"We Can Beat Devin\" - recap of recent Open Source",
+    "snippet": "SWE-bench performance comparison for Devin AI … recap of recent Open Source challengers SWE-agent, OpenDevin, etc... Devin results are still ...",
+    "host_name": "www.reddit.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://artificialanalysis.ai/agents/coding",
+    "name": "Coding Agents Comparison",
+    "snippet": "Comprehensive comparison of AI coding agents including Cursor, GitHub Copilot, Cline , Continue, and more. Compare IDE extensions, proprietary IDEs, ...",
+    "host_name": "artificialanalysis.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/05/15/best-ai-agents-for-software-development-ranked-a-benchmark-driven-look-at-the-current-field",
+    "name": "Best AI Agents for Software Development Ranked",
+    "snippet": "May 15, 2026 — SWE - bench Verified has been the industry's standard coding benchmark since mid-2024. is Google DeepMind's open - source coding agent ・ 19, 2026 ...",
+    "host_name": "www.marktechpost.com",
+    "rank": 7,
+    "date": "May 15, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.codesota.com/tasks/swe-bench",
+    "name": "SWE-bench / Autonomous Coding Agents.",
+    "snippet": "Side-by-side comparison of 14 autonomous coding agents on SWE - bench Verified: cost per task, headline score, sandbox model, iteration loop, license.",
+    "host_name": "www.codesota.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://vals.ai/benchmarks/swebench",
+    "name": "SWE-bench Verified",
+    "snippet": "Key Takeaways. Claude Opus 5 leads SWE-bench Verified with 97.00% accuracy, followed by GPT-5.6 Sol at 96.20% and Claude Fable 5 at 95.00%. Read more",
+    "host_name": "vals.ai",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

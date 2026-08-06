@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.digitalapplied.com/blog/swe-bench-terminal-bench-benchmark-guide-2026",
+    "name": "SWE-Bench vs Terminal-Bench: Governance First",
+    "snippet": "May 17, 2026 — The complementarity between SWE-Bench and Terminal-Bench is straightforward: SWE-Bench covers Python repository issue resolution ; Terminal-Bench ...",
+    "host_name": "www.digitalapplied.com",
+    "rank": 0,
+    "date": "May 17, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.tbench.ai/news/registry-and-adapters",
+    "name": "Introducing the Terminal-Bench Dataset Registry with SWE",
+    "snippet": "Jul 15, 2025 — Today we're announcing the Terminal - Bench registry: an easy way to evaluate agents on many agentic benchmarks via the Terminal - Bench framework.",
+    "host_name": "www.tbench.ai",
+    "rank": 1,
+    "date": "Jul 15, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2601.11868v1",
+    "name": "Terminal-Bench: Benchmarking Agents on Hard, Realistic",
+    "snippet": "Jan 17, 2026 — In this paper we introduce Terminal-Bench , a framework to evaluate agents on realistic tasks in command line interfaces. Terminal-Bench ...",
+    "host_name": "arxiv.org",
+    "rank": 2,
+    "date": "Jan 17, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://moogician.github.io/blog/2026/trustworthy-benchmarks-cont",
+    "name": "How We Broke Top AI Agent Benchmarks",
+    "snippet": "Apr 8, 2026 — Terminal - Bench evaluates agents on 89 complex terminal tasks engines to configuring distributed. SWE - bench is arguably the most influential AI ...",
+    "host_name": "moogician.github.io",
+    "rank": 3,
+    "date": "Apr 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@allahverdiyev.tural/beyond-swe-bench-how-to-actually-evaluate-ai-coding-agents-in-2026-8233940530f1",
+    "name": "Beyond SWE-Bench: How to Actually Evaluate AI Coding",
+    "snippet": "The benchmark catalog has expanded — Terminal - Bench , a different slice of agent capability. The right agent for us scored 73% on SWE - Bench ...",
+    "host_name": "medium.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/GithubCopilot/comments/1odgwbp/a_more_accurate_benchmark_for_coding_agents",
+    "name": "A more accurate benchmark for coding agents - SWE-",
+    "snippet": "Terminal bench is better, and it is one of the benchmark that Anthropic chose to use for their Haiku 4.5 announcement.",
+    "host_name": "www.reddit.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.swebench.com",
+    "name": "SWE-bench Leaderboards",
+    "snippet": "Benchmarks SWE - bench . We use mini- SWE - agent to evaluate all models with the same harness (details). scores 65% on SWE - bench . Train your own models for software ...\nVerified is a human-filtered subset of 500 instances. We use mini-SWE-agent to evaluate all models with the same harness (details).",
+    "host_name": "www.swebench.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=aaZKkcxObIM",
+    "name": "Senior SWE-Bench: Evaluating Coding Agents Like Senior",
+    "snippet": "Senior SWE-Bench , an open-source, Harbor-compatible benchmark for evaluating coding agents on realistic, senior-level software engineering work.",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://snorkel.ai/blog/senior-swe-bench-evaluating-coding-agents-like-senior-engineers",
+    "name": "Senior SWE-Bench: Evaluating Coding Agents",
+    "snippet": "Jul 27, 2026 — Explore Senior SWE-Bench , a benchmark for evaluating coding agents on realistic, long-horizon software engineering tasks and code quality.",
+    "host_name": "snorkel.ai",
+    "rank": 8,
+    "date": "Jul 27, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://benchmarkingagents.com/agent-benchmarks",
+    "name": "AI Agent Benchmarks - SWE-bench, WebArena, AgentBench",
+    "snippet": "Comprehensive guide to AI agent benchmarks. SWE-bench Verified, WebArena, AgentBench, Terminal-Bench, OSWorld, and Tau-Bench explained with methodology, construction, and honest limitations. Per-model scores live on each benchmark's official leaderboard.",
+    "host_name": "benchmarkingagents.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

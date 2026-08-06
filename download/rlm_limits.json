@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2512.17102v2",
+    "name": "Reinforcement Learning for Self-Improving Agent with Skill",
+    "snippet": "Mar 10, 2026 — it limits the RL process in two ways: (1) In long-horizon tasks, the additional skill generation process further extends the context length, ...",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Mar 10, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/reinforcementlearning/comments/1r9kniz/proposal_for_selfimproving_llm_reasoning",
+    "name": "Proposal for self-improving LLM reasoning",
+    "snippet": "Ive come up with an adversarial RL design that could potentially push LLMs to superhuman level reasoning in a variety of domains.",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/MDLI1/posts/3083472298483464",
+    "name": "Self-improving agent machine learning model development",
+    "snippet": "a fundamental limitation of current language agents research is that they are model-centric, or engineering-centric .",
+    "host_name": "www.facebook.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.technology.org/2026/03/02/self-improving-ai-agents-reinforcement-continual-learning",
+    "name": "Self-Improving AI Agents: RL and Continual Learning",
+    "snippet": "Mar 2, 2026 — The core limitation of RL is that it assumes a reasonably stable environment . When conditions change significantly, the learned policy can ... Read more",
+    "host_name": "www.technology.org",
+    "rank": 3,
+    "date": "Mar 2, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/rlm",
+    "name": "Recursive Language Models: the paradigm of 2026",
+    "snippet": "Jan 1, 2026 — The RLM is limited in its per-REPL-call timeout, which we set to 120 seconds unless stated otherwise. This helps when the RLM writes ...",
+    "host_name": "www.primeintellect.ai",
+    "rank": 4,
+    "date": "Jan 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://itcanthink.substack.com/p/how-close-are-we-to-self-improving",
+    "name": "How Close Are We to Self-Improving Artificial Intelligence?",
+    "snippet": "There is a set of problems where we know modern reinforcement learning works very well. To summarize: You want a verifiable domain: math, coding ... Read more",
+    "host_name": "itcanthink.substack.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/639d992f819c2b40387d4d5170b8ffd7-Paper-Conference.pdf",
+    "name": "Teaching Language Model Agents How to Self-Improve",
+    "snippet": "by Y Qu · 2024 · Cited by 214 — Our key insight is to supervise improvements to the learner's own responses in an iterative fashion, taking inspiration from methods in online imitation ... Read more 37 pages",
+    "host_name": "proceedings.neurips.cc",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.towardsai.net/building-self-improving-ai-agents-a-complete-training-architecture-guide-c358b3391f99",
+    "name": "Building Self-Improving AI Agents: A Complete Training",
+    "snippet": "Nov 14, 2025 — Self-improving agents are different : they learn from experience, collaborate with each other, and continuously optimize their performance ... Read more",
+    "host_name": "pub.towardsai.net",
+    "rank": 7,
+    "date": "Nov 14, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2504.15228v2",
+    "name": "A Self-Improving Coding Agent - arXiv.org",
+    "snippet": "Our initial attempt at a self-improving coding agent is not without limitations. One key difficulty was getting the LLM-based agent to autonomously come up with truely novel, innovative, feasible and interesting modification ideas at each meta-improvement step, which is a theme which has been commented on in the open-ended learning literature ...",
+    "host_name": "arxiv.org",
+    "rank": 8,
+    "date": "May 16, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2504.15228",
+    "name": "[2504.15228] A Self-Improving Coding Agent - arXiv.org",
+    "snippet": "Recent advancements in Large Language Models (LLMs) have spurred interest in deploying LLM agents to undertake tasks in the world. LLMs are often deployed in agent systems: code that orchestrates LLM calls and provides them with tools. We demonstrate that an agent system, equipped with basic coding tools, can autonomously edit itself, and thereby improve its performance on benchmark tasks. We ...",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Apr 21, 2025",
+    "favicon": ""
+  }
+]

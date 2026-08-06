@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://hermes-agent.nousresearch.com",
+    "name": "Hermes Agent | Nous Research",
+    "snippet": "Hermes Agent — the open-source agent that grows with you. Native app for macOS, Windows, and Linux. Python RPC scripts\nthe open-source agent that grows with you. Native app for macOS, Windows, and Linux. By Nous Research.",
+    "host_name": "hermes-agent.nousresearch.com",
+    "rank": 0,
+    "date": "Hermes Agent",
+    "favicon": ""
+  },
+  {
+    "url": "https://hermes-agent.org/about",
+    "name": "Open-Source AI Agent by Nous Research - Hermes Agent",
+    "snippet": "Hermes Agent is an open-source autonomous AI agent built by Nous Research and released in February 2026. It supports Linux, macOS, and WSL2",
+    "host_name": "hermes-agent.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://petronellatech.com/blog/hermes-agent-ai-guide-2026",
+    "name": "Hermes Agent 2026: Latest Version & Release Tracker",
+    "snippet": "Apr 16, 2026 — Hermes Agent , the agentic framework that launched in February 2026, feels different from other open-source agent projects.",
+    "host_name": "petronellatech.com",
+    "rank": 2,
+    "date": "Apr 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1n0us6p/nous_research_presents_hermes_4",
+    "name": "Nous Research presents Hermes 4 : r/LocalLLaMA",
+    "snippet": "Hermes 4 achieves SOTA against all popular closed and open models in conforming to your values, without censorship. Read more",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/nousresearch/hermes-agent",
+    "name": "NousResearch/hermes-agent: The agent that grows with you",
+    "snippet": "2 days ago — The self-improving AI agent built by Nous Research . It's the only agent with a built-in learning loop — it creates skills from experience, ... Read more\nThe self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, ...",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.turingpost.com/p/hermes",
+    "name": "AI 101:Hermes vs OpenClaw: Local AI Agents Compared",
+    "snippet": "Hermes Agent is an open-source, self-hosted personal AI agent built by Nous Research. It runs persistently on your machine or server, remembers context across ...",
+    "host_name": "www.turingpost.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/hermes-agent-nous-research-self-improving-open-source-developers-gly1c",
+    "name": "Hermes Agent by Nous Research: The Self-Improving",
+    "snippet": "Released on February 25, 2026 by Nous Research, an autonomous AI agent that lives on your server, Funding totals roughly $70 million.",
+    "host_name": "www.linkedin.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark",
+    "name": "Hermes Unlocks Self-Improving AI Agents, Powered by",
+    "snippet": "May 13, 2026 — Reliable, self-evolving and powered by the newest agentic large language models, Hermes brings a new class of agents to NVIDIA RTX PCs and ...",
+    "host_name": "blogs.nvidia.com",
+    "rank": 7,
+    "date": "May 13, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/WebAfterAI/comments/1sx4748/hermes_agent_the_opensource_selfimproving_ai",
+    "name": "Hermes Agent: The Open-Source Self-Improving AI",
+    "snippet": "Hermes Agent: a fully open-source, autonomous, self-improving AI agent that lives on your hardware (or cheap VPS), builds its own skills from ...",
+    "host_name": "www.reddit.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://twit.tv/posts/tech/what-makes-hermes-agent-stand-out-open-source-innovation-nous-researchs-jeffrey",
+    "name": "What Makes Hermes Agent Stand Out? Open Source",
+    "snippet": "Hermes is designed to dynamically switch between local and cloud-based models, orchestrating tasks and optimizing for cost, speed, and privacy.",
+    "host_name": "twit.tv",
+    "rank": 9,
+    "date": "Jun 11, 2026",
+    "favicon": ""
+  }
+]

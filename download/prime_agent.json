@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://x.com/PrimeIntellect",
+    "name": "Prime Intellect (@PrimeIntellect) / Posts / X",
+    "snippet": "SITUATION DETECTED: Prime Intellect is releasing Prime Agent, a self-improving harness for coding and long-running autonomous tasks. The team reports 95.5% on ...",
+    "host_name": "x.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://primeintellect.ai",
+    "name": "Prime Intellect - The Open Superintelligence Stack",
+    "snippet": "Train, deploy, and continuously improve your own models … 2026 Prime Agent: A self-improving RLM agent. Tasksets and Harnesses for Agentic RL. Prime Intellect, ...",
+    "host_name": "primeintellect.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vgnmny/prime_agent_a_new_coding_harness_surpassing",
+    "name": "Prime Agent - a new coding harness surpassing Codex/CC",
+    "snippet": "Prime Agent is an open-source coding and research agent. A self-improving RLM harness for coding and long-running autonomous tasks. Prime Agent ...",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "Aug 6, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/07/13/prime-intellect-releases-verifiers-v1",
+    "name": "Prime Intellect Releases Verifiers v1",
+    "snippet": "Prime Intellect releases verifiers 0.2.0, decomposing agentic RL environments into composable tasksets, harnesses, and runtimes.",
+    "host_name": "www.marktechpost.com",
+    "rank": 3,
+    "date": "Jul 13, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/reward-hacking",
+    "name": "Systematic Reward Hacking and Prime Sprints",
+    "snippet": "Prime Agent is our open-source, self-improving coding harness built around two abstractions: the Recursive Language Model (RLM) and the ...",
+    "host_name": "www.primeintellect.ai",
+    "rank": 4,
+    "date": "May 20, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.threads.com/@testingcatalog/post/DbrRjztDZyN/source",
+    "name": "Source https://www.primeintellect.ai/blog/prime-agent",
+    "snippet": "August 5, 2026 at 4:03 PM. Prime Intellect announced Prime Agent, a new self-improving RLM harness for coding and long-running autonomous tasks.",
+    "host_name": "www.threads.com",
+    "rank": 5,
+    "date": "Aug 5, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://dcbuilder.dev/news/prime-intellect",
+    "name": "Prime Intellect News",
+    "snippet": "Prime Intellect partners with LangChain to deploy self-improving agents that learn continually from production environments. May 12, 2026 Blog ...",
+    "host_name": "dcbuilder.dev",
+    "rank": 6,
+    "date": "May 30, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog",
+    "name": "Prime Intellect | Blog",
+    "snippet": "Prime Agent: A self-improving RLM agent · AUG 05TH, 2026. Prime Agent: A self-improving RLM agent ; Scaling Agentic RL: 365,000+ Environments for SWE, Terminal, ...",
+    "host_name": "www.primeintellect.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/prime-agent",
+    "name": "Prime Agent: A self-improving RLM agent",
+    "snippet": "Prime Agent is our open-source, self-improving coding harness built around two abstractions: the Recursive Language Model (RLM) and the Continual Harness. With Opus 5, it achieves 95.5% on ARC-AGI-3, surpassing the reported human expert baseline.",
+    "host_name": "www.primeintellect.ai",
+    "rank": 8,
+    "date": "Aug 5, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/06/prime-intellect-releases-prime-agent",
+    "name": "Prime Intellect Releases Prime Agent: An Open-Source RLM",
+    "snippet": "Prime Intellect has open-sourced Prime Agent, a self-improving coding harness designed around two abstractions, the Recursive Language Model (RLM) and Continual Harness. Fixed tool schemas and context compaction force a model to work around its own scaffolding. Prime Agent replaces both with a ...",
+    "host_name": "www.marktechpost.com",
+    "rank": 9,
+    "date": "Aug 6, 2026",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/RUC-NLPIR/Awesome-Long-Horizon-Agents",
+    "name": "RUC-NLPIR/Awesome-Long-Horizon-Agents",
+    "snippet": "The roadmap of long-horizon agents . Contribute to RUC-NLPIR/Awesome-Long-Horizon- Agents development by creating an account on GitHub.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=cUC-hyjpNxk",
+    "name": "How to Build an Advanced AI Agent with Search (LangGraph",
+    "snippet": "In this video, we're building an advanced AI agent in Python using LangGraph. This is a multi-step, deep research agent that will pull live ...",
+    "host_name": "www.youtube.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.firecrawl.dev/blog/best-open-source-agent-frameworks",
+    "name": "The best open source frameworks for building AI agents in",
+    "snippet": "Jun 5, 2026 — This article examines the ten most widely adopted open source agent frameworks in 2026 : their technical features, adoption numbers, and the use ...",
+    "host_name": "www.firecrawl.dev",
+    "rank": 2,
+    "date": "Jun 5, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2601.03743v1",
+    "name": "An Open Ended Deep Research Model via Multi-Agent",
+    "snippet": "Jan 7, 2026 — This work provides a scalable and effective pathway for advancing open - source LLMs without relying on proprietary data or models . Our objective ...",
+    "host_name": "arxiv.org",
+    "rank": 3,
+    "date": "Jan 7, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/data-science-collective/building-a-multi-agent-deep-research-agent-with-langgraph-203547b5fb12",
+    "name": "How to Build a Multi-Agent Deep Research System with",
+    "snippet": "It is a LangGraph-based research workflow designed to plan , investigate, challenge, verify, and write with structure. the code is open source ...",
+    "host_name": "medium.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.towardsai.net/the-4-best-open-source-multi-agent-ai-frameworks-2026-9da389f9407a",
+    "name": "The 4 Best Open Source Multi-Agent AI Frameworks 2026",
+    "snippet": "Dec 16, 2025 — Evaluating the top 4 open - source multi- agent AI frameworks for 2026 based on scalability, governance, and future-proof interoperability with ... Read more",
+    "host_name": "pub.towardsai.net",
+    "rank": 5,
+    "date": "Dec 16, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+    "name": "How we built our multi-agent research system",
+    "snippet": "Jun 13, 2025 — Our Research system uses a multi-agent architecture with an orchestrator-worker pattern, where a lead agent coordinates the process while ... Read more",
+    "host_name": "www.anthropic.com",
+    "rank": 6,
+    "date": "Jun 13, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://nextagile.ai/blog/ai/ai-agent-project-ideas",
+    "name": "15 AI Agent Project Ideas To Build In 2026",
+    "snippet": "Jul 14, 2026 — Build smarter AI agents with 15 real-world AI agent project ideas . Explore Python, LangChain, CrewAI, RAG, GitHub examples, tech stacks, ...",
+    "host_name": "nextagile.ai",
+    "rank": 7,
+    "date": "Jul 14, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=mYSRn6PC1mc",
+    "name": "Full Workshop: Build Your Own Deep Research Agents",
+    "snippet": "In this hands-on workshop, you will build an MCP-powered deep research agent that can plan a research strategy, synthesize its findings into a ...",
+    "host_name": "www.youtube.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/greg-coquillo_aiagent-activity-7360324069025591296-wVyk",
+    "name": "Greg Coquillo - Tech Stack of an AI Research Agent",
+    "snippet": "Agent formulates multi-step strategy, executes tool sequence, synthesizes findings . Solves complex research and competitive intelligence.",
+    "host_name": "www.linkedin.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2401.01313v1",
+    "name": "A Comprehensive Survey of Hallucination Mitigation",
+    "snippet": "This paper presents a comprehensive survey of over thirty-two techniques developed to mitigate hallucination in LLMs. Knowledge injection training aims to  ...\nKnowledge injection training aims to reduce hallucinations by injecting abstract knowledge representations.",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.getzep.com/ai-agents/reducing-llm-hallucinations",
+    "name": "How to Reduce LLM Hallucinations - Zep",
+    "snippet": "Jun 15, 2026 — No single technique removes hallucination . The reliable pattern is layered: retrieve relevant facts, let the model abstain when unsure, verify ... Read more",
+    "host_name": "www.getzep.com",
+    "rank": 1,
+    "date": "Jun 15, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://mem0.ai/blog/reducing-hallucinations-llms-with-grounded-memory",
+    "name": "Reducing Hallucinations in LLMs with Grounded Memory",
+    "snippet": "Apr 27, 2026 — Learn how grounded memory and RAG architectures reduce LLM hallucinations by 95%+. By forcing the model to cite retrieved data before ...\nApr 27, 2026 — Learn how grounded memory and RAG architectures reduce LLM hallucinations by 95 %+. Explore retrieval systems, verification loops, ...",
+    "host_name": "mem0.ai",
+    "rank": 2,
+    "date": "Apr 27, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://mbrenndoerfer.com/writing/hallucination-mitigation",
+    "name": "Hallucination Mitigation: RAG, Decoding, and Training",
+    "snippet": "Mar 20, 2026 — Enabling attribution: When the answer comes from a retrieved document, the model can cite the source . Attribution lets users verify claims and ... Read more\nMar 20, 2026 — Reduce LLM hallucination using retrieval augmentation, self-consistency decoding, DPO training , and calibrated uncertainty expression.",
+    "host_name": "mbrenndoerfer.com",
+    "rank": 3,
+    "date": "Mar 20, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-llm-agents-with-a-verified-semantic-cache-using-amazon-bedrock-knowledge-bases",
+    "name": "Reducing hallucinations in LLM agents with a verified",
+    "snippet": "Feb 21, 2025 — This approach helps prevent hallucinations by using trusted information whenever possible, while still allowing the LLM to handle new or unique ... Read more",
+    "host_name": "aws.amazon.com",
+    "rank": 4,
+    "date": "Feb 21, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/EdinburghNLP/awesome-hallucination-detection",
+    "name": "EdinburghNLP/awesome-hallucination-detection",
+    "snippet": "Proposes training with soft labels from a teacher LLM to reduce overconfidence and lower hallucination rates in summarization tasks.\nIt decomposes an image- grounded claim into sub-claims and uses program-of-thought (code execution with external tools) to verify each sub-claim's truth. An LLM ...",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://parallel.ai/articles/how-to-reduce-llm-hallucinations-by-connecting-your-app-to-real-time-web-search",
+    "name": "How to Reduce LLM Hallucinations With Real-Time Web",
+    "snippet": "Jul 29, 2026 — The most effective approach is web grounding , connecting your LLM to real-time web search so it retrieves current facts rather than generating ... Read more",
+    "host_name": "parallel.ai",
+    "rank": 6,
+    "date": "Jul 29, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@FrankGoortani/strategies-patterns-and-methods-to-avoid-hallucination-in-large-language-model-responses-81a871987d96",
+    "name": "Strategies, Patterns, and Methods to Avoid Hallucination in",
+    "snippet": "This approach reduces hallucinations by grounding the model's outputs in multiple data sources , enhancing reliability in complex tasks ( ...",
+    "host_name": "medium.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.authorea.com/doi/full/10.22541/au.174491149.99244128/v1",
+    "name": "Enhancing LLM Accuracy and Reducing Hallucinations",
+    "snippet": "Apr 17, 2025 — Though these techniques are improving relevance, they are not rigorously tested against authoritative and structured sources of knowledge . Read more",
+    "host_name": "www.authorea.com",
+    "rank": 8,
+    "date": "Apr 17, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.k2view.com/blog/llm-hallucination",
+    "name": "LLM hallucination risks and prevention",
+    "snippet": "How to reduce LLM hallucination issues. LLM grounding reduces hallucinations via: Improved training data. For LLMs, the knowledge sources matters. Using high ...",
+    "host_name": "www.k2view.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

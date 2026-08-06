@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+    "name": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog",
+    "snippet": "2 days ago — LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. often outperforms, ...",
+    "host_name": "www.liquid.ai",
+    "rank": 0,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+    "name": "Deploy local agents everywhere with LFM2.5-2.6B",
+    "snippet": "2 days ago — Benchmark results . We evaluated LFM2.5-2.6B against models up to ~4x its size on STEM, instruction following, tool use, and agentic ... Read more",
+    "host_name": "huggingface.co",
+    "rank": 1,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://benchlm.ai/models/lfm2-5-2-6b",
+    "name": "LFM2.5-2.6B Benchmarks & Context (August 2026)",
+    "snippet": "2 days ago — LFM2.5-2.6B ranks #59 out of 131 eligible models for agentic tool use and computer tasks, with a public category score of 48.3/100.",
+    "host_name": "benchlm.ai",
+    "rank": 2,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://daily.dev/posts/liquid-ai-s-lfm2-5-2-6b-runs-local-agents-on-phones-and-laptops-vspjopwi8",
+    "name": "Liquid AI's LFM2.5-2.6B runs local agents on phones and",
+    "snippet": "2 days ago — Performance numbers are surprisingly solid for the size: 220 tokens/s on Apple M5 Max, 113 tokens/s on AMD Ryzen, and around 30 tokens/s on ...",
+    "host_name": "daily.dev",
+    "rank": 3,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfn9vc/a_26b_model_with_tool_calling_and_128k_context",
+    "name": "A 2.6B model with tool calling and 128K context now runs",
+    "snippet": "The benchmark results are surprisingly competitive for the size: - ToolSandbox: 77.83, compared with 76.44 for Qwen3.5-9B - IFBench: 59.17, ...",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.dutchstartup.ai/en/tv/lfm2-5-2-6b-local-test-better-than-gemma-qwen-opencode-coding-reasoning-tool",
+    "name": "LFM2.5 2.6B Local Test | Better Than Gemma & Qwen?",
+    "snippet": "1 day ago — Description. LFM2.5 is 2.6B dense LLM that targets agentic workflows running on local devices with impressive benchmarks for it's size. Read more",
+    "host_name": "www.dutchstartup.ai",
+    "rank": 5,
+    "date": "Aug 5, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://explainx.ai/blog/liquid-ai-lfm2-5-2-6b-on-device-agents-august-2026",
+    "name": "LFM2.5-2.6B: Liquid AI's Biggest On-Device Agent Model Yet",
+    "snippet": "2 days ago — LFM2.5-2.6B runs fully on-device at 220 tok/s on Apple Silicon, beating models nearly 4x its size on tool use and instruction following. Aug 5, ...",
+    "host_name": "explainx.ai",
+    "rank": 6,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/liquidai/status/2084640701669613906",
+    "name": "Today we release LFM2.5-2.6B, an agentic model that runs",
+    "snippet": "Aug 4. Today we release LFM2.5-2.6B , an agentic model that runs entirely on-device. It plans, calls tools, and works through multi-step tasks ... Read more",
+    "host_name": "x.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://finance.yahoo.com/technology/ai/articles/liquid-ai-2-69b-model-013716912.html",
+    "name": "Liquid AI's 2.69B Model Cuts Cloud Dependency to Zero",
+    "snippet": "2 days ago — On August 4, 2026 , Liquid AI released LFM2.5-2.6B , a 2.69B-parameter hybrid model that fundamentally alters the cost-benefit analysis of ... Read more",
+    "host_name": "finance.yahoo.com",
+    "rank": 8,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.distillabs.ai/blog/fine-tuning-liquids-lfm25-accurate-tool-calling-at-350m-parameters",
+    "name": "Fine-Tuning Liquid's LFM2.5 - Tool Calling",
+    "snippet": "Mar 30, 2026 — Across our three benchmarks , the untuned LFM2.5 scored between 34.5% and 63.2% tool call equivalence - significantly higher than FunctionGemma's ... Read more",
+    "host_name": "www.distillabs.ai",
+    "rank": 9,
+    "date": "Mar 30, 2026",
+    "favicon": ""
+  }
+]

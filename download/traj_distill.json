@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2604.00626v1",
+    "name": "A Survey of On-Policy Distillation for Large Language Models",
+    "snippet": "Apr 1, 2026 — Knowledge distillation has become a primary mechanism for transferring reasoning and domain expertise from frontier Large Language Models (LLMs) ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Apr 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://neurips.cc/virtual/2025/poster/117657",
+    "name": "Distilling LLM Agent into Small Models with Retrieval and",
+    "snippet": "Dec 1, 2025 — We introduce two methods to overcome limitations of naive distillation : (1) a first-thought prefix for improving teacher trajectory , and (2) ... Read more",
+    "host_name": "neurips.cc",
+    "rank": 1,
+    "date": "Dec 1, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/chrisliu298/awesome-on-policy-distillation",
+    "name": "chrisliu298/awesome-on-policy-distillation",
+    "snippet": "Trajectory-Refined Distillation (2026) — Teacher revises the student's failed rollout within on-policy support before of teacher-reference disagreement,",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.interconnects.ai/p/frontier-post-training-recipe-review",
+    "name": "Frontier post-training recipe review with Finbarr Timbers",
+    "snippet": "Jun 16, 2026 — Distillation (MOPD) is the pattern showing up across the 2026 frontier . Train one general student by sampling its own trajectories (this is the ...",
+    "host_name": "www.interconnects.ai",
+    "rank": 3,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/blog/sergiopaniego/distillation-2026",
+    "name": "Distillation in 2026 (so far): which frontier models use it and",
+    "snippet": "Jul 8, 2026 — The three stages we discussed in the live session (off-policy, on-policy and self- distillation ) map directly onto how labs use it in real life. Read more",
+    "host_name": "huggingface.co",
+    "rank": 4,
+    "date": "Jul 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/smaller-better-task-llm-distillation-practice-liang-gang-yu-ikdoc",
+    "name": "Smaller, But Better at the Task: LLM Distillation in Practice",
+    "snippet": "Distillation trains a smaller model to capture the relevant skills of a larger one, creating an SLM that's faster, cheaper, and often more ... Read more",
+    "host_name": "www.linkedin.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://zylos.ai/research/2026-04-06-distilling-ai-agents-frontier-to-specialized",
+    "name": "Distilling AI Agents: From Frontier Models to Specialized",
+    "snippet": "Apr 6, 2026 — This article examines the state of the art in agent distillation , the practical patterns emerging in production, and the specific challenges ... Read more",
+    "host_name": "zylos.ai",
+    "rank": 6,
+    "date": "Apr 6, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://thinkingmachines.ai/blog/on-policy-distillation",
+    "name": "On-Policy Distillation",
+    "snippet": "Oct 27, 2025 — The core idea of on-policy distillation is to sample trajectories from the student model and use a high-performing teacher to grade each token ... Read more",
+    "host_name": "thinkingmachines.ai",
+    "rank": 7,
+    "date": "Oct 27, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net/forum?id=zyp9QT5Gf1",
+    "name": "Agentic Distillation for Large Language Model Reasoning",
+    "snippet": "by J Liu · Cited by 1 — The paper proposes Agentic Distillation as a novel paradigm for knowledge transfer, aiming to distill complex reasoning capabilities from large, computationally ... Read more",
+    "host_name": "openreview.net",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-898-the-trace",
+    "name": "The Trace Is the Teacher: Distilling Reasoning Into Small",
+    "snippet": "From the release of DeepSeek R1, distillation in reasoning models have become one of the most common techniques in frontier AI.",
+    "host_name": "thesequence.substack.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

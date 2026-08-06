@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/pdf/2601.19897",
+    "name": "Self-Distillation Enables Continual Learning",
+    "snippet": "by I Shenfeld · 2026 · Cited by 142 — We introduce Self - Distillation Fine - Tuning ( SDFT ), a simple method that en- ables on- policy learning directly from demonstrations.",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://self-distillation.github.io/SDFT",
+    "name": "SDFT: Self-Distillation Enables Continual Learning",
+    "snippet": "We introduce On- Policy Self - Distillation Fine - Tuning ( SDFT ), a simple method that enables on- policy learning directly from demonstrations.\nLearning from expert demonstrations, the primary alternative, is dominated by supervised fine-tuning (SFT), which is inherently off-policy. We introduce On-Policy Self-Distillation Fine-Tuning (SDFT), a simple method that enables on-policy learning directly from demonstrations.",
+    "host_name": "self-distillation.github.io",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net/forum?id=qA6FgH0nnZ&referrer=%5Bthe%20profile%20of%20Idan%20Shenfeld%5D(%2Fprofile%3Fid%3D~Idan_Shenfeld1)",
+    "name": "Self-Distillation Enables Continual Learning",
+    "snippet": "Apr 30, 2026 — We introduce Self - Distillation Fine - Tuning ( SDFT ), a simple method that enables on- policy learning directly from demonstrations.",
+    "host_name": "openreview.net",
+    "rank": 2,
+    "date": "Apr 30, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/idanshen/Self-Distillation",
+    "name": "GitHub - idanshen/Self-Distillation",
+    "snippet": "We introduce On- Policy Self - Distillation Fine - Tuning ( SDFT ), a simple method that enables on- policy learning directly from demonstrations.\nLearning from expert demonstrations, the primary alternative, is dominated by supervised fine-tuning (SFT), which is inherently off-policy. We introduce On-Policy Self-Distillation Fine-Tuning (SDFT), a simple method that enables on-policy learning directly from demonstrations.",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://icml.cc/virtual/2026/poster/61434",
+    "name": "Self-Distillation Enables Continual Learning",
+    "snippet": "Jul 6, 2026 — We introduce Self - Distillation Fine - Tuning ( SDFT ), a simple method that enables on- policy learning directly from demonstrations.",
+    "host_name": "icml.cc",
+    "rank": 4,
+    "date": "Jul 6, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.emergentmind.com/topics/self-distillation-fine-tuning-sdft",
+    "name": "Self-Distillation Fine-Tuning (SDFT)",
+    "snippet": "Jan 28, 2026 — Explore SDFT , a method where models use their own predictions to improve fine-tuning, enhance regularization, and boost efficiency.",
+    "host_name": "www.emergentmind.com",
+    "rank": 5,
+    "date": "Jan 28, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/papers/2601.19897",
+    "name": "Paper page - Self-Distillation Enables Continual Learning",
+    "snippet": "Jan 28, 2026 — We introduce Self - Distillation Fine - Tuning ( SDFT ), a simple method that enables on-policy learning directly from demonstrations. SDFT leverages ...",
+    "host_name": "huggingface.co",
+    "rank": 6,
+    "date": "Jan 28, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.yacinemahdid.com/p/why-self-distillation-is-taking-over",
+    "name": "Why Self-Distillation Is Taking Over LLM Post-Training (w",
+    "snippet": "Apr 28, 2026 — we cover the SDPO algo for reinforcement learning with rich feedback and SDFT for continual learning without forgetting along with many ...",
+    "host_name": "www.yacinemahdid.com",
+    "rank": 7,
+    "date": "Apr 28, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2601.19897",
+    "name": "[2601.19897] Self-Distillation Enables Continual Learning",
+    "snippet": "Learning from expert demonstrations, the primary alternative, is dominated by supervised fine-tuning (SFT), which is inherently off-policy. We introduce Self-Distillation Fine-Tuning (SDFT), a simple method that enables on-policy learning directly from demonstrations.",
+    "host_name": "arxiv.org",
+    "rank": 8,
+    "date": "Jan 27, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2601.19897v1",
+    "name": "Self-Distillation Enables Continual Learning - arXiv.org",
+    "snippet": "We introduce Self-Distillation Fine-Tuning (SDFT), which turns expert demonstrations into on-policy learning signals by using a demonstration-conditioned version of the model as its own teacher.",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Jan 27, 2026",
+    "favicon": ""
+  }
+]

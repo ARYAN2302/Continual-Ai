@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2506.02126v1",
+    "name": "Knowledge or Reasoning ? A Close Look at How LLMs",
+    "snippet": "Jun 2, 2025 — Both domains involve multi-step reasoning , but they differ in how much they depend on knowledge versus the reasoning steps required during ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Jun 2, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://neurips.cc/virtual/2023/poster/70015",
+    "name": "Knowledge-Augmented Reasoning Distillation for Small",
+    "snippet": "Large Language Models (LLMs) have shown promising performance in knowledge - intensive reasoning tasks that require a compound understanding of knowledge . Read more",
+    "host_name": "neurips.cc",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net/forum?id=r5WpkObeYa",
+    "name": "Test-Time Scaling in Reasoning Models Is Not Effective for",
+    "snippet": "by JX Zhao · Cited by 9 — The paper benchmarks reasoning models ' behaviors with test-time scaling on two knowledge - intensive benchmarks, showing that more reasoning does not consistently ... Read more",
+    "host_name": "openreview.net",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://aclanthology.org/2024.findings-acl.464.pdf",
+    "name": "Teaching Small Language Models to Reason for",
+    "snippet": "by X Li · 2024 · Cited by 19 — Unlike arith- metic reasoning and commonsense reasoning , knowledge - intensive reasoning tasks pose greater challenges due to their requirement ... 13 pages\nby X Li · 2024 · Cited by 19 — Stage 1: A large language model is prompted to solve a knowledge - intensive multi-hop question by generating a series of subquestions and ... Read more 13 pages\nby X Li · 2024 · Cited by 19 — CoTD teaches one SLM to out- put all intermediate reasoning steps and the final answer at once, struggling on knowledge - intensive multi-hop. Read more 13 pages",
+    "host_name": "aclanthology.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ya_9_niq2as",
+    "name": "Your LLM Ran Out of Knowledge — Now What?",
+    "snippet": "We demo a novel framework that enables reasoning LLMs to operate in domains with limited training data by combining domain -specific heuristics, ...",
+    "host_name": "www.youtube.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@adnanmasood/why-large-language-models-struggle-with-mathematical-reasoning-3dc8e9f964ae",
+    "name": "Why Large Language Models Struggle with Mathematical",
+    "snippet": "They lack a well-curated curriculum of math problems with solutions . As a result, they don't develop a robust mathematical reasoning ability ... Read more",
+    "host_name": "medium.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1dcl6bv/can_multiple_small_ai_agents_surpass_a_single",
+    "name": "Can multiple small AI agents surpass a single large model",
+    "snippet": "I'm curious about the potential benefits of using multiple small (8b, let's say) AI agents that communicate with each other for brainstorming and ...",
+    "host_name": "www.reddit.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dl.acm.org/doi/10.1145/3746252.3761103",
+    "name": "Unbiased Reasoning for Knowledge-Intensive Tasks in",
+    "snippet": "Nov 10, 2025 — Large Language Models (LLMs) have shown impressive capabilities still struggle to perform well on knowledge - intensive tasks that require deep  ...\nNov 10, 2025 — Large language models (LLMs) have achieved impressive performance on knowledge - intensive tasks; however, their predictions can be biased due to ... Read more",
+    "host_name": "dl.acm.org",
+    "rank": 7,
+    "date": "Nov 10, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/top-content/technology/ai-language-processing/challenges-of-cross-domain-reasoning-in-large-language-models",
+    "name": "Challenges of Cross-Domain Reasoning in Large",
+    "snippet": "Cross- domain reasoning in large language models refers to the ability of AI systems to apply logical thinking and problem-solving across different fields, ... Read more",
+    "host_name": "www.linkedin.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2502.12143v1",
+    "name": "Small Models Struggle to Learn from Strong Reasoners",
+    "snippet": "Feb 17, 2025 — We conjecture that a key factor leading to the small model learnability gap is the limited in- domain knowledge of small student models . We ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Feb 17, 2025",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2510.25992v1",
+    "name": "From Expert Trajectories to Step-wise Reasoning",
+    "snippet": "It provides smoother rewards based on the similarity between the model's actions and expert actions extracted from the SFT dataset in a step-wise manner. This ...",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cameronrwolfe.substack.com/p/agentic-rl",
+    "name": "Agentic RL: Frameworks and Best Practices",
+    "snippet": "This learning process for agents is referred to in [7] as “self-evolution”, as the agent learns from its own outputs and the corresponding ...",
+    "host_name": "cameronrwolfe.substack.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/how-to-train-scientific-agents-with-reinforcement-learning",
+    "name": "How to Train Scientific Agents with Reinforcement Learning",
+    "snippet": "Through RL, scientific agents can compose skills learned in pre-training and SFT to build new workflows and achieve specific scientific goals. ...",
+    "host_name": "developer.nvidia.com",
+    "rank": 2,
+    "date": "Dec 15, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/cwolferesearch?lang=en",
+    "name": "Cameron R. Wolfe, Ph.D. (@cwolferesearch) / Posts / X",
+    "snippet": "Verifying intermediate trajectory states is common in agentic evaluation. If the agent solves a task, then this provides a valuable signal. But, what do we do ...",
+    "host_name": "x.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hUI08Mc_joo",
+    "name": "Training Agents with Reinforcement Learning: Kyle Corbitt",
+    "snippet": "speak with Kyle Corbitt, to explore the evolving role of reinforcement learning in building smarter, more reliable AI agents.",
+    "host_name": "www.youtube.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.primeintellect.ai/blog/true-agents-model-the-world",
+    "name": "True Agents Model the World",
+    "snippet": "World modeling during RL trains models to predict their environment in response to their own actions, improving in-domain generalization and ...",
+    "host_name": "www.primeintellect.ai",
+    "rank": 5,
+    "date": "Jun 5, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://decagon.ai/blog/why-off-policy-training-isnt-enough",
+    "name": "Why off-policy training isn't enough: SFT, RL, and the limits of",
+    "snippet": "The choice between off-policy and on-policy training shapes not just how well a model performs, but how it fails.",
+    "host_name": "decagon.ai",
+    "rank": 6,
+    "date": "Mar 25, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.amazon.science/blog/customizing-multiturn-ai-agents-with-reinforcement-learning",
+    "name": "Customizing multiturn AI agents with reinforcement learning",
+    "snippet": "The online RL trainer takes the rollout trajectories and the reward from the online simulator to update the actor policy.",
+    "host_name": "www.amazon.science",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://neurohive.io/en/frameworks/openclaw-rl-a-framework-that-updates-an-agent-s-weights-on-the-fly-learning-from-user-and-environment-feedback",
+    "name": "OpenClaw-RL: A Framework That Updates an Agent's",
+    "snippet": "OpenClaw-RL does what ordinary LLMs do not: it actually updates the model's weights via gradient descent based on live interactions — right ...",
+    "host_name": "neurohive.io",
+    "rank": 8,
+    "date": "Mar 17, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2604.04949v1",
+    "name": "Learning to Retrieve from Agent Trajectories",
+    "snippet": "We introduce learning to retrieve from agent trajectories as a new training paradigm, where supervision is derived from multi-step agent interactions ...",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

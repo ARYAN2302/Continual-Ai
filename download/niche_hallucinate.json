@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.digitalapplied.com/blog/ai-model-hallucination-rate-benchmarks-2026-study",
+    "name": "AI Hallucination Rate Benchmarks 2026: 5-Model Study",
+    "snippet": "Apr 23, 2026 — Conclusion Frontier AI hallucination rates in 2026 sit between 3.1% and 19.1 % st frontier sits at 19.1% on citation accuracy. Citation accuracy ...\nApr 23, 2026 — Original 5,000-prompt benchmark across five frontier models measuring hallucination on three task families — factual recall, citation accuracy, ... Read more",
+    "host_name": "www.digitalapplied.com",
+    "rank": 0,
+    "date": "Apr 23, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks",
+    "name": "AI Hallucination Rates, Statistics & Benchmarks in 2026",
+    "snippet": "This page tracks hallucination rates across six benchmarks, covers every frontier model from GPT-5.6 to Claude Fable 5 and Opus 4.8 to Gemini 3.1 and 3.5 to ... Read more",
+    "host_name": "suprmind.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2602.01031v1",
+    "name": "HalluHard: A Hard Multi-Turn Hallucination Benchmark",
+    "snippet": "Feb 1, 2026 — HalluHard mirrors real-world, open-ended interactions with LLMs while still supporting verifiable hallucination evaluation. During generation, ... Read more\nFeb 1, 2026 — Across all models , we see the least hallucinations in Python. The could be another evidence for “ models hallucinate more with niche knowledge”. Read more",
+    "host_name": "arxiv.org",
+    "rank": 2,
+    "date": "Feb 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.talkory.ai/blog/ai-hallucination-rate-2026",
+    "name": "AI Hallucination Rate 2026: What Accuracy Cannot Fix",
+    "snippet": "The AI hallucination rate in 2026 fell 95% since 2024, yet frontier models still miss 3 to 19% by task. See why cross- model consensus catches the rest.",
+    "host_name": "www.talkory.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/devgomath_the-recent-2026-stanford-ai-index-report-activity-7454749393041391616-40EI",
+    "name": "Stanford AI Index Report Contradicts Model Hallucination",
+    "snippet": "Frontier models hallucinate 22%–94% when answering factual questions from memory alone (AA-Omniscience, 26 models ). The number drops to 1.8%–5. ...",
+    "host_name": "www.linkedin.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blogs.library.duke.edu/blog/2026/01/05/its-2026-why-are-llms-still-hallucinating",
+    "name": "It's 2026. Why Are LLMs Still Hallucinating?",
+    "snippet": "Jan 5, 2026 — Hallucinations arise when the data is more sparse, contradictory, or low-quality. Even if we could minimize hallucination , we'd be relying on. ...",
+    "host_name": "blogs.library.duke.edu",
+    "rank": 5,
+    "date": "Jan 5, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lakera.ai/blog/guide-to-hallucinations-in-large-language-models",
+    "name": "LLM Hallucinations in 2026: How to Understand and",
+    "snippet": "LLM hallucinations explained : what they are, classic causes, and the latest research breakthroughs reshaping how we measure and reduce them.",
+    "host_name": "www.lakera.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/WSJ/posts/though-tech-companies-have-made-progress-in-reducing-the-likelihood-that-product/1327135902606337",
+    "name": "Frontier AI models still struggle with hallucination",
+    "snippet": "This includes grounded question-answering (QA), where models provide answers with citations to show where the information came from. Read more\nWe review recent advancements in the areas of detecting and mitigating hallucinations in foundation models across text, image, video, and audio ...",
+    "host_name": "www.facebook.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://aisagroup.substack.com/p/halluhard-a-hard-multi-turn-hallucination",
+    "name": "HalluHard: A Hard Multi-Turn Hallucination Benchmark",
+    "snippet": "Even strong models still hallucinate a lot under this setup, and web search helps but doesn't solve the problem. For instance, even frontier ... Read more",
+    "host_name": "aisagroup.substack.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://research-signals.com/2026/05/08/hallucitating",
+    "name": "Are Frontier Models Still HalluCitating?",
+    "snippet": "May 8, 2026 — The frontier models are still HalluCitating. even a low rate of hallucinated references is unacceptable in the scholarly record.",
+    "host_name": "research-signals.com",
+    "rank": 9,
+    "date": "May 8, 2026",
+    "favicon": ""
+  }
+]

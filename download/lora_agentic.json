@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://garystafford.medium.com/supervised-fine-tuning-of-small-language-models-using-duke-based-model-distillation-e3704f223807",
+    "name": "Supervised Fine-tuning of Small Language Models using",
+    "snippet": "By integrating DUKE-based model distillation with LoRA fine - tuning , we establish a streamlined methodology for deploying specialized small ...",
+    "host_name": "garystafford.medium.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2505.17612v2",
+    "name": "Distilling LLM Agent into Small Models with Retrieval and",
+    "snippet": "Nov 5, 2025 — We proposed Agent Distillation , a framework for transferring agentic behavior and tool use from LLMs to small language models (sLMs).",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "Nov 5, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/introducing-dora-a-high-performing-alternative-to-lora-for-fine-tuning",
+    "name": "Introducing DoRA, a High-Performing Alternative to LoRA",
+    "snippet": "Jun 28, 2024 — DoRA is a fine-tuning method that is compatible with LoRA and its variants and exhibits a closer resemblance to FT learning behavior.",
+    "host_name": "developer.nvidia.com",
+    "rank": 2,
+    "date": "Jun 28, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.towardsai.net/small-language-models-are-the-future-of-agentic-ai-heres-why-6fe5e4fa9834",
+    "name": "Small Language Models Are the Future of Agentic AI",
+    "snippet": "Sep 30, 2025 — LoRA (Low-Rank Adaptation): Fine-tune only a small number of parameters , dramatically reducing computational requirements Knowledge  ...",
+    "host_name": "pub.towardsai.net",
+    "rank": 3,
+    "date": "Sep 30, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://papers.ssrn.com/sol3/Delivery.cfm/7201500.pdf?abstractid=7201500&mirid=1&type=2",
+    "name": "Agent-Trace Fine-Tuning of Small Language Models under",
+    "snippet": "8 days ago — Small language models (SLMs, 3-8B) are increasingly fine - tuned on agent traces (recorded multi-step sessions of a frontier model using tools ) ...",
+    "host_name": "papers.ssrn.com",
+    "rank": 4,
+    "date": "Jul 29, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://bigdataboutique.com/blog/fine-tuning-llms-when-rag-isnt-enough",
+    "name": "Fine-Tuning LLMs in 2026: When RAG Isn't Enough (and",
+    "snippet": "May 10, 2026 — LoRA and QLoRA are the only realistic paths in 2026 , The right sequence in 2026 is Prompt -> RAG -> Fine -tune -> Distill, and the highest-ROI  ...",
+    "host_name": "bigdataboutique.com",
+    "rank": 5,
+    "date": "May 10, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net/publication/401560788_Self-Distillation_Fine-Tuning_with_QLoRA_Stability_vs_LoRA_Rank_under_On-Policy_Decoding",
+    "name": "(PDF) Self-Distillation Fine-Tuning with QLoRA: Stability vs.",
+    "snippet": "Mar 8, 2026 — Self-distillation fine-tuning (SDFT ) is an on-policy objective that anchors a student to a demonstration-conditioned teacher via a KL ...",
+    "host_name": "www.researchgate.net",
+    "rank": 6,
+    "date": "Mar 8, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://futureagi.com/blog/llm-fine-tuning-techniques-i-ii",
+    "name": "LLM Fine-Tuning Techniques 2026: LoRA, QLoRA, DPO",
+    "snippet": "When to use : large supervised data sets, narrow domains where quality matters more than cost, model distillation into a smaller target. LoRA ( Low -Rank ...",
+    "host_name": "futureagi.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.distillabs.ai/blog/using-custom-slms-in-agentic-ai",
+    "name": "Small Models, Big Wins – Using SLMs in Agentic AI",
+    "snippet": "Oct 16, 2025 — How small language models can match or beat much larger LLMs when fine-tuned to well-scoped tasks, enabling faster, cheaper, ...",
+    "host_name": "www.distillabs.ai",
+    "rank": 8,
+    "date": "Oct 16, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@dataenthusiast.io/fine-tuning-slms-on-agentic-tool-calling-an-experiment-ccbef62ac5c7",
+    "name": "Fine Tuning SLMs on Agentic Tool Calling: An Experiment",
+    "snippet": "Small Language Models (SLMs) — models with fewer than 10B parameters — offer a way out. They're fast, cheap, and can run on consumer hardware .",
+    "host_name": "medium.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

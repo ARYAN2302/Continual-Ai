@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://deepresearch-bench.github.io",
+    "name": "DeepResearch Bench: A Comprehensive Benchmark for",
+    "snippet": "DeepResearch Bench provides a comprehensive evaluation framework for Deep Research Agents across 22 distinct research fields.\nDeepResearch Bench provides a comprehensive evaluation framework for Deep Research Agents across 22 distinct research fields. Abstract Deep Research Agents (DRAs) currently represent one of the most widely used categories of LLM-based agents.",
+    "host_name": "deepresearch-bench.github.io",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2506.11763",
+    "name": "A Comprehensive Benchmark for Deep Research Agents",
+    "snippet": "by M Du · 2025 · Cited by 195 — DeepResearch Bench , a benchmark consisting of 100 PhD-level research tasks, each meticulously crafted by domain experts across 22 distinct ...\nDeep Research Agents are a prominent category of LLM-based agents. By autonomously orchestrating multistep web exploration, targeted retrieval, and higher-order synthesis, they transform vast amounts of online information into analyst-grade, citation-rich reports--compressing hours of manual desk research into minutes. However, a comprehensive benchmark for systematically evaluating the ...",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "Jun 13, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/Ayanami0730/deep_research_bench",
+    "name": "DeepResearch Bench: A Comprehensive Benchmark for",
+    "snippet": "DeepResearch Bench addresses the absence of a comprehensive benchmark for systematically evaluating Deep Research Agents (DRAs). Our benchmark consists of 100 ...\nAll raw research articles and evaluation scores are now available on our Hugging Face Leaderboard for comprehensive analysis and comparison. For detailed evaluation results and comprehensive comparisons, please refer to the evaluation results table below.",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net/forum?id=hQ0K2Hhq7H",
+    "name": "A Comprehensive Benchmark for Deep Research Agents",
+    "snippet": "by M Du · Cited by 195 — DeepResearch Bench , a benchmark consisting of 100 PhD-level research tasks, each meticulously crafted by domain experts across 22 distinct ...\nIn order to evaluate the performance of Deep Research Agents (DRAs) that gather and summarize information for research tasks, this paper presents a benchmark named DeepResearch Bench, with 100 PhD-level research tasks.",
+    "host_name": "openreview.net",
+    "rank": 3,
+    "date": "Jan 26, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.nvidia.com/aiq-blueprint/2.0.0/evaluation/benchmarks/deep-research-bench.html",
+    "name": "Deep Research Bench Evaluation of NVIDIA AI-Q Blueprint",
+    "snippet": "DeepResearch Bench is one of the most popular benchmarks for evaluating deep research agents . It proposed 2 different evaluation metrics: RACE and FACT to  ...",
+    "host_name": "docs.nvidia.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org/abs/2601.08536",
+    "name": "DeepResearch Bench II: Diagnosing Deep Research",
+    "snippet": "Jan 30, 2026 — Deep Research Bench II , a new benchmark for evaluating DRS-generated reports. It contains 132 grounded research tasks across 22 domains; by a ...",
+    "host_name": "www.alphaxiv.org",
+    "rank": 5,
+    "date": "Jan 30, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/deepresearch-bench-comprehensive-benchmark-deep-research-vlad-bogolin-ge8pe",
+    "name": "A Comprehensive Benchmark for Deep Research Agents",
+    "snippet": "This paper introduces a specialized benchmark for Deep Research Agents. The DeepResearch Bench dataset and the RACE and FACT evaluation ...",
+    "host_name": "www.linkedin.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://futuresearch.ai/deep-research-bench",
+    "name": "Deep Research Bench Leaderboard: LLM Web",
+    "snippet": "Jun 25, 2025 — Deep Research Bench scores ChatGPT, Claude, Gemini, and Grok on real web research. Deep Research Bench (DRB) benchmarks how well LLM agents do  ...",
+    "host_name": "futuresearch.ai",
+    "rank": 7,
+    "date": "Jun 25, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://agentresearchlab.com/benchmarks/deepresearch-bench-ii/index.html",
+    "name": "Benchmarks/DeepResearch Bench II - USTC-CMI",
+    "snippet": "We introduce DeepResearch Bench II , a benchmark designed to evaluate deep research systems across three critical dimensions: Information Recall, Analysis, and ...\nHowever, existing evaluation benchmarks for such systems fail to fully capture the complexity of real-world research tasks. We introduce DeepResearch Bench II, a benchmark designed to evaluate deep research systems across three critical dimensions: Information Recall, Analysis, and Presentation.",
+    "host_name": "agentresearchlab.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/DeepResearch-Bench/DeepResearch-Bench.github.io",
+    "name": "GitHub - DeepResearch-Bench/DeepResearch-Bench.github.io",
+    "snippet": "DeepResearch Bench is a comprehensive benchmark designed for evaluating Deep Research Agents (DRAs). It consists of 100 PhD-level research tasks meticulously crafted by domain experts across 22 distinct fields.",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

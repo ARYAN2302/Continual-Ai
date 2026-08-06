@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2667305326000712",
+    "name": "Overcoming catastrophic forgetting in continuous image",
+    "snippet": "by EL Aleixo · 2026 — The proposed adapter -based design preserves previously learned knowledge without replay buffers or retraining with old samples.",
+    "host_name": "www.sciencedirect.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2505.11998v4",
+    "name": "Parameter Efficient Continual Learning with Dynamic Low-",
+    "snippet": "Jan 24, 2026 — SeqLoRA , a sequential finetuning baseline without any safeguards against catastrophic forgetting. SeqLoRA experiences significant forgetting, ...",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "Jan 24, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/xialeiliu/awesome-incremental-learning",
+    "name": "xialeiliu/Awesome-Incremental-Learning",
+    "snippet": "Merge before Forget : A Single LoRA Continual Learning via Continual Merging (ICLR 2026 ) [paper]. Fed-Duet: Dual Expert-Orchestrated Framework for Continual ...\nModels without Forgetting . Learning to Learn without Forgetting By Maximizing Transfer and Minimizing Interference … learning to generate images from new ...",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/artificial/comments/1u40uys/continual_learning_in_mid2026_a_map_of_everyone",
+    "name": "Continual learning in mid-2026. A map of everyone trying",
+    "snippet": "A January 2026 paper tried continual fine-tuning on LRMs (arXiv 2601.18699) but catastrophic forgetting didn't fade but rather increased.",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://zylos.ai/research/2026-04-09-continual-learning-catastrophic-forgetting-ai-agents",
+    "name": "Continual Learning and Catastrophic Forgetting Prevention",
+    "snippet": "Apr 9, 2026 — Parameter-efficient adapters ( LoRA families) allow new capabilities to be grafted on without touching the base model at all.",
+    "host_name": "zylos.ai",
+    "rank": 4,
+    "date": "Apr 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://iclr.cc/virtual/2026/poster/10008003",
+    "name": "Merge before Forget: A Single LoRA Continual Learning",
+    "snippet": "Apr 25, 2026 — In this paper, we propose a novel continual learning method that orthogonally initializes and sequentially merges LoRAs updates into a single ...",
+    "host_name": "iclr.cc",
+    "rank": 5,
+    "date": "Apr 25, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://aclanthology.org/2025.ijcnlp-srw.4.pdf",
+    "name": "Stacked LoRA: Isolated Low-Rank Adaptation for Lifelong",
+    "snippet": "by HV Patil · 2025 — Continual Learning (CL) aims to train models sequentially on new tasks, incrementally updat- ing their knowledge, without forgetting previous. 11 pages",
+    "host_name": "aclanthology.org",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://gwern.net/doc/reinforcement-learning/meta-learning/continual-learning/index",
+    "name": "'continual learning' directory",
+    "snippet": "To circumvent this forgetting , we propose a new method, C- LoRA ⁠, composed of a continually self-regularized low-rank adaptation in cross attention layers of the ...",
+    "host_name": "gwern.net",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/data-science-collective/the-promise-of-continual-learning-f3dd88b17a51",
+    "name": "The Promise of Continual Learning | by Minhajul Hoque",
+    "snippet": "Update all weights and rehearse old data to avoid forgetting . Works in the small. Painful at scale. Parameter-efficient finetuning. LoRA , ...\nLoRA adds low-rank deltas to weight matrices that many tokens/contexts pass through, so each update tends to influence a much broader swath of ...",
+    "host_name": "medium.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2502.17920v1",
+    "name": "C-LoRA: Continual Low-Rank Adaptation for Pre-trained",
+    "snippet": "Feb 25, 2025 — C- LoRA enables a integrated approach for task adaptation, achieving both scalability and parameter efficiency in sequential learning scenarios.",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Feb 25, 2025",
+    "favicon": ""
+  }
+]

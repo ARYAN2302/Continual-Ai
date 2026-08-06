@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2511.01831v3",
+    "name": "Routing-Based Continual Learning for Multimodal Large",
+    "snippet": "Apr 6, 2026 — LoRA modules are added exclusively to the LLM , ensuring that only the LoRA weights of the LLM are updated during training.",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Apr 6, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/singularity/comments/1pu9og6/continual_learning_is_solved_in_2026",
+    "name": "Continual Learning is Solved in 2026 : r/singularity",
+    "snippet": "Replay-based methods try to mix old data, or generated approximations of it, back into training so new learning doesn't overwrite old structure.",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=R11BmqHNouw&vl=en",
+    "name": "Training Hub: continuous learning for LLMs",
+    "snippet": "Post-training is crucial for making your LLM useful beyond basic language prediction. explains the options for model customization, from ...",
+    "host_name": "www.youtube.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@adnanmasood/continual-learning-the-missing-capability-for-reliable-ai-at-scale-c225e1a523de",
+    "name": "Continual Learning: The Missing Capability for Reliable AI",
+    "snippet": "Continual Learning (CL) is the pursuit of AI systems that can learn from a stream of tasks/domains over time while retaining prior capabilities\nFor LLM CL, benchmarks often test both capabilities and instruction-following/alignment retention . Regression Testing (for models) Borrowed from ... Read more",
+    "host_name": "medium.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://futureagi.com/blog/real-time-learning-in-large-language-models-llms",
+    "name": "Real-Time Learning in LLMs 2026: Methods Compared",
+    "snippet": "Dec 5, 2024 — Continual learning is the broader research program: train a model on a sequence of tasks or distributions while avoiding catastrophic forgetting ... Read more\nDec 5, 2024 — Frontier-scale weight updates remain offline because every update needs evaluation, safety review, and rollback. What ships under names like ... Read more",
+    "host_name": "futureagi.com",
+    "rank": 4,
+    "date": "Dec 5, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://zylos.ai/research/2026-04-09-continual-learning-catastrophic-forgetting-ai-agents",
+    "name": "Continual Learning and Catastrophic Forgetting Prevention",
+    "snippet": "Apr 9, 2026 — A model that improves on new tasks while quietly regressing on old ones will erode user trust faster than a model that never improves. Read more",
+    "host_name": "zylos.ai",
+    "rank": 5,
+    "date": "Apr 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net/forum?id=ScI7IlKGdI",
+    "name": "Spurious Forgetting in Continual Learning of Language",
+    "snippet": "by J Zheng · Cited by 69 — Based on their findings, they propose a simple freezing method for the lower layers of LLMs, which mitigates spurious forgetting and improves continual learning ... Read more\nby J Zheng · Cited by 69 — Y-axis: The weight update direction during the initial 150 steps, which corresponds to the process of undoing Task 0 alignment. X-axis: The weight update ... Read more",
+    "host_name": "openreview.net",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net/publication/400085081_Just-In-Time_Reinforcement_Learning_Continual_Learning_in_LLM_Agents_Without_Gradient_Updates",
+    "name": "Continual Learning in LLM Agents Without Gradient Updates",
+    "snippet": "Jan 26, 2026 — We theoretically prove that this additive update rule is the exact closed-form solution to the KL-constrained policy optimization objective. Read more",
+    "host_name": "www.researchgate.net",
+    "rank": 7,
+    "date": "Jan 26, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://architectureforgrowth.com/continual-learning-2026-smart-stuck",
+    "name": "Continual Learning in 2026: Why “Smart but Stuck” Models",
+    "snippet": "Jan 18, 2026 — If you're going to build a model that updates continuously, you need a gate . A policy that decides what gets stored, what gets discarded ... Read more",
+    "host_name": "architectureforgrowth.com",
+    "rank": 8,
+    "date": "Jan 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2510.16089v1",
+    "name": "Gated Continual Learning for Large Language Models",
+    "snippet": "Oct 17, 2025 — If the gate threshold is exceeded, the update is rescaled through a LoRA specific clipping procedure or rejected. Report issue for preceding ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Oct 17, 2025",
+    "favicon": ""
+  }
+]

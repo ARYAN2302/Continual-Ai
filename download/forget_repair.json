@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://openreview.net/forum?id=FSDxP3ZpAx",
+    "name": "LoRA Provably Reduces Forgetting and Enables Adapter",
+    "snippet": "by Z Xu — LoRA can remain resistant to catastrophic forgetting , and that independently trained LoRA adapters can be merged into a single model that maintains good ...",
+    "host_name": "openreview.net",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.legionintel.com/blog/navigating-the-challenges-of-fine-tuning-and-catastrophic-forgetting",
+    "name": "Fine-Tuning LLMs: Overcoming Catastrophic Forgetting",
+    "snippet": "Mar 25, 2024 — Learn to fine-tune LLMs with FIP & LoRA methods to beat 'Catastrophic Forgetting' for robust AI applications across industries.",
+    "host_name": "www.legionintel.com",
+    "rank": 1,
+    "date": "Mar 25, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://apxml.com/courses/lora-peft-efficient-llm-training/chapter-6-evaluating-peft-limitations/peft-catastrophic-forgetting",
+    "name": "Catastrophic Forgetting in PEFT",
+    "snippet": "Assess the extent to which PEFT methods mitigate or exhibit catastrophic forgetting compared to full fine-tuning.",
+    "host_name": "apxml.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://discuss.huggingface.co/t/why-does-naive-replay-still-beat-most-sophisticated-continual-learning-methods-in-practice/176513",
+    "name": "Why does naive replay still beat most \"sophisticated",
+    "snippet": "Jun 4, 2026 — LoRA -style methods may forget less partly because they update less aggressively, which is useful, but it can also mean they learn less from the ... Read more",
+    "host_name": "discuss.huggingface.co",
+    "rank": 3,
+    "date": "Jun 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2603.26299v1",
+    "name": "Preference-Aligned LoRA Merging: Preserving Subspace",
+    "snippet": "Mar 27, 2026 — merging is used to mitigate catastrophic forgetting and to accumulate knowledge across tasks over time.",
+    "host_name": "arxiv.org",
+    "rank": 4,
+    "date": "Mar 27, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/DeepNetGroup/posts/2025405791185626",
+    "name": "Fine-tuning large language models with low-rank adapters",
+    "snippet": "Fine-tuning an LLM may not be as trivial as we may think! Depending on your data, it may lead to the model forgetting what it learned in the pretraining ...",
+    "host_name": "www.facebook.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/MachineLearning/comments/13rp5sa/d_does_lora_actually_mitigate_catastrophic",
+    "name": "[D] does LORA actually mitigate catastrophic forgetting",
+    "snippet": "I’ve been looking into using LORA for fine tuning llms. Many sites like huggingface claim it overcomes catastrophic forgetting since it freezes the ...",
+    "host_name": "www.reddit.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.towardsai.net/a-guide-to-fine-tuning-large-language-models-llms-without-catastrophic-forgetting-4b2c926f14a4",
+    "name": "Fine-Tuning Large Language Models (LLMs) Without",
+    "snippet": "Jan 4, 2026 — However, naive fine-tuning often leads to catastrophic forgetting , where the model learns the new task but degrades on previously learned ... Read more",
+    "host_name": "pub.towardsai.net",
+    "rank": 7,
+    "date": "Jan 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://aclanthology.org/2026.acl-long.247.pdf",
+    "name": "SLoRA: Balancing Plasticity and Forgetting in Large",
+    "snippet": "by L Yang · 2026 — Notably, on the TRACE bench- mark, SLoRA improves final accuracy by up to 12% and reduces forgetting by up to 29% by removing over 30% of LoRA ... Read more 18 pages",
+    "host_name": "aclanthology.org",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2504.07448v2",
+    "name": "LoRI: Reducing Cross-Task Interference in Multi-Task Low-",
+    "snippet": "Aug 2, 2025 — LoRI significantly outperforms LoRA in mitigating catastrophic forgetting of safety alignment, while maintaining strong performance on ...",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "Aug 2, 2025",
+    "favicon": ""
+  }
+]

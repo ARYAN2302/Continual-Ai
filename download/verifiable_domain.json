@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/MachineLearning/comments/fzss9t/d_if_a_paper_or_project_doesnt_publicly_release",
+    "name": "[D] If a paper or project doesn't publicly release its code,",
+    "snippet": "This is more of a rant type of post, but it's been something that's been on my mind for a while and I'd like to know what everyone else thinks. The main ...",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2406.14325v3",
+    "name": "Reproducibility in Machine Learning-based Research",
+    "snippet": "our paper provides a contextual categorization of the barriers and drivers to the four types of ML reproducibility (description, code , data, and experiment)",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/papers/trending",
+    "name": "Trending Papers",
+    "snippet": "Amphion is a toolkit for audio, music, and speech generation that includes model visualizations, vocoders, and evaluation metrics to support reproducible ...",
+    "host_name": "huggingface.co",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/codefuse-ai/awesome-code-llm",
+    "name": "codefuse-ai/Awesome-Code-LLM",
+    "snippet": "A curated list of language modeling researches for code (and other software engineering activities), plus related datasets. This is the repo for our TMLR code ...",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.gopenai.com/paper2code-can-ai-finally-solve-the-code-reproducibility-crisis-in-machine-learning-bc16c142212c",
+    "name": "Paper2Code: Can AI Finally Solve the Code Reproducibility",
+    "snippet": "Apr 26, 2025 — Explore Paper2Code, a groundbreaking AI framework using multi-agent LLMs to automate code generation from ML research papers .",
+    "host_name": "blog.gopenai.com",
+    "rank": 4,
+    "date": "Apr 26, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://academia.stackexchange.com/questions/157672/why-say-source-code-is-available-with-an-arxiv-paper-when-it-is-not",
+    "name": "Why say source code is available with an ArXiv paper",
+    "snippet": "Oct 15, 2020 — I sometimes come across ArXiv papers where the authors claim the source code for the project discussed can be obtained, but on checking the link provided ...",
+    "host_name": "academia.stackexchange.com",
+    "rank": 5,
+    "date": "Oct 15, 2020",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/data-science/papers-with-code-arxiv-reproducible-organized-research-f5404eb6a22e",
+    "name": "Papers with Code + arXiv = Reproducible, Organized",
+    "snippet": "The Papers with Code website hosts academic papers that also share their backing software so that experiments can be faithfully reproduced. Read more",
+    "host_name": "medium.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/eric-vyacheslav-156273169_you-can-now-turn-any-research-paper-into-activity-7446950150398459904-pZJO",
+    "name": "Turn Research Papers into Code in Minutes with Paper2code",
+    "snippet": "You can now turn any research paper into working code in minutes. Paper2code is an open-source Claude Code skill. Give it any arxiv paper, and ... Read more",
+    "host_name": "www.linkedin.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "alphaXiv: Explore",
+    "snippet": "Discuss, discover, and read arXiv papers . Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv.",
+    "host_name": "www.alphaxiv.org",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2312.01639v2",
+    "name": "On the Effectiveness of Large Language Models in Domain",
+    "snippet": "In this paper , we conduct an in-depth study of the LLMs in domain -specific code generation. Our results demonstrate that LLMs exhibit sub-optimal performance in ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

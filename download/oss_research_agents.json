@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/assafelovic/gpt-researcher",
+    "name": "assafelovic/gpt-researcher: An autonomous agent that",
+    "snippet": "The core idea is to utilize 'planner' and 'execution' agents . The planner generates research questions, while the execution agents gather relevant information.\nGPT Researcher the first open deep research agent designed for both web and local research on any given task. The agent produces detailed, factual, and ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LLMDevs/comments/1jpfa8f/i_built_open_source_deep_research_heres_how_it",
+    "name": "I built Open Source Deep Research - here's how it works",
+    "snippet": "Simple: runs the iterative researcher in a single loop without the initial planning step (for faster output on a narrower topic or question).\nI built a deep research implementation that allows you to produce 20+ page detailed research reports, compatible with online and locally ...",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.gptr.dev/blog",
+    "name": "Blog | GPT Researcher",
+    "snippet": "Mar 3, 2026 — GPT Researcher conducts web research based on an auto-generated plan from local documents, as seen in the architecture above.",
+    "host_name": "docs.gptr.dev",
+    "rank": 2,
+    "date": "Mar 3, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://listenlabs.ai/articles/best-open-source-gpt-assistants",
+    "name": "Best Open Source GPT Research Assistant Tools (2026)",
+    "snippet": "Mar 24, 2026 — GPT Researcher is an open-source autonomous research agent that automates the full workflow from planning searches to synthesizing cited ...\nMar 24, 2026 — GPT Researcher is an open-source autonomous research agent that automates the full workflow from planning searches to synthesizing cited reports ...",
+    "host_name": "listenlabs.ai",
+    "rank": 3,
+    "date": "Mar 24, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://trilogyai.substack.com/p/comparative-analysis-of-deep-research",
+    "name": "Comparative Analysis of Deep Research Tools",
+    "snippet": "It is an autonomous agent that can research both the web and local files, then generate a long report with citations​. Notably, GPT - Researcher ...",
+    "host_name": "trilogyai.substack.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.tavily.com/examples/open-sources/gpt-researcher",
+    "name": "GPT Researcher",
+    "snippet": "GPT Researcher is an autonomous agent designed for comprehensive online research on a variety of tasks. The agent can produce detailed, factual and unbiased ...",
+    "host_name": "docs.tavily.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://skillsllm.com/skill/gpt-researcher",
+    "name": "gpt-researcher - AI Agents on GitHub (28.8k★)",
+    "snippet": "Dec 27, 2025 — The core idea is to utilize 'planner' and 'execution' agents . The planner generates research questions, while the execution agents gather ...\nDec 27, 2025 — GPT Researcher the first open deep research agent designed for both web and local research on any given task. The agent produces detailed, ...",
+    "host_name": "skillsllm.com",
+    "rank": 6,
+    "date": "Dec 27, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://cubxxw.com/projects/gpt-researcher",
+    "name": "GPT Researcher Explained: Open Source Deep Researc",
+    "snippet": "Apr 14, 2025 — GPT Researcher is an open source deep research agent that plans a question, gathers web and local sources, validates evidence, and generates ...\nApr 14, 2025 — This deep dive covers its LangGraph multi-agent architecture , installation with Docker, real API costs, and when to pick it over closed tools.",
+    "host_name": "cubxxw.com",
+    "rank": 7,
+    "date": "Apr 14, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://gptr.dev",
+    "name": "GPT Researcher - Autonomous AI Research Agent",
+    "snippet": "GPT Researcher is an open-source autonomous AI research agent that produces deep, multi-source research reports with inline citations.",
+    "host_name": "gptr.dev",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.langchain.com/blog/open-deep-research",
+    "name": "Open Deep Research",
+    "snippet": "Jul 16, 2025 — We've built an open deep researcher that is simple and configurable, allowing users to bring their own models, search tools, and MCP servers.",
+    "host_name": "www.langchain.com",
+    "rank": 9,
+    "date": "Jul 16, 2025",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://arxiv.org/html/2602.16201v1",
+    "name": "Long-Tail Knowledge in Large Language Models",
+    "snippet": "Feb 18, 2026 — This contrast highlights a persistent gap between transferable reasoning skills, which generalize from high-frequency patterns, and the ... Read more\nFeb 18, 2026 — This paper develops a structured taxonomy and analysis of long - Tail Knowledge in large language models, synthesizing prior work across technical ...",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Feb 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net/publication/400929959_Long-Tail_Knowledge_in_Large_Language_Models_Taxonomy_Mechanisms_Interventions_and_Implications",
+    "name": "(PDF) Long-Tail Knowledge in Large Language Models",
+    "snippet": "Feb 18, 2026 — This paper develops a structured taxonomy and analysis of long - Tail Knowledge in large language models, synthesizing prior work across technical ... Read more",
+    "host_name": "www.researchgate.net",
+    "rank": 1,
+    "date": "Feb 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://proceedings.mlr.press/v202/kandpal23a/kandpal23a.pdf",
+    "name": "Large Language Models Struggle to Learn Long-Tail",
+    "snippet": "by N Kandpal · 2023 · Cited by 956 — In this paper, we study the relationship between the knowledge memorized by large language models and the in- formation in pre-training datasets ... Read more 12 pages\nby N Kandpal · 2023 · Cited by 956 — In this paper, we study the relationship between the knowledge memorized by large language models and the in- formation in pre-training datasets ... 12 pages",
+    "host_name": "proceedings.mlr.press",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nature.com/articles/s41598-025-22940-0",
+    "name": "Limitations of large language models in clinical problem",
+    "snippet": "by J Kim · 2025 · Cited by 114 — There is a critical need for rigorous benchmarks that identify weaknesses and failure modes in LLM medical reasoning, as addressing these gaps ... Read more\nby J Kim · 2025 · Cited by 114 — Large Language Models (LLMs) have attained human-level accuracy on medical question-answer (QA) benchmarks . However, their limitations in ...",
+    "host_name": "www.nature.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41325597",
+    "name": "Knowledge-Practice Performance Gap in Clinical Large",
+    "snippet": "by EJ Gong · 2025 · Cited by 54 — Objective: This systematic review aims to categorize and analyze medical LLM benchmarks , examining performance patterns across different ... Read more",
+    "host_name": "pubmed.ncbi.nlm.nih.gov",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net/forum?id=neTgHJlQch",
+    "name": "Mind the gap: A method for evaluating and comparing",
+    "snippet": "by BDS Medrano — The paper introduces CHOCLO , a framework to evaluate regional and culturally grounded knowledge about underrepresented regions in Large Language Models (LLMs). Read more",
+    "host_name": "openreview.net",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.themoonlight.io/zh/review/long-tail-knowledge-in-large-language-models-taxonomy-mechanisms-interventions-and-implications",
+    "name": "[论文评述] Long-Tail Knowledge in Large Language Models",
+    "snippet": "This paper presents a structured taxonomy and comprehensive analysis of Long - Tail Knowledge (LTK) in Large Language Models (LLMs), synthesizing prior work ...",
+    "host_name": "www.themoonlight.io",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.jmir.org/2025/1/e84120",
+    "name": "Knowledge-Practice Performance Gap in Clinical Large",
+    "snippet": "by EJ Gong · 2025 · Cited by 55 — This systematic review aims to categorize and analyze medical LLM benchmarks , examining performance patterns",
+    "host_name": "www.jmir.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://papers.ssrn.com/sol3/Delivery.cfm/6664738.pdf?abstractid=6664738&mirid=1",
+    "name": "In Defense of Niche Benchmarks: Why the Long Tail of",
+    "snippet": "Apr 26, 2026 — Domain knowledge changes; benchmarks need to accommodate it. The Powell Jobs Monumental Sports divestment occurred in December 2025; the PIF ... Read more\nApr 26, 2026 — Abstract. General-purpose large language model ( LLM ) benchmarks such as MMLU, HumanEval, and GPQA Diamond have entered a regime in which the ...",
+    "host_name": "papers.ssrn.com",
+    "rank": 8,
+    "date": "Apr 26, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1ai7en3/large_language_models_struggle_to_learn_longtail",
+    "name": "Large Language Models Struggle to Learn Long-Tail",
+    "snippet": "In this paper, we study the relationship between the knowledge memorized by large language models and the information in pre-training datasets ...",
+    "host_name": "www.reddit.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

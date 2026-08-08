@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+    "name": "LiquidAI/LFM2.5-2.6B",
+    "snippet": "4 days ago — LFM2.5-2.6B is part of LFM2.5, a family of hybrid models designed for on-device deployment. AMD Ryzen CPU, in under 2.5 GB of memory.",
+    "host_name": "huggingface.co",
+    "rank": 0,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF",
+    "name": "LiquidAI/LFM2.5-2.6B-GGUF",
+    "snippet": "4 days ago — Instructions to use LiquidAI/LFM2.5-2.6B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started.",
+    "host_name": "huggingface.co",
+    "rank": 1,
+    "date": "Aug 4, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/LiquidAI",
+    "name": "LiquidAI (Liquid AI)",
+    "snippet": "A new generation of foundation models from first principles. LFM2.5-2.6B . LiquidAI / LFM2.5-2.6B Text Generation … 160 models datasets",
+    "host_name": "huggingface.co",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+    "name": "LFM2.5-2.6B - Liquid Docs",
+    "snippet": "Back to Text Models LFM2.5-2.6B is Liquid AI's 2.6B dense model built for agentic workloads with a 128K context window and native tool calling.",
+    "host_name": "docs.liquid.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-MLX",
+    "name": "LiquidAI/LFM2.5-2.6B-MLX",
+    "snippet": "LFM2.5 is a new family of hybrid models designed for on-device deployment. Each precision is available both as a standalone repo and as a subfolder of this  ...",
+    "host_name": "huggingface.co",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  }
+]

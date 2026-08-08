@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://hermes-agent.ai/use-cases/researcher",
+    "name": "AI Agent for Researchers, Hermes Remembers What You Read",
+    "snippet": "Hermes Agent helps researchers read papers, track findings, monitor sources, and build a persistent knowledge base across every session.",
+    "host_name": "hermes-agent.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.letta.com/agent",
+    "name": "Letta Agent | Personalized Agent That Remembers and Learns",
+    "snippet": "Letta is an AI lab building machines that learn: persistent agents with the ability to continuously learn and adapt from their own experience. Born from MemGPT at UC Berkeley's Sky Computing Lab, and backed by leaders in AI research and infrastructure.",
+    "host_name": "www.letta.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mindstudio.ai/blog/ai-agents-research-analysis",
+    "name": "9 AI Agents for Research and Analysis - mindstudio.ai",
+    "snippet": "This guide covers nine AI agents built specifically for research and analysis work. Each excels in different scenarios—from academic literature reviews to market analysis to scientific research. We’ll show you what they do well, where they fall short, and how to pick the right tool for your needs.",
+    "host_name": "www.mindstudio.ai",
+    "rank": 2,
+    "date": "Feb 6, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2603.10808v1",
+    "name": "Nurture-First Agent Development: Building Domain-Expert AI",
+    "snippet": "We have proposed Nurture-First Development as a paradigm for building domain-expert AI agents, addressing the fundamental mismatch between the tacit, evolving nature of domain expertise and the static nature of traditional agent configurations.",
+    "host_name": "arxiv.org",
+    "rank": 3,
+    "date": "Mar 11, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://futurehumanism.co/articles/hermes-agent-nous-research-self-improving-ai",
+    "name": "Hermes Agent: The Self-Improving AI That Remembers Everything",
+    "snippet": "Hermes Agent writes its own skills, remembers everything across sessions, and is strongest when it runs close to your actual working environment. It reportedly crossed 100,000 GitHub stars in seven weeks.",
+    "host_name": "futurehumanism.co",
+    "rank": 4,
+    "date": "May 19, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2404.07738",
+    "name": "[2404.07738] ResearchAgent: Iterative Research Idea",
+    "snippet": "To enhance the productivity of researchers, we propose ResearchAgent, which leverages the encyclopedic knowledge and linguistic reasoning capabilities of Large Language Models (LLMs) to assist them in their work.",
+    "host_name": "arxiv.org",
+    "rank": 5,
+    "date": "Apr 11, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@rosgluk/openclaw-for-researchers-build-an-ai-agent-that-actually-remembers-ff0fe1ee3665",
+    "name": "OpenClaw for Researchers: Build an AI Agent That Actually",
+    "snippet": "A well-configured OpenClaw research stack doesn’t just answer research questions well. It builds a persistent, traceable, searchable knowledge layer that gets more valuable with every session.",
+    "host_name": "medium.com",
+    "rank": 6,
+    "date": "Apr 20, 2026",
+    "favicon": ""
+  }
+]

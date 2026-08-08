@@ -1,0 +1,83 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=jtzfYKrRHUM",
+    "name": "How AI Agents Are Changing Market Research in 2026 The",
+    "snippet": "AI is reshaping how research gets done , how data gets valued, and who owns the intelligence that drives decisions.",
+    "host_name": "www.youtube.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/data-science-collective/deep-research-in-ai-the-insight-gap-446118ebe76e",
+    "name": "AI Deep Research: The Insight Gap | Data Science Collective",
+    "snippet": "The emergence of AI “Deep Research ” tools promises to transform knowledge work by autonomously generating lengthy, cited reports. Read more",
+    "host_name": "medium.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://agentic.ai/best/research-deep-analysis",
+    "name": "11 Best AI Research & Analysis Agents in 2026",
+    "snippet": "The best research agents in 2026 don't just summarize individual documents. They follow citation trails, cross-reference findings across papers , identify ...",
+    "host_name": "agentic.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/edition-47-death-solo-ai-agent-why-2026-belongs-teams-futureagi-ch4gc",
+    "name": "The Death of the Solo AI Agent: Why 2026 Belongs to",
+    "snippet": "Single agents can't. And they never will. Synthesizes findings into structured insights Quality. Generic insights , questionable accuracy, no ...",
+    "host_name": "www.linkedin.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.langchain.com/state-of-agent-engineering",
+    "name": "State of Agent Engineering",
+    "snippet": "Research & deep research agents are the next most used. These agents are used to explore new domains, summarize long documents, and synthesize information ...",
+    "host_name": "www.langchain.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.digitalapplied.com/blog/open-source-deep-research-agents-2026-guide",
+    "name": "Four Open-Source Deep Research Agents, Tested Honestly",
+    "snippet": "5 days ago — GPT-Researcher is a report-generation building block. LangChain's Open Deep Research is an orchestration graph you are expected to reconfigure. Read more",
+    "host_name": "www.digitalapplied.com",
+    "rank": 5,
+    "date": "Aug 3, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=y7Sh1dni5T8",
+    "name": "The AI Research Toolkit: What Actually Works in 2026",
+    "snippet": "AI tools are changing research faster than many academics realise . In this live session, I'll walk you through the AI tools I actually use ...",
+    "host_name": "www.youtube.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.prosus.com/news-insights/2026/state-of-ai-agents-2026-autonomy-is-here",
+    "name": "State of AI Agents 2026: Autonomy is Here",
+    "snippet": "Feb 26, 2026 — There was a ten-day window in December where Anthropic and Google topped the benchmarks before OpenAI reclaimed the lead by a narrow margin. Read more",
+    "host_name": "www.prosus.com",
+    "rank": 7,
+    "date": "Feb 26, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.nvidia.com/aiq-blueprint/latest/architecture/agents/shallow-researcher.html",
+    "name": "Shallow Researcher Agent — NVIDIA AI-Q Blueprint",
+    "snippet": "Shallow Researcher Agent#. The Shallow Researcher performs fast, bounded tool-augmented research . It handles the majority of queries – simple factual ... Read more",
+    "host_name": "docs.nvidia.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  }
+]

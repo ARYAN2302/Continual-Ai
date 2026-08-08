@@ -1,0 +1,83 @@
+[
+  {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1quz5ra/how_are_you_handling_persistent_memory_across",
+    "name": "How are you handling persistent memory across multiple",
+    "snippet": "Our team is running into a wall with our agent setup, and I'm trying to figure out if there's actually a solution out there.\n\nOur devs are using Claude ...",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.getzep.com/ai-agents/persistent-memory-for-ai-agents",
+    "name": "How to Give Your AI Agent Persistent Memory (Guide) - Zep",
+    "snippet": "May 31, 2026 — Real persistent memory unifies everything the agent should know about the user — transactions, support tickets, app events, emails, transcripts.",
+    "host_name": "www.getzep.com",
+    "rank": 1,
+    "date": "May 31, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/andrew.ng.96/posts/new-course-agent-memory-building-memory-aware-agents-built-in-partnership-with-o/26117542421208318",
+    "name": "New course: Agent Memory: Building Memory-Aware Agents,",
+    "snippet": "This short course teaches you to build a memory system that enables agents to persist memory and thereby learn across sessions .",
+    "host_name": "www.facebook.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/vibecodinglife/posts/2051537945434732",
+    "name": "Memberry: a persistent memory system for ai agents",
+    "snippet": "Google has unveiled Always-On Memory Agent , an open-source AI system that maintains continuous memory across sessions. The agent learns from ... Read more",
+    "host_name": "www.facebook.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/memorylake_ai/what-is-persistent-memory-in-ai-how-it-works-why-it-matters-393g",
+    "name": "What Is Persistent Memory in AI? How It Works & Why",
+    "snippet": "Apr 1, 2026 — Persistent memory in AI is a centralized, long-term data layer that allows AI agents and applications to autonomously extract, store, update, ... Read more",
+    "host_name": "dev.to",
+    "rank": 4,
+    "date": "Apr 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://next.redhat.com/2026/06/01/from-context-to-dreams-architecting-memory-for-ai-agents",
+    "name": "From context to dreams: architecting memory for AI agents",
+    "snippet": "Jun 1, 2026 — Agent memory systems provide persistent , queryable storage that allows agentic inference systems to recall past interactions, accumulated ... Read more",
+    "host_name": "next.redhat.com",
+    "rank": 5,
+    "date": "Jun 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://community.openai.com/t/would-it-be-possible-to-build-a-persistent-gpt-chat-with-context-memory-and-time-awareness/1234607",
+    "name": "Would it be possible to build a persistent GPT chat with",
+    "snippet": "Apr 20, 2025 — Yes, not only is it possible — it already exists. My custom GPT, Evelyn 4, has had persistent memory , contextual continuity, time awareness, and ... Read more",
+    "host_name": "community.openai.com",
+    "rank": 6,
+    "date": "Apr 20, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=HDqzJJhZsxw",
+    "name": "How to add persistent memory to your AI agent",
+    "snippet": "In this tutorial, you'll learn how to add persistent memory to your agent using Google's Agent Development Kit (ADK), including database-backed ...",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hidekazu-konishi.com/entry/ai_agent_memory_design_guide.html",
+    "name": "AI Agent Memory Design Guide - Working, Long-Term, and",
+    "snippet": "Jun 11, 2026 — Procedural memory is also the layer that transfers across users and sessions most cleanly. A user preference belongs to one user ; a hard-won ... Read more",
+    "host_name": "hidekazu-konishi.com",
+    "rank": 8,
+    "date": "Jun 11, 2026",
+    "favicon": ""
+  }
+]

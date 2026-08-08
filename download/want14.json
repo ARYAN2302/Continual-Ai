@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=qMzhYhcBS-Q",
+    "name": "What does research even mean today if coding agents can do",
+    "snippet": "Using agents to execute or realize those ideas is still a very human endeavour. My process of working with agents may differ from someone else's ...",
+    "host_name": "www.youtube.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://skypilot.ai/blog/research-driven-agents",
+    "name": "Research-Driven Agents: What Happens When  - SkyPilot",
+    "snippet": "Apr 9, 2026 — Coding agents working from code alone generate shallow hypotheses . Coding agents generate better optimizations when they read papers and study ...",
+    "host_name": "skypilot.ai",
+    "rank": 1,
+    "date": "Apr 9, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://deepmind.google/public-policy/conjecture-machines-ai-agents-and-the-new-validation-bottleneck-in-science",
+    "name": "AI agents and the new validation bottleneck in science",
+    "snippet": "AI agents are starting to reshape science , from proposing novel hypotheses to writing code. Learn what comes next for scientists and policymakers.",
+    "host_name": "deepmind.google",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/yossimatias_a-new-research-demonstrates-how-an-llm-powered-activity-7378850883071197184-yq3v",
+    "name": "AlphaEvolve: AI discovers new mathematical structures",
+    "snippet": "Works like a research collaborator, helping generate hypotheses , design experiments , and analyze data. Uses a multi- agent framework that ...",
+    "host_name": "www.linkedin.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nature.com/articles/d41586-025-03246-7",
+    "name": "How AI agents will change research: a scientist's guide",
+    "snippet": "Oct 3, 2025 — Researchers are increasingly turning to artificial-intelligence tools that can handle complex, multi-step processes.",
+    "host_name": "www.nature.com",
+    "rank": 4,
+    "date": "Oct 3, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s73gma/p_i_built_an_autonomous_ml_agent_that_runs",
+    "name": "[P] I built an autonomous ML agent that runs experiments",
+    "snippet": "Inspired by Andrej Karpathy's AutoResearch, I built a system where Claude Code acts as an autonomous ML researcher on tabular binary ...",
+    "host_name": "www.reddit.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://aimodels.substack.com/p/can-an-ai-agent-run-the-entire-scientific",
+    "name": "Can an AI agent run the entire scientific method without",
+    "snippet": "The coordinator is a language model that reads the hypothesis tree , interprets accumulated evidence, and decides which hypotheses to test next. Read more",
+    "host_name": "aimodels.substack.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/codex/building-a-research-reproduction-agent-from-paper-to-verified-results-e5714f808c66",
+    "name": "Building a Research Reproduction Agent: From Paper to",
+    "snippet": "How agentic systems can read papers, write code, run experiments , verify outputs, and produce human-reviewable reports. Hemanth Raju Koneti. Read more",
+    "host_name": "medium.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

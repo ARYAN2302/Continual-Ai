@@ -60,20 +60,31 @@ Write ONLY Python code. No explanation.
 
 
 def extract_code(text: str) -> str:
-    """Extract Python code from markdown fences or plain text."""
+    """Extract Python code from markdown fences or plain text.
+    Strips leading whitespace from each line to prevent indentation SyntaxErrors."""
+    code = text
     if "```python" in text:
         start = text.index("```python") + len("```python")
         end = text.find("```", start)
         if end != -1:
-            return text[start:end].strip()
-    if "```" in text:
+            code = text[start:end]
+    elif "```" in text:
         parts = text.split("```")
         if len(parts) >= 3:
             code = parts[1]
             if code.startswith("python\n"):
                 code = code[7:]
-            return code.strip()
-    return text.strip()
+    # Strip leading/trailing whitespace and dedent
+    lines = code.strip().split("\n")
+    # Find minimum indentation (excluding empty lines)
+    min_indent = float("inf")
+    for line in lines:
+        if line.strip():
+            indent = len(line) - len(line.lstrip())
+            min_indent = min(min_indent, indent)
+    if min_indent > 0 and min_indent != float("inf"):
+        lines = [line[min_indent:] if line.strip() else line for line in lines]
+    return "\n".join(lines).strip()
 
 
 def run_in_sandbox(code: str, timeout: int = 60) -> Dict:

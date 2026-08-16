@@ -26,7 +26,8 @@ import sys
 
 app = modal.App("continual-pt")
 
-# Image with all dependencies
+# Image with all dependencies + local code
+_local_dir = os.path.dirname(os.path.abspath(__file__))
 image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
@@ -39,18 +40,13 @@ image = (
         "beautifulsoup4>=4.12",
     )
     .apt_install("git")
+    .add_local_dir(_local_dir, remote_path="/root/continual-pt",
+                  ignore=[".git", "__pycache__", "tool-results", "*.pyc", "results/"])
 )
 
 # Volumes for persistence
 hf_cache_vol = modal.Volume.from_name("continual-pt-hf-cache", create_if_missing=True)
 results_vol = modal.Volume.from_name("continual-pt-results", create_if_missing=True)
-
-# Mount the local code
-repo = modal.Mount.from_local_dir(
-    os.path.dirname(os.path.abspath(__file__)),
-    remote_path="/root/continual-pt",
-    condition=lambda path: ".git" not in path and "__pycache__" not in path,
-)
 
 # === Default Sequence ===
 # This is the first real run. It tests:
@@ -99,8 +95,7 @@ DEFAULT_SEQUENCE = [
         "/root/.cache/huggingface": hf_cache_vol,
         "/root/results": results_vol,
     },
-    mounts=[repo],
-    timeout=7200,  # 2 hours
+    timeout=14400,  # 4 hours
     memory=16384,  # 16GB RAM
 )
 def run_sequence(sequence_json: str = None) -> str:
@@ -120,7 +115,31 @@ def run_sequence(sequence_json: str = None) -> str:
     if sequence_json:
         x_list = json.loads(sequence_json)
     else:
-        x_list = DEFAULT_SEQUENCE
+        # Default: executable-only (2 items, faster first run)
+        x_list = [
+            {
+                "x": "LoRA (Low-Rank Adaptation)",
+                "verifier_type": "executable",
+                "claims": [
+                    "LoRA adds two low-rank matrices A (rank x in_features) and B (out_features x rank) to a frozen weight matrix.",
+                    "The original weight matrix W is frozen (requires_grad=False).",
+                    "The forward pass computes output = W @ x + (alpha/rank) * B @ A @ x.",
+                    "LoRA uses fewer trainable parameters than full fine-tuning: r*(d_in+d_out) instead of d_in*d_out.",
+                    "B is initialized to zeros so the initial output is unchanged from the base model.",
+                ],
+            },
+            {
+                "x": "GRPO (Group Relative Policy Optimization)",
+                "verifier_type": "executable",
+                "claims": [
+                    "GRPO samples a group of G responses for the same prompt.",
+                    "GRPO computes advantage as (reward - group_mean) / (group_std + eps).",
+                    "GRPO does not use a separate value/critic model.",
+                    "GRPO applies a KL penalty between current policy and reference policy.",
+                    "GRPO's loss is similar to PPO but with group-relative baseline instead of value function.",
+                ],
+            },
+        ]
 
     # Config
     config = Config(
@@ -158,7 +177,6 @@ def run_sequence(sequence_json: str = None) -> str:
         "/root/.cache/huggingface": hf_cache_vol,
         "/root/results": results_vol,
     },
-    mounts=[repo],
     timeout=3600,
 )
 def run_single(x: str, verifier_type: str = "auto", claims_json: str = None, claim: str = None) -> str:
@@ -197,7 +215,6 @@ def run_single(x: str, verifier_type: str = "auto", claims_json: str = None, cla
         "/root/.cache/huggingface": hf_cache_vol,
         "/root/results": results_vol,
     },
-    mounts=[repo],
     timeout=7200,
 )
 def run_resume(sequence_json: str, adapter_path: str = None) -> str:

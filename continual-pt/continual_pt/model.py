@@ -93,7 +93,13 @@ def generate(model, tokenizer, user_prompt: str,
     try:
         input_ids = tokenizer.apply_chat_template(
             messages, return_tensors="pt", add_generation_prompt=True
-        ).to(model.device)
+        )
+        # apply_chat_template may return a tensor or a list; ensure it's a 2D tensor
+        if not isinstance(input_ids, torch.Tensor):
+            input_ids = torch.tensor(input_ids)
+        if input_ids.dim() == 1:
+            input_ids = input_ids.unsqueeze(0)
+        input_ids = input_ids.to(model.device)
     except Exception:
         input_ids = tokenizer(user_prompt, return_tensors="pt").input_ids.to(model.device)
 

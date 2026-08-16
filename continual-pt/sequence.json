@@ -1,0 +1,29 @@
+[
+  {
+    "x": "LoRA (Low-Rank Adaptation)",
+    "verifier_type": "executable",
+    "claims": [
+      "LoRA adds two low-rank matrices A (rank x in_features) and B (out_features x rank) to a frozen weight matrix.",
+      "The original weight matrix W is frozen (requires_grad=False).",
+      "The forward pass computes output = W @ x + (alpha/rank) * B @ A @ x.",
+      "LoRA uses fewer trainable parameters than full fine-tuning: r*(d_in+d_out) instead of d_in*d_out.",
+      "B is initialized to zeros so the initial output is unchanged from the base model."
+    ]
+  },
+  {
+    "x": "GRPO (Group Relative Policy Optimization)",
+    "verifier_type": "executable",
+    "claims": [
+      "GRPO samples a group of G responses for the same prompt.",
+      "GRPO computes advantage as (reward - group_mean) / (group_std + eps).",
+      "GRPO does not use a separate value/critic model.",
+      "GRPO applies a KL penalty between current policy and reference policy.",
+      "GRPO's loss is similar to PPO but with group-relative baseline instead of value function."
+    ]
+  },
+  {
+    "x": "DiLoCo optimizer",
+    "verifier_type": "non_executable",
+    "claim": "DiLoCo reduces communication bandwidth in distributed training by compressing local gradients before transmission and applying outer optimizer steps less frequently than inner optimizer steps."
+  }
+]

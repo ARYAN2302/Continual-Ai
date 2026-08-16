@@ -1,0 +1,7 @@
+torch>=2.1
+transformers>=4.46
+peft>=0.13
+bitsandbytes>=0.43
+accelerate>=0.34
+requests>=2.31
+beautifulsoup4>=4.12

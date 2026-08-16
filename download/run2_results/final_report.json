@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-08-16 02:46:49",
+  "model": "LiquidAI/LFM2.5-2.6B",
+  "sequence_length": 3,
+  "results": [
+    {
+      "x": "LoRA (Low-Rank Adaptation)",
+      "committed": false,
+      "verdict": "FAIL",
+      "regressions": 0,
+      "total_time": 450.07973647117615
+    },
+    {
+      "x": "GRPO (Group Relative Policy Optimization)",
+      "committed": false,
+      "verdict": "FAIL",
+      "regressions": 0,
+      "total_time": 337.4938929080963
+    },
+    {
+      "x": "DiLoCo optimizer",
+      "committed": false,
+      "verdict": "DISCARD",
+      "regressions": 0,
+      "total_time": 171.38228392601013
+    }
+  ],
+  "ledger_size": 0
+}

@@ -1,0 +1,89 @@
+{
+  "x": "GRPO (Group Relative Policy Optimization)",
+  "verifier_type": "executable",
+  "timestamp": "2026-08-16 02:38:20",
+  "absorb": {
+    "time": 77.49590969085693,
+    "queries": [
+      "GRPO Group Relative Policy Optimization official paper"
+    ],
+    "pages_fetched": 3,
+    "practice_examples": 0
+  },
+  "train": {
+    "losses": [],
+    "avg_loss": null,
+    "final_loss": null,
+    "time": 0.00011420249938964844
+  },
+  "verify": {
+    "verifier_type": "executable",
+    "implementation": "[saved separately]",
+    "claims": [
+      {
+        "claim": "GRPO samples a group of G responses for the same prompt.",
+        "verdict": "CONFUSED",
+        "reason": "",
+        "test_code": "import torch.nn as nn\nimport torch\nimport math\n\n\nclass GroupRelativePolicy(nn.Module):\n    \"\"\"\n    A simple policy network for group-relative policy optimization (GRPO).\n    This module defines a model where multiple responses are generated per prompt,\n    and only one is selected during training (the rest act as references).\n    \"\"\"\n\n    def __init__(self, hidden_dim=64, num_groups=4):\n        super().__init__()\n        self.num_groups = num_groups\n        # For each group, we generate logits for all possible responses\n        # We assume a fixed vocabulary size V; the actual generation uses sampling\n        # Here we simulate by having separate heads per group for simplicity\n        self.group_logits = nn.ModuleList([nn.Linear(hidden_dim, 100) for _ in range(num_groups)])\n        \n        # Value head to estimate the quality of each candidate response\n        self.value_head = nn.Linear(hidden_dim, 1)\n    \n    def forward(self, prompts, mask_indices):\n        \"\"\"\n        Args:\n            prompts: List of input prompts (batch size B)\n            mask_indices: Indices indicating which response from each group is selected \n                         (shape [B], num_groups). 0 means no selection yet.\n        Returns:\n            logits: Combined logits for all candidates across groups\n            values: Estimated values for all candidates\n        \"\"\"\n        # Generate logits for each group based on current hidden states\n        logits_list = []\n        values_list = []\n        for i in range(self.num_groups):\n            # Get logits for this group's candidates\n            g_logits = self.group_logits[i](hidden_states)\n            g_values = self.value_head(g_logits)\n            \n            # Apply mask: set selected response logit to -infinity so it won't be chosen later\n            if mask_indices[:, i] > 0:\n                g_logits[mask_indices == mask_indices[:, i]] = float('-inf')\n                \n            logits_list.append(g_logits)\n            values_list.append(g_values)\n        \n        # Concatenate all group logits into a single tensor\n        combined_logits = torch.cat(logits_list, dim=1)\n        combined_values = torch.cat(values_list, dim=1)\n        \n        return combined_logits, combined_values\n    \n    def select_response(self, masks):\n        \"\"\"",
+        "stdout": "",
+        "stderr": "  File \"/tmp/tmp528jqdnf.py\", line 17\n    A simple policy network for group-relative policy optimization (GRPO).\n      ^^^^^^\nSyntaxError: invalid syntax\n",
+        "time": 45.89818453788757
+      },
+      {
+        "claim": "GRPO computes advantage as (reward - group_mean) / (group_std + eps).",
+        "verdict": "CONFUSED",
+        "reason": "",
+        "test_code": "import torch.nn as nn\nimport torch\nimport math\n\n# Implementation of GroupRelativePolicy as required\nclass GroupRelativePolicy(nn.Module):\n    def __init__(self, num_heads=8):\n        super(GroupRelativePolicy, self).__init__()\n        self.num_heads = num_heads\n        \n        # Initialize parameters for the policy head\n        self.policy_head = nn.Linear(128, num_heads)  # Example linear layer\n    \n    def get_reward(self, x):\n        \"\"\"Returns the raw rewards.\"\"\"\n        return x\n    \n    def compute_advantage(self, rewards, group_mean, group_std, eps=1e-5):\n        \"\"\"\n        Computes advantage per sample using the GRPO formula:\n        (reward - group_mean) / (group_std + eps)\n        \n        Args:\n            rewards: List/tensor of individual rewards.\n            group_mean: Current mean of rewards in the group.\n            group_std: Current standard deviation of rewards in the group.\n            eps: Small constant to prevent division by zero.\n        \"\"\"\n        # Convert to tensor if needed\n        rewards_tensor = torch.tensor(rewards, dtype=torch.float32)\n        advantage = (rewards_tensor - group_mean) / (group_std + eps)\n        return advantage",
+        "stdout": "",
+        "stderr": "  File \"/tmp/tmp4zfjb2e3.py\", line 37\n    \"\"\"\n    ^\nSyntaxError: unterminated triple-quoted string literal (detected at line 41)\n",
+        "time": 46.06764888763428
+      },
+      {
+        "claim": "GRPO does not use a separate value/critic model.",
+        "verdict": "CONFUSED",
+        "reason": "",
+        "test_code": "import torch\nimport torch.nn as nn\n\n# Implementation of GroupRelativePolicy (as provided/specified)\nclass GroupRelativePolicy(nn.Module):\n    def __init__(self, num_groups, group_size):\n        super().__init__()\n        self.num_groups = num_groups\n        # Note: according to the claim, there is NO separate value/critic model.\n        # So we will intentionally NOT add one. If the original had one, this would be a falsification.\n        # For this test, we assume the given implementation follows the claim (no critic).\n        # We can also explicitly check that no such attributes exist.\n        # But the task says \"Verify THIS SPECIFIC claim\", meaning the implementation SHOULD match the claim.\n        # So we write the implementation WITHOUT a critic, and the test verifies it.\n    \n    def forward(self, group_ids):\n        # Simplified forward for testing\n        batch_size = group_ids.shape[0]\n        logits = torch.zeros(batch_size, self.num_groups)\n        # Just return dummy logits for verification purposes\n        return logits, group_ids",
+        "stdout": "",
+        "stderr": "  File \"/tmp/tmpxpbxynxw.py\", line 6\n    \"\"\"\n    ^\nSyntaxError: unterminated triple-quoted string literal (detected at line 30)\n",
+        "time": 45.96749401092529
+      },
+      {
+        "claim": "GRPO applies a KL penalty between current policy and reference policy.",
+        "verdict": "CONFUSED",
+        "reason": "",
+        "test_code": "import torch\nimport torch.nn as nn\n\nclass GroupRelativePolicy(nn.Module):\n    def __init__(self, input_size, hidden_size=64):\n        super().__init__()\n        self.hidden_size = hidden_size\n        self.fc = nn.Linear(input_size, hidden_size)\n        self.policy = nn.Linear(hidden_size, input_size)\n        \n    def forward(self, x):\n        h = self.fc(x)\n        y = self.policy(h)\n        return y\n\ndef check_kl_penalty():\n    # Create sample data\n    batch_size = 4\n    input_dim = 8\n    ref_weights = torch.randn(batch_size, input_dim)\n    \n    # Initialize policy model\n    model = GroupRelativePolicy(input_dim, hidden_size=32)\n    optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)\n    \n    # Simulate one step of GRPO training\n    loss = None\n    for i in range(batch_size):\n        # Reference weights (prior) stay fixed during this step\n        target_priority = ref_weights[i:i+1]\n        \n        # Current policy logits\n        current_logits = model(input_dim)\n        current_probs = torch.softmax(current_logits, dim=-1)\n        \n        # Compute KL divergence between current and reference policies\n        kl_div = torch.sum(\n            current_probs * torch.log(target_priority / current_probs + 1e-8),\n            dim=-1\n        ).mean()\n        \n        # Loss includes KL penalty term\n        loss = kl_div\n    \n    # Verify that a KL penalty was actually applied\n    # If no KL term were present, loss would simply be MSE-like\n    if not (loss > 0 and loss < 5):  # Typical KL values fall in this range\n        return False\n    return True\n\nresult = check_kl_penalty()\nif result:\n    print(\"CLAIM_VERIFIED\")\n    print(\"REASON: the test computed a positive KL divergence which indicates a KL penalty was applied to the policy.\")\nelse:\n    print(\"CLAIM_FALSIFIED\")\n    print(\"REASON: the test did not detect any evidence of a KL penalty being added to the objective.\")",
+        "stdout": "",
+        "stderr": "  File \"/tmp/tmp_46l6lei.py\", line 6\n    \"\"\"\n    ^\nSyntaxError: unterminated triple-quoted string literal (detected at line 66)\n",
+        "time": 21.93743109703064
+      },
+      {
+        "claim": "GRPO's loss is similar to PPO but with group-relative baseline instead of value function.",
+        "verdict": "CONFUSED",
+        "reason": "",
+        "test_code": "import torch\nimport numpy as np\n\n# First, include the implementation of GroupRelativePolicy as provided",
+        "stdout": "",
+        "stderr": "  File \"/tmp/tmpn5w9wkug.py\", line 6\n    \"\"\"\n    ^\nSyntaxError: unterminated triple-quoted string literal (detected at line 13)\n",
+        "time": 46.263378381729126
+      }
+    ],
+    "all_pass": false,
+    "pass_count": 0,
+    "fail_count": 0,
+    "confused_count": 5,
+    "time": 259.98843216896057
+  },
+  "retain": {
+    "checked": 0,
+    "regressions": [],
+    "all_retained": true,
+    "time": 4.1961669921875e-05
+  },
+  "commit": {
+    "committed": false,
+    "x_verified": false,
+    "retention_ok": true,
+    "verdict": "FAIL",
+    "regressions": []
+  },
+  "total_time": 337.4938929080963
+}

@@ -87,8 +87,18 @@ def load_model_with_adapter(config, adapter_path: str) -> Tuple[AutoModelForCaus
 
 
 def generate(model, tokenizer, user_prompt: str,
-             max_new_tokens: int = 2048, temperature: float = 0.7) -> str:
-    """Generate a response from the model."""
+             max_new_tokens: int = 4096, temperature: float = 0.1) -> str:
+    """Generate a response from the model.
+
+    Uses Liquid AI's recommended generation parameters:
+    - temperature=0.1 (model is trained for low-temp, focused output)
+    - top_k=50
+    - repetition_penalty=1.1
+
+    LFM2.5 is a reasoning model: the chat template auto-adds a <think> tag,
+    the model produces a thinking trace, then outputs the final answer after
+    </think>. We strip the thinking trace and return only the final answer.
+    """
     messages = [{"role": "user", "content": user_prompt}]
     try:
         input_ids = tokenizer.apply_chat_template(
@@ -109,11 +119,24 @@ def generate(model, tokenizer, user_prompt: str,
             max_new_tokens=max_new_tokens,
             do_sample=True,
             temperature=temperature,
-            top_p=0.9,
+            top_k=50,
+            repetition_penalty=1.1,
             pad_token_id=tokenizer.eos_token_id,
         )
-    response = tokenizer.decode(outputs[0][input_ids.shape[1]:], skip_special_tokens=True)
-    return response.strip()
+    full_response = tokenizer.decode(outputs[0][input_ids.shape[1]:], skip_special_tokens=True)
+
+    # LFM2.5 is a reasoning model. It produces a thinking trace, then the
+    # final answer after a closing think tag. Strip the thinking trace.
+    # Use rsplit to take everything after the LAST occurrence (in case the
+    # thinking trace itself contains the tag).
+    THINK_END = "</think" + ">"
+    if THINK_END in full_response:
+        response = full_response.rsplit(THINK_END, 1)[-1].strip()
+    else:
+        # No thinking trace found — return as-is (some prompts may not trigger it)
+        response = full_response.strip()
+
+    return response
 
 
 def snapshot_adapter(model) -> dict:

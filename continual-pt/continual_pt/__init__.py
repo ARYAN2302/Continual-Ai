@@ -54,11 +54,13 @@ class Config:
     grad_accum_steps: int = 4
     max_seq_len: int = 2048
 
-    # Generation
-    max_new_tokens_impl: int = 2048
-    max_new_tokens_test: int = 1024
+    # Generation — LFM2.5-2.6B recommended params (from model card)
+    # temperature=0.1, top_k=50, repetition_penalty=1.1
+    # Token budgets increased: model is verbose and was truncating mid-docstring
+    max_new_tokens_impl: int = 4096
+    max_new_tokens_test: int = 2048
     max_new_tokens_research: int = 4096
-    temperature: float = 0.7
+    temperature: float = 0.1  # Liquid AI recommended (was 0.7 — caused verbose broken code)
 
     # Verification
     verification_timeout: int = 60  # seconds for subprocess

@@ -21,6 +21,11 @@ from urllib.parse import urlparse
 # --- Known sources for common ML topics ---
 # Used as fallback when DuckDuckGo is blocked (e.g., from Modal's network)
 KNOWN_SOURCES = {
+    "linear layer": [
+        "https://pytorch.org/docs/stable/generated/torch.nn.Linear.html",
+        "https://pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+        "https://discuss.pytorch.org/t/how-does-nn-linear-work/11567",
+    ],
     "lora": [
         "https://arxiv.org/abs/2106.09685",
         "https://arxiv.org/html/2106.09685v2",
@@ -230,31 +235,70 @@ Here are source materials from web research:
 
 {sources}
 
-Generate 5 practice examples. Each example must be:
-1. A question that tests understanding of {x}
-2. A correct, detailed answer
-3. The exact source URL and a quoted span from the source that supports the answer
+Generate 5 practice examples. Output ONLY a JSON array, no markdown, no explanation.
 
-Output as JSON array. Each element:
-{{
-  "question": "...",
-  "answer": "...",
-  "source_url": "...",
-  "source_span": "exact quote from the source"
-}}
+Each element must be exactly this format:
+{{"question": "...", "answer": "...", "source_url": "...", "source_span": "..."}}
 
-Requirements:
-- The answer must be grounded in the source span, not invented
-- The source_span must be a verbatim quote from the fetched content
-- Vary the questions: some about mechanism, some about specifics, some about tradeoffs
-- No hallucinated URLs — only use URLs from the sources above
+Rules:
+- The first character of your response must be '[' (the start of the JSON array)
+- Do NOT wrap in backticks or markdown
+- Do NOT write "Here are the examples:" or any prose
+- The answer must be grounded in the source_span
+- source_span must be a verbatim quote from the fetched content
+- source_url must be one of the URLs from the sources above
 
-Output ONLY the JSON array. No explanation.
+Begin your response with '['.
 """
 
 
+def generate_practice_fallback(x: str, research: Dict) -> List[Dict]:
+    """Programmatic fallback: create practice examples from source text directly.
+    Used when the model fails to generate parseable practice examples.
+    This guarantees training always has data — 0 examples is never silent."""
+    import re
+
+    practice = []
+    pages = research.get("pages", [])
+
+    for page in pages[:5]:
+        url = page.get("url", "")
+        title = page.get("title", x)
+        text = page.get("text", "")
+
+        if not text or len(text) < 100:
+            continue
+
+        # Extract sentences that look like definitions or key facts
+        sentences = re.split(r'(?<=[.!?])\s+', text)
+        for sent in sentences:
+            sent = sent.strip()
+            # Look for definition-like sentences (contain "is", "are", "uses", "computes", etc.)
+            if (50 < len(sent) < 300
+                and any(kw in sent.lower() for kw in [
+                    " is ", " are ", " uses ", " computes ", " reduces ", " increases ",
+                    " consists of", " involves ", " requires ", " means ", " refers to ",
+                    " represents ", " implements ", " achieves ", " enables "
+                ])):
+                # Create a question by replacing the key phrase
+                question = f"What does the source say about: {sent[:100]}...?"
+                practice.append({
+                    "question": question,
+                    "answer": sent,
+                    "source_url": url,
+                    "source_span": sent,
+                })
+                if len(practice) >= 5:
+                    break
+        if len(practice) >= 5:
+            break
+
+    return practice[:5]
+
+
 def generate_practice(model, tokenizer, x: str, research: Dict, config) -> List[Dict]:
-    """Generate source-grounded practice examples from research."""
+    """Generate source-grounded practice examples from research.
+    Falls back to programmatic extraction if the model fails."""
     print(f"\n[absorb] Generating practice examples for: {x}")
 
     # Format sources for the prompt
@@ -266,7 +310,7 @@ def generate_practice(model, tokenizer, x: str, research: Dict, config) -> List[
         sources_text += f"Content (first 2000 chars):\n{page['text'][:2000]}\n"
 
     if not sources_text:
-        sources_text = "(No pages fetched — generate examples from your knowledge, but mark source_url as 'model_internal')"
+        sources_text = f"(No pages fetched. Generate examples about {x} from your knowledge.)"
 
     from continual_pt.model import generate as gen
     response = gen(model, tokenizer,
@@ -274,19 +318,37 @@ def generate_practice(model, tokenizer, x: str, research: Dict, config) -> List[
                    max_new_tokens=config.max_new_tokens_research,
                    temperature=config.temperature)
 
-    # Parse practice examples
+    # Parse practice examples — try multiple strategies
     practice = []
+    raw_response_saved = response[:500]  # Save for debugging
+
+    # Strategy 1: direct JSON parse
     try:
         practice = json.loads(response.strip())
         if not isinstance(practice, list):
             practice = [practice]
     except json.JSONDecodeError:
-        # Try to extract JSON array from response
+        pass
+
+    # Strategy 2: extract JSON array with regex
+    if not practice:
         import re
-        match = re.search(r'\[.*\]', response, re.DOTALL)
+        match = re.search(r'\[[\s\S]*\]', response)
         if match:
             try:
                 practice = json.loads(match.group())
+            except:
+                pass
+
+    # Strategy 3: extract individual JSON objects
+    if not practice:
+        import re
+        objects = re.findall(r'\{[^{}]+\}', response)
+        for obj_str in objects:
+            try:
+                obj = json.loads(obj_str)
+                if isinstance(obj, dict):
+                    practice.append(obj)
             except:
                 pass
 
@@ -298,5 +360,23 @@ def generate_practice(model, tokenizer, x: str, research: Dict, config) -> List[
             p.setdefault("source_span", "")
             valid_practice.append(p)
 
-    print(f"[absorb] Generated {len(valid_practice)} valid practice examples")
+    model_generated = len(valid_practice)
+    print(f"[absorb] Model generated {model_generated} valid practice examples")
+
+    # FALLBACK: if model failed, generate programmatically from source text
+    if model_generated == 0:
+        print(f"[absorb] ⚠ Model practice generation FAILED. Using programmatic fallback.")
+        fallback = generate_practice_fallback(x, research)
+        if fallback:
+            print(f"[absorb] Fallback generated {len(fallback)} examples from source text")
+            valid_practice = fallback
+        else:
+            print(f"[absorb] ⚠⚠ Fallback also failed — no source text available. ZERO examples.")
+
+    # Tag each example with how it was generated (for the report)
+    source = "model" if model_generated > 0 else "fallback"
+    for p in valid_practice:
+        p["_generation_source"] = source
+
+    print(f"[absorb] Total practice examples: {len(valid_practice)} (source: {source})")
     return valid_practice

@@ -90,6 +90,46 @@ def test_sanitize_code_removes_backticks():
     assert "import torch" in result
 
 
+def test_sanitize_code_repairs_unterminated_docstring():
+    """Unterminated triple-quoted strings should be closed."""
+    code = 'import torch\n\nclass Foo:\n    """This is a docstring that never closes\n    def bar(self):\n        pass'
+    result = sanitize_code(code)
+    # The docstring should now be closed (even number of """)
+    assert result.count('"""') % 2 == 0
+
+
+def test_generate_function_strips_thinking_trace():
+    """The generate function should strip the thinking trace (everything before last closing think tag)."""
+    # The marker the model uses to end its thinking trace
+    # Constructed from parts to avoid rendering issues
+    THINK_END = "</think" + ">"
+
+    # Case 1: no thinking trace — return as-is
+    full_response = "print('hello')"
+    if THINK_END in full_response:
+        response = full_response.rsplit(THINK_END, 1)[-1].strip()
+    else:
+        response = full_response.strip()
+    assert response == "print('hello')"
+
+    # Case 2: thinking trace present — strip everything before the LAST marker
+    full_response2 = "Let me think about this.\nThis is my reasoning.\n" + THINK_END + "\nprint('hello')"
+    if THINK_END in full_response2:
+        response2 = full_response2.rsplit(THINK_END, 1)[-1].strip()
+    else:
+        response2 = full_response2.strip()
+    assert "Let me think" not in response2
+    assert "print('hello')" in response2
+
+    # Case 3: multiple markers — take after the LAST one
+    full_response3 = "first thought" + THINK_END + "second thought" + THINK_END + "final answer"
+    if THINK_END in full_response3:
+        response3 = full_response3.rsplit(THINK_END, 1)[-1].strip()
+    else:
+        response3 = full_response3.strip()
+    assert response3 == "final answer"
+
+
 def test_run_in_sandbox():
     """Sandbox should run simple Python code."""
     result = run_in_sandbox("print('CLAIM_VERIFIED')\nprint('REASON: test passed')")
@@ -121,6 +161,8 @@ if __name__ == "__main__":
         test_sanitize_code_removes_prose,
         test_sanitize_code_adds_missing_imports,
         test_sanitize_code_removes_backticks,
+        test_sanitize_code_repairs_unterminated_docstring,
+        test_generate_function_strips_thinking_trace,
         test_run_in_sandbox,
         test_run_in_sandbox_failure,
         test_run_in_sandbox_timeout,

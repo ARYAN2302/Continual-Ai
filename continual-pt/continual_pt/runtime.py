@@ -55,11 +55,15 @@ def learn_x(
     t0 = time.time()
     research = research_x(model, tokenizer, x, config)
     practice = generate_practice(model, tokenizer, x, research, config)
+    practice_source = "model"
+    if practice and practice[0].get("_generation_source") == "fallback":
+        practice_source = "fallback"
     log["absorb"] = {
         "time": time.time() - t0,
         "queries": research.get("queries", []),
         "pages_fetched": len(research.get("pages", [])),
         "practice_examples": len(practice),
+        "practice_source": practice_source,  # "model" or "fallback"
     }
 
     # --- 2. SNAPSHOT (anchor for rollback) ---
@@ -71,6 +75,16 @@ def learn_x(
     t0 = time.time()
     training_log = train_candidate(model, tokenizer, practice, config)
     training_log["time"] = time.time() - t0
+    # CRITICAL FLAG: training was skipped if 0 examples
+    training_log["training_skipped"] = (len(practice) == 0)
+    if training_log["training_skipped"]:
+        training_log["skip_reason"] = "zero practice examples generated (model + fallback both failed)"
+        print(f"\n[runtime] ⚠⚠ CRITICAL: TRAINING SKIPPED — 0 practice examples. "
+              f"This item tests the COLD model, NOT a trained one. "
+              f"The commit decision below is NOT a valid continual-learning test.")
+    elif practice_source == "fallback":
+        print(f"\n[runtime] ⚠ NOTE: Training used FALLBACK examples (model generation failed). "
+              f"Training ran, but on programmatically-extracted text, not model-generated practice.")
     log["train"] = training_log
 
     # --- 4. VERIFY (post-training) ---
@@ -183,31 +197,68 @@ def learn_sequence(
     print(f"\n\n{'#'*70}")
     print(f"# SEQUENCE COMPLETE")
     print(f"{'#'*70}")
-    print(f"\n{'X':<40} {'Committed':>10} {'Verdict':>15} {'Regressions':>12}")
-    print("-" * 80)
+
+    # Check for critical failures (training skipped)
+    critical_failures = []
+    for r in results:
+        train = r.get("train", {})
+        if train.get("training_skipped"):
+            critical_failures.append({
+                "x": r.get("x"),
+                "issue": "TRAINING SKIPPED — 0 practice examples",
+                "reason": train.get("skip_reason", "unknown"),
+                "impact": "This item tested the COLD model, NOT a trained one. "
+                         "The commit decision is NOT a valid continual-learning test.",
+            })
+
+    print(f"\n{'X':<40} {'Committed':>10} {'Verdict':>15} {'Train':>10} {'Regress':>8}")
+    print("-" * 85)
     for r in results:
         x = r.get("x", "?")[:38]
         committed = r.get("commit", {}).get("committed", False)
         verdict = r.get("commit", {}).get("verdict", "?")
+        train_status = "SKIPPED⚠" if r.get("train", {}).get("training_skipped") else "ran"
         regressions = len(r.get("retain", {}).get("regressions", []))
-        print(f"{x:<40} {'✓' if committed else '✗':>10} {verdict:>15} {regressions:>12}")
+        print(f"{x:<40} {'✓' if committed else '✗':>10} {verdict:>15} {train_status:>10} {regressions:>8}")
 
-    # Save final report
+    # Loud critical failure banner
+    if critical_failures:
+        print(f"\n{'!'*85}")
+        print(f"!! CRITICAL FAILURES — {len(critical_failures)} item(s) had training skipped:")
+        for cf in critical_failures:
+            print(f"!!   - {cf['x']}: {cf['issue']}")
+            print(f"!!     Impact: {cf['impact']}")
+        print(f"!! These items' commit decisions are NOT valid continual-learning tests.")
+        print(f"!! The spec's retention question CANNOT be answered with these results.")
+        print(f"{'!'*85}")
+
+    # Save final report — include critical failures prominently
     report = {
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
         "model": config.model_id,
         "sequence_length": len(x_list),
+        "critical_failures": critical_failures,  # TOP of report — impossible to miss
+        "critical_failure_count": len(critical_failures),
+        "valid_continual_learning_tests": len(results) - len(critical_failures),
         "results": [
             {
                 "x": r.get("x"),
                 "committed": r.get("commit", {}).get("committed"),
                 "verdict": r.get("commit", {}).get("verdict"),
+                "training_skipped": r.get("train", {}).get("training_skipped", False),
+                "practice_examples": r.get("absorb", {}).get("practice_examples", 0),
+                "practice_source": r.get("absorb", {}).get("practice_source", "unknown"),
                 "regressions": len(r.get("retain", {}).get("regressions", [])),
                 "total_time": r.get("total_time"),
             }
             for r in results
         ],
         "ledger_size": len(ledger),
+        "spec_open_question_answered": (
+            "NO — zero commits, retention never fired against a real prior item"
+            if len(ledger) == 0
+            else f"PARTIALLY — {len(ledger)} commit(s), retention fired {len(ledger)} time(s)"
+        ),
     }
     report_path = os.path.join(config.output_dir, "final_report.json")
     with open(report_path, "w") as f:

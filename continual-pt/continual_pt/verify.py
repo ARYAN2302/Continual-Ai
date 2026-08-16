@@ -248,7 +248,37 @@ def sanitize_code(code: str) -> str:
     if "F." in code and "torch.nn.functional" not in code and "import torch.nn.functional" not in code:
         code = "import torch.nn.functional as F\n" + code
 
+    # Repair unterminated string literals (common when model runs out of tokens mid-docstring)
+    code = repair_unterminated_strings(code)
+
     return code.strip()
+
+
+def repair_unterminated_strings(code: str) -> str:
+    """Fix unterminated triple-quoted strings, single quotes, and double quotes.
+    Common when the model hits max_new_tokens mid-generation.
+
+    For triple-quoted strings (docstrings): if there's an odd number of \"\"\", append a closing one.
+    For single/double quotes: only fix if they're clearly unbalanced at the end of a line.
+    """
+    import re
+
+    # Count triple-quoted strings
+    triple_count = code.count('"""')
+    if triple_count % 2 == 1:
+        # Odd number — the last one is unterminated. Append a closing """.
+        code = code.rstrip() + '\n"""'
+        # Add a pass statement in case the docstring was inside a function/class body
+        # that expected more indented code
+        code += '\npass  # auto-added: repair_unterminated_strings'
+
+    # Also handle ''' triple-quoted strings
+    triple_single_count = code.count("'''")
+    if triple_single_count % 2 == 1:
+        code = code.rstrip() + "\n'''"
+        code += '\npass  # auto-added: repair_unterminated_strings'
+
+    return code
 
 
 def run_in_sandbox(code: str, timeout: int = 60) -> Dict:

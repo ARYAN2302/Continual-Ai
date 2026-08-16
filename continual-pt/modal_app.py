@@ -49,13 +49,27 @@ hf_cache_vol = modal.Volume.from_name("continual-pt-hf-cache", create_if_missing
 results_vol = modal.Volume.from_name("continual-pt-results", create_if_missing=True)
 
 # === Default Sequence ===
-# This is the first real run. It tests:
-# 1. Executable verifier (LoRA) — can the model implement and verify code?
-# 2. Executable verifier (GRPO) — does it generalize to a new method?
-# 3. Non-executable verifier — does the 5-step process work?
-# The retention check after items 2 and 3 tests whether behavioral retention holds.
+# Item 0: TRIVIAL item to validate the retention gate fires against a real prior commit.
+#   This is deliberately simple — a basic linear layer. The goal is NOT to test
+#   the model's coding ability; it's to get ONE commit into the ledger so that
+#   items 1-3 actually run their retention check against a real prior item.
+#   If this item fails to commit, retention never fires for real, and the spec's
+#   open question (does behavioral retention hold past 2-3 commits?) cannot be
+#   answered regardless of how items 1-3 perform.
+#
+# Items 1-3: the actual test — LoRA (executable), GRPO (executable), DiLoCo (non-executable).
 
 DEFAULT_SEQUENCE = [
+    {
+        "x": "a simple linear layer",
+        "verifier_type": "executable",
+        "claims": [
+            "The linear layer has a weight parameter of shape (out_features, in_features).",
+            "The linear layer has a bias parameter of shape (out_features).",
+            "The forward method computes output = x @ weight.T + bias.",
+            "The weight parameter requires gradients (requires_grad=True).",
+        ],
+    },
     {
         "x": "LoRA (Low-Rank Adaptation)",
         "verifier_type": "executable",

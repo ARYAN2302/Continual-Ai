@@ -64,38 +64,42 @@ TEST_CLAIM_PROMPT = """You are verifying a claim about {x}.
 
 Claim: "{claim}"
 
-Here is an implementation:
+Here is the implementation that will be tested:
 
 {implementation}
 
-Write a Python test that verifies THIS SPECIFIC claim.
+Write a MINIMAL Python test that verifies THIS SPECIFIC claim against the implementation above.
 
-Output rules (CRITICAL):
+CRITICAL RULES:
+- DO NOT include the implementation. It will be prepended automatically.
+- DO NOT define the class/function again. It already exists.
+- Write ONLY the test code that USES the implementation.
+- The implementation above will be available as-is when your test runs.
+
+Output rules:
 - Output ONLY Python code. No markdown. No backticks. No explanation.
 - Do NOT wrap code in ```python ``` fences.
-- The FIRST character of your response must be 'i' (from "import") or '#' (for a comment).
-- Include the implementation above inline at the top of your test file.
+- Start with "import" or "#".
+- Create an instance of the implementation and test the SPECIFIC claim.
 - Print exactly "CLAIM_VERIFIED" if the claim is true.
 - Print exactly "CLAIM_FALSIFIED" if the claim is false.
 - Print exactly "CLAIM_UNCLEAR" if the test cannot determine.
 - Print "REASON: <brief reason>" on the next line after the verdict.
 
-Example output format:
+Example (for a claim about a LinearLayer class):
+# The implementation (LinearLayer) is already defined above.
+# Write only the test:
 import torch
-
-# Paste the implementation here, then write the test:
-# (implementation code)
-
-# Test code:
-result = check_something()
-if result:
+layer = SimpleLinearLayer(out_features=5, in_features=3)
+# Check the claim:
+if layer.weight.shape == (5, 3):
     print("CLAIM_VERIFIED")
-    print("REASON: the check passed because ...")
+    print("REASON: weight shape is (out_features, in_features) = (5, 3)")
 else:
     print("CLAIM_FALSIFIED")
-    print("REASON: the check failed because ...")
+    print("REASON: weight shape is", layer.weight.shape, "expected (5, 3)")
 
-Now write the test. Begin with "import" or "#".
+Now write the test. DO NOT include the implementation. Begin with "import" or "#".
 """
 
 

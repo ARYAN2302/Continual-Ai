@@ -29,16 +29,35 @@ from continual_pt import Verdict, VerifierType
 
 IMPL_PROMPT = """You are an expert ML engineer. Implement {x} in PyTorch.
 
-Write a COMPLETE, RUNNABLE Python file that:
-1. Implements {x} from scratch (no external libraries except torch)
-2. Starts with all necessary imports (import torch, import torch.nn as nn, import math, etc.)
-3. Includes a __main__ block that creates an instance and runs it
-4. Prints "IMPL_READY" at the end if successful
+Output a COMPLETE, RUNNABLE Python file. The very first line MUST be an import statement.
 
-CRITICAL: The file must run without NameError. Include ALL imports at the top.
-Do not reference any module that hasn't been imported.
+Requirements:
+- Start with imports: import torch, import torch.nn as nn, import math, etc.
+- Implement {x} from scratch (no external libraries except torch)
+- Include a __main__ block that creates an instance and runs it
+- Print "IMPL_READY" at the end if successful
+- ALL imports at the top. Do not reference any undefined module.
 
-Write ONLY Python code. No explanation. No markdown formatting.
+CRITICAL RULES:
+- Output ONLY Python code. No markdown. No backticks. No explanation.
+- Do NOT wrap code in ```python ``` fences.
+- Do NOT write "Here is the implementation:" or any prose.
+- The FIRST character of your response must be 'i' (from "import").
+
+Example output format:
+import torch
+import torch.nn as nn
+
+class MyLayer(nn.Module):
+    def __init__(self):
+        super().__init__()
+        # ...
+
+if __name__ == "__main__":
+    # ...
+    print("IMPL_READY")
+
+Now write the implementation. Begin with "import".
 """
 
 TEST_CLAIM_PROMPT = """You are verifying a claim about {x}.
@@ -47,48 +66,189 @@ Claim: "{claim}"
 
 Here is an implementation:
 
-```python
 {implementation}
-```
 
-Write a Python test that verifies THIS SPECIFIC claim. The test must:
-1. Be self-contained (include the implementation inline if needed)
-2. Use only torch (no other external libraries)
-3. Print exactly "CLAIM_VERIFIED" if the claim is true
-4. Print exactly "CLAIM_FALSIFIED" if the claim is false
-5. Print exactly "CLAIM_UNCLEAR" if the test cannot determine
-6. Print "REASON: <brief reason>" on the next line
+Write a Python test that verifies THIS SPECIFIC claim.
 
-Write ONLY Python code. No explanation.
+Output rules (CRITICAL):
+- Output ONLY Python code. No markdown. No backticks. No explanation.
+- Do NOT wrap code in ```python ``` fences.
+- The FIRST character of your response must be 'i' (from "import") or '#' (for a comment).
+- Include the implementation above inline at the top of your test file.
+- Print exactly "CLAIM_VERIFIED" if the claim is true.
+- Print exactly "CLAIM_FALSIFIED" if the claim is false.
+- Print exactly "CLAIM_UNCLEAR" if the test cannot determine.
+- Print "REASON: <brief reason>" on the next line after the verdict.
+
+Example output format:
+import torch
+
+# Paste the implementation here, then write the test:
+# (implementation code)
+
+# Test code:
+result = check_something()
+if result:
+    print("CLAIM_VERIFIED")
+    print("REASON: the check passed because ...")
+else:
+    print("CLAIM_FALSIFIED")
+    print("REASON: the check failed because ...")
+
+Now write the test. Begin with "import" or "#".
 """
 
 
 def extract_code(text: str) -> str:
-    """Extract Python code from markdown fences or plain text.
-    Strips leading whitespace from each line to prevent indentation SyntaxErrors."""
+    """Extract Python code from model output. Handles:
+    - Markdown fences (```python ... ``` or ``` ... ```)
+    - Leading backticks/whitespace
+    - Prose before/after code
+    - Dedents indented code blocks
+
+    Strategy: find the longest contiguous block of lines that looks like Python
+    (starts with import, from, class, def, or # comment), and return it.
+    """
+    import re
+
+    # Step 1: Try to extract from markdown fences first
     code = text
-    if "```python" in text:
-        start = text.index("```python") + len("```python")
-        end = text.find("```", start)
-        if end != -1:
-            code = text[start:end]
-    elif "```" in text:
-        parts = text.split("```")
-        if len(parts) >= 3:
-            code = parts[1]
-            if code.startswith("python\n"):
-                code = code[7:]
-    # Strip leading/trailing whitespace and dedent
-    lines = code.strip().split("\n")
-    # Find minimum indentation (excluding empty lines)
+
+    # Match ```python ... ``` or ``` ... ```
+    fence_pattern = re.compile(r'```(?:python)?\s*\n(.*?)```', re.DOTALL)
+    matches = fence_pattern.findall(text)
+    if matches:
+        # Take the longest match (most likely the actual code)
+        code = max(matches, key=len)
+    else:
+        # No fences — try to find code by looking for Python-like lines
+        lines = text.split("\n")
+        code_lines = []
+        in_code = False
+        for line in lines:
+            stripped = line.strip()
+            # Start capturing when we see a Python-like line
+            if not in_code:
+                if (stripped.startswith(("import ", "from ", "class ", "def ", "#", "@"))
+                    or stripped == ""
+                    or (stripped and not stripped[0].isalpha())):
+                    # Heuristic: if line starts with a Python keyword, treat as code
+                    if any(stripped.startswith(kw) for kw in
+                           ["import ", "from ", "class ", "def ", "#", "@", "if ", "for ",
+                            "while ", "try:", "with ", "return ", "print(", "raise "]):
+                        in_code = True
+            if in_code:
+                # Stop if we hit a line that's clearly prose (long sentence with no code chars)
+                if stripped and not any(c in stripped for c in "=:()[]{}#"):
+                    # Check if it's prose (starts with capital, ends with period, no code syntax)
+                    if (stripped[0].isupper() and stripped.endswith(".")
+                        and "=" not in stripped and "(" not in stripped):
+                        break
+                code_lines.append(line)
+        if code_lines:
+            code = "\n".join(code_lines)
+
+    # Step 2: Clean up the extracted code
+    lines = code.split("\n")
+
+    # Remove leading empty lines
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    # Remove trailing empty lines
+    while lines and not lines[-1].strip():
+        lines.pop()
+
+    # Step 3: Dedent (find min indentation, strip it)
     min_indent = float("inf")
     for line in lines:
         if line.strip():
             indent = len(line) - len(line.lstrip())
             min_indent = min(min_indent, indent)
-    if min_indent > 0 and min_indent != float("inf"):
+    if 0 < min_indent != float("inf"):
         lines = [line[min_indent:] if line.strip() else line for line in lines]
-    return "\n".join(lines).strip()
+
+    # Step 4: Strip any remaining leading/trailing backticks or quotes
+    result = "\n".join(lines).strip()
+    # Remove stray backticks at start
+    while result.startswith("`"):
+        result = result[1:].strip()
+    # Remove stray backticks at end
+    while result.endswith("`"):
+        result = result[:-1].strip()
+
+    return result
+
+
+def sanitize_code(code: str) -> str:
+    """Final sanitization pass before running code in sandbox.
+    Handles common model output issues:
+    - Stray markdown artifacts
+    - Prose lines mixed with code
+    - Missing imports
+    - Unescaped string literals
+    """
+    import re
+
+    # Remove any remaining backtick sequences
+    code = code.replace("```python", "").replace("```", "")
+
+    # Remove lines that are clearly prose (not Python)
+    lines = code.split("\n")
+    cleaned_lines = []
+    for line in lines:
+        stripped = line.strip()
+        # Skip empty lines (keep them for formatting)
+        if not stripped:
+            cleaned_lines.append(line)
+            continue
+        # Skip lines that look like prose explanations
+        # Prose indicators: starts with "Here", "This", "Note:", "Now", "Let", etc.
+        # and doesn't contain Python syntax
+        prose_starters = [
+            "Here is", "Here's", "This is", "This will", "Note:", "Now ",
+            "Let me", "Let's", "The following", "Below is", "First,",
+            "Second,", "Finally,", "In this", "To verify", "We need",
+            "The test", "The code", "The implementation", "I'll",
+            "We'll", "This code", "This test", "This implementation",
+            "That concludes", "This concludes", "The above",
+        ]
+        is_prose = any(stripped.startswith(p) for p in prose_starters)
+        # A line is prose if it starts with a prose starter AND doesn't look like an assignment/call
+        # (i.e., no '=' that's not inside a string, no '(' that indicates a function call)
+        looks_like_assignment = bool(re.match(r'^\w+\s*=', stripped))
+        looks_like_call = '(' in stripped and not stripped.startswith(("Here", "This", "Note", "Now", "Let", "The", "Below", "First", "Second", "Finally", "In ", "To ", "We ", "I'll", "That", "The above"))
+        if is_prose and not (looks_like_assignment or looks_like_call):
+            continue
+        # Skip lines that are just "Python code:" or similar labels
+        if stripped in ["Python code:", "Python:", "Code:", "Test:", "Test code:",
+                       "Implementation:", "Implementation code:"]:
+            continue
+        cleaned_lines.append(line)
+
+    code = "\n".join(cleaned_lines)
+
+    # Dedent again in case sanitization introduced indentation
+    lines = code.split("\n")
+    min_indent = float("inf")
+    for line in lines:
+        if line.strip():
+            indent = len(line) - len(line.lstrip())
+            min_indent = min(min_indent, indent)
+    if 0 < min_indent != float("inf"):
+        lines = [line[min_indent:] if line.strip() else line for line in lines]
+    code = "\n".join(lines)
+
+    # Ensure there's at least an import if the code references torch/nn
+    if "torch" in code and "import torch" not in code:
+        code = "import torch\n" + code
+    if "nn." in code and "import torch.nn" not in code and "from torch import nn" not in code:
+        code = "import torch.nn as nn\n" + code
+    if "math." in code and "import math" not in code:
+        code = "import math\n" + code
+    if "F." in code and "torch.nn.functional" not in code and "import torch.nn.functional" not in code:
+        code = "import torch.nn.functional as F\n" + code
+
+    return code.strip()
 
 
 def run_in_sandbox(code: str, timeout: int = 60) -> Dict:
@@ -164,14 +324,17 @@ def verify_executable(model, tokenizer, x: str, claims: List[str], config) -> Di
                              max_new_tokens=config.max_new_tokens_impl,
                              temperature=config.temperature)
     implementation = extract_code(impl_response)
+    implementation = sanitize_code(implementation)
     print(f"[verify:exec] Implementation: {len(implementation)} chars")
 
     # Quick sanity: does it run?
-    sanity = run_in_sandbox(implementation + '\nprint("CLAIM_VERIFIED")\nprint("REASON: runs")',
-                            timeout=config.verification_timeout)
+    sanity_code = sanitize_code(implementation + '\nprint("CLAIM_VERIFIED")\nprint("REASON: runs")')
+    sanity = run_in_sandbox(sanity_code, timeout=config.verification_timeout)
     if sanity["exit_code"] != 0:
         print(f"[verify:exec] Implementation doesn't run: {sanity['stderr'][:200]}")
         # Still proceed — tests might work if they include their own fixed version
+    else:
+        print(f"[verify:exec] Implementation runs OK")
 
     # Step 2: Verify each claim
     results = []
@@ -186,9 +349,10 @@ def verify_executable(model, tokenizer, x: str, claims: List[str], config) -> Di
                                 max_new_tokens=config.max_new_tokens_test,
                                 temperature=config.temperature)
         test_code = extract_code(test_response)
+        test_code = sanitize_code(test_code)
 
         # Run test in sandbox
-        full_code = implementation + "\n\n# === TEST ===\n" + test_code
+        full_code = sanitize_code(implementation + "\n\n# === TEST ===\n" + test_code)
         sandbox_result = run_in_sandbox(full_code, timeout=config.verification_timeout)
 
         verdict = parse_verdict(sandbox_result["stdout"])

@@ -1,0 +1,102 @@
+{
+  "x": "a simple linear layer",
+  "verifier_type": "executable",
+  "timestamp": "2026-08-16 04:32:47",
+  "absorb": {
+    "time": 16.392672300338745,
+    "queries": [
+      "simple linear layer definition and mathematical formulation",
+      "official documentation for simple linear layer in deep learning frameworks",
+      "independent analysis of simple linear transformation in neural networks"
+    ],
+    "pages_fetched": 3,
+    "practice_examples": 5,
+    "practice_source": "fallback"
+  },
+  "train": {
+    "losses": [
+      0.5353450775146484,
+      0.7324802875518799,
+      2.347317934036255,
+      1.3307689428329468,
+      0.6058059334754944,
+      0.5228307247161865,
+      0.7095832824707031,
+      2.128675699234009,
+      1.2042160034179688,
+      0.5819051861763,
+      0.4922848343849182,
+      0.6772704124450684,
+      2.0315370559692383,
+      1.1129573583602905,
+      0.5462892651557922
+    ],
+    "avg_loss": 1.03728453318278,
+    "final_loss": 0.5462892651557922,
+    "num_examples": 5,
+    "epochs": 3,
+    "time": 2.150050401687622,
+    "training_skipped": false
+  },
+  "verify": {
+    "verifier_type": "executable",
+    "implementation": "[saved separately]",
+    "claims": [
+      {
+        "claim": "The linear layer has a weight parameter of shape (out_features, in_features).",
+        "verdict": "FAIL",
+        "reason": "the weight parameter shape does not match (out_features, in_features)",
+        "test_code": "import torch\nimport torch.nn as nn\n\nclass SimpleLinearLayer(nn.Module):\n    def __init__(self, out_features, in_features):\n        super().__init__()\n        self.weight = nn.Parameter(torch.randn(out_features, in_features))\n        self.bias = nn.Parameter(torch.randn(out_features))\n\ndef check_linear_layer_claim(module):\n    try:\n        w_shape = module.weight.shape\n        expected_shape = (out_features, in_features)\n        assert w_shape == expected_shape, f\"Weight shape {w_shape} does not match expected {expected_shape}\"\n        return True\n    except Exception as e:\n        print(f\"Check failed due to exception: {e}\")\n        return False\n\n# Create a sample instance for testing\nlayer = SimpleLinearLayer(out_features=5, in_features=3)\n\n# Verify the specific claim\nif check_linear_layer_claim(layer):\n    print(\"CLAIM_VERIFIED\")\n    print(\"REASON: the weight parameter shape matches (out_features, in_features)\")\nelse:\n    print(\"CLAIM_FALSIFIED\")\n    print(\"REASON: the weight parameter shape does not match (out_features, in_features)\")",
+        "stdout": "Check failed due to exception: name 'out_features' is not defined\nCLAIM_FALSIFIED\nREASON: the weight parameter shape does not match (out_features, in_features)\n",
+        "stderr": "",
+        "time": 13.067617893218994
+      },
+      {
+        "claim": "The linear layer has a bias parameter of shape (out_features).",
+        "verdict": "PASS",
+        "reason": "the bias parameter has shape (5,) which matches out_features=5",
+        "test_code": "import torch\nimport torch.nn as nn\n\nclass SimpleLinearLayer(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.weight = nn.Parameter(torch.randn(10))\n        self.bias = nn.Parameter(torch.randn(5))\n\ndef check_bias_shape():\n    layer = SimpleLinearLayer()\n    return layer.bias.shape == (5,)\n\nif check_bias_shape():\n    print(\"CLAIM_VERIFIED\")\n    print(\"REASON: the bias parameter has shape (5,) which matches out_features=5\")\nelse:\n    print(\"CLAIM_FALSIFIED\")\n    print(\"REASON: the bias parameter does not have the expected shape (5,)\")",
+        "stdout": "CLAIM_VERIFIED\nREASON: the bias parameter has shape (5,) which matches out_features=5\n",
+        "stderr": "",
+        "time": 8.792160511016846
+      },
+      {
+        "claim": "The forward method computes output = x @ weight.T + bias.",
+        "verdict": "CONFUSED",
+        "reason": "",
+        "test_code": "import torch\nimport torch.nn as nn\n\nclass SimpleLinearLayer(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.weight = nn.Parameter(torch.randn(10, 1))\n        self.bias = nn.Parameter(torch.randn(1))\n\n    def forward(self, x):\n        return x @ self.weight.T + self.bias\n\ndef check_claim():\n    layer = SimpleLinearLayer()\n    x = torch.randn(5, 10)\n    y = layer(x)\n    \n    # Verify the computation matches x @ weight.T + bias\n    expected = x @ layer.weight.T + layer.bias\n    \n    if torch.allclose(y, expected):\n        print(\"CLAIM_VERIFIED\")\n        print(\"REASON: the computed output matches the claimed formula x @ weight.T + bias\")\n    else:\n        print(\"CLAIM_FALSIFIED\")\n        print(\"REASON: the output does not match x @ weight.T + bias; difference is\", torch.abs(y - expected).sum())\n\ncheck_claim()",
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppsk1ni13.py\", line 39, in <module>\n    check_claim()\n  File \"/tmp/tmppsk1ni13.py\", line 27, in check_claim\n    y = layer(x)\n        ^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1778, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1789, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmppsk1ni13.py\", line 22, in forward\n    return x @ self.weight.T + self.bias\n           ~~^~~~~~~~~~~~~~~\nRuntimeError: mat1 and mat2 shapes cannot be multiplied (5x10 and 1x10)\n",
+        "time": 11.809051275253296
+      },
+      {
+        "claim": "The weight parameter requires gradients (requires_grad=True).",
+        "verdict": "PASS",
+        "reason": "both weight and bias parameters correctly have requires_grad=True",
+        "test_code": "import torch\nimport torch.nn as nn\n\nclass SimpleLinearLayer(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.weight = nn.Parameter(torch.randn(5, 5))\n        self.bias = nn.Parameter(torch.randn(5))\n\ndef check_weight_gradients():\n    model = SimpleLinearLayer()\n    # Ensure weight and bias have requires_grad=True by default for Parameters\n    assert model.weight.requires_grad == True, \"Weight should require gradients\"\n    assert model.bias.requires_grad == True, \"Bias should require gradients\"\n    return True\n\nif __name__ == \"__main__\":\n    try:\n        result = check_weight_gradients()\n        if result:\n            print(\"CLAIM_VERIFIED\")\n            print(\"REASON: both weight and bias parameters correctly have requires_grad=True\")\n        else:\n            print(\"CLAIM_FALSIFIED\")\n            print(\"REASON: the verification failed due to missing gradient requirements\")\n    except Exception as e:\n        print(\"CLAIM_FALSIFIED\")\n        print(f\"REASON: exception occurred - {str(e)}\")",
+        "stdout": "CLAIM_VERIFIED\nREASON: both weight and bias parameters correctly have requires_grad=True\n",
+        "stderr": "",
+        "time": 12.53583812713623
+      }
+    ],
+    "all_pass": false,
+    "pass_count": 2,
+    "fail_count": 1,
+    "confused_count": 1,
+    "time": 60.939085721969604
+  },
+  "retain": {
+    "checked": 0,
+    "regressions": [],
+    "all_retained": true,
+    "time": 0.00010228157043457031
+  },
+  "commit": {
+    "committed": false,
+    "x_verified": false,
+    "retention_ok": true,
+    "verdict": "FAIL",
+    "regressions": []
+  },
+  "total_time": 79.49793577194214
+}

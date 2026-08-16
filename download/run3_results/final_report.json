@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-08-16 04:50:58",
+  "model": "LiquidAI/LFM2.5-2.6B",
+  "sequence_length": 4,
+  "critical_failures": [],
+  "critical_failure_count": 0,
+  "valid_continual_learning_tests": 4,
+  "results": [
+    {
+      "x": "a simple linear layer",
+      "committed": false,
+      "verdict": "FAIL",
+      "training_skipped": false,
+      "practice_examples": 5,
+      "practice_source": "fallback",
+      "regressions": 0,
+      "total_time": 79.49793577194214
+    },
+    {
+      "x": "LoRA (Low-Rank Adaptation)",
+      "committed": false,
+      "verdict": "FAIL",
+      "training_skipped": false,
+      "practice_examples": 5,
+      "practice_source": "model",
+      "regressions": 0,
+      "total_time": 397.2069413661957
+    },
+    {
+      "x": "GRPO (Group Relative Policy Optimization)",
+      "committed": false,
+      "verdict": "FAIL",
+      "training_skipped": false,
+      "practice_examples": 5,
+      "practice_source": "model",
+      "regressions": 0,
+      "total_time": 288.7597761154175
+    },
+    {
+      "x": "DiLoCo optimizer",
+      "committed": false,
+      "verdict": "DISCARD",
+      "training_skipped": false,
+      "practice_examples": 5,
+      "practice_source": "fallback",
+      "regressions": 0,
+      "total_time": 325.7806694507599
+    }
+  ],
+  "ledger_size": 0,
+  "spec_open_question_answered": "NO \u2014 zero commits, retention never fired against a real prior item"
+}

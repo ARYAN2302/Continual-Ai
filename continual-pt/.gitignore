@@ -10,3 +10,4 @@ results/
 *.bin
 checkpoints/
 adapters/
+tool-results/

@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://modal.com/docs/cli/latest/run",
+    "name": "modal run | Modal Docs",
+    "snippet": "-- detach : Don't stop the app if the local process dies or disconnects . Show this message and exit .",
+    "host_name": "modal.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://modal.com/docs/guide/apps",
+    "name": "Apps, Functions, and entrypoints | Modal Docs",
+    "snippet": "You can use -- detach in order to keep an ephemeral App running even after the client exits . By using app. run you can run your Modal Apps from within your Python ... Read more",
+    "host_name": "modal.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://modal.com/docs/examples/long-training",
+    "name": "Run long, resumable training jobs on Modal",
+    "snippet": "The -- detach flag ensures training will continue even if you close your terminal or turn off your computer.",
+    "host_name": "modal.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://modal.com/docs/guide/batch-processing",
+    "name": "Batch Processing | Modal Docs",
+    "snippet": "Modal's batch processing capabilities, When combined with the -- detach flag, your App continues running until all jobs are completed. You can disconnect after ...",
+    "host_name": "modal.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://gist.github.com/idhantgulati/e1affeb54c3e29d10e3f07c8094705d8",
+    "name": "to ssh into modal (https://modal.com/) · GitHub",
+    "snippet": "In detach mode use a persistent named app so the sandbox outlives the local entrypoint. # The ephemeral app created by ` modal run ` is torn down when the ...",
+    "host_name": "gist.github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://modal.com/docs/sdk/py/latest/App",
+    "name": "App | Modal Docs",
+    "snippet": "A Modal App is a group of functions and classes that are deployed together. The app serves at least three purposes: A unit of deployment for functions and ... Read more",
+    "host_name": "modal.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://inspect.aisi.org.uk/control-channel.html",
+    "name": "Control Channel - Inspect AI",
+    "snippet": "The detached process's stdout and stderr go to a file under the Inspect data directory, reported launch record. The process exits on its own when the eval ...",
+    "host_name": "inspect.aisi.org.uk",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://modal.com/docs/guide/developing-debugging",
+    "name": "Developing and debugging | Modal Docs",
+    "snippet": "Feb 2, 2025 — You can use a debug shell to examine or terminate running processes , modify the Container filesystem, run commands, and more. You can also ... Read more",
+    "host_name": "modal.com",
+    "rank": 7,
+    "date": "Feb 2, 2025",
+    "favicon": ""
+  }
+]

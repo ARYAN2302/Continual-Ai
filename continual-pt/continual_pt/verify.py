@@ -31,8 +31,12 @@ IMPL_PROMPT = """You are an expert ML engineer. Implement {x} in PyTorch.
 
 Write a COMPLETE, RUNNABLE Python file that:
 1. Implements {x} from scratch (no external libraries except torch)
-2. Includes a __main__ block that creates an instance and runs it
-3. Prints "IMPL_READY" at the end if successful
+2. Starts with all necessary imports (import torch, import torch.nn as nn, import math, etc.)
+3. Includes a __main__ block that creates an instance and runs it
+4. Prints "IMPL_READY" at the end if successful
+
+CRITICAL: The file must run without NameError. Include ALL imports at the top.
+Do not reference any module that hasn't been imported.
 
 Write ONLY Python code. No explanation. No markdown formatting.
 """

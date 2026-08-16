@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://modal.com/docs/guide/apps",
+    "name": "Apps, Functions, and entrypoints | Modal Docs",
+    "snippet": "You can use --detach in order to keep an ephemeral App running even after the client exits. By using app.run you can run your Modal Apps from within your Python ... Read more",
+    "host_name": "modal.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://modal.com/docs/sdk/py/latest/App",
+    "name": "App | Modal Docs",
+    "snippet": "runs an ephemeral app on Modal . Whether to detach after starting the app . Deploy the App so that it is available persistently. s until they are stopped. this ...",
+    "host_name": "modal.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://modal.com/docs/sdk/py/changelog",
+    "name": "Changelog",
+    "snippet": "This changelog documents user-facing updates (features, enhancements, fixes, and deprecations) to the modal client library. Latest. 1.5.4 ( 2026 -08-12). Read more",
+    "host_name": "modal.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://modal.com/docs/guide/managing-deployments",
+    "name": "Managing deployments",
+    "snippet": "Programmatically triggering lots of ephemeral App runs can clutter your web and CLI interfaces. Web Functions keep running when you close your laptop, and ...",
+    "host_name": "modal.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://modal.com/docs/examples/long-training",
+    "name": "Run long, resumable training jobs on Modal",
+    "snippet": "You can still run long training jobs on Modal by making them interruptible and resumable (aka reentrant). This is usually done via checkpointing: saving the ... Read more",
+    "host_name": "modal.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/OpenHands/OpenHands/issues/9127",
+    "name": "[Bug]: Modal runtime fails with Server disconnected without",
+    "snippet": "Jun 14, 2025 — Modal runtime fails to launch. However the runtime itself is properly launched in the Modal website. To reproduce, run OpenHands server with ... Read more",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "Jun 14, 2025",
+    "favicon": ""
+  }
+]

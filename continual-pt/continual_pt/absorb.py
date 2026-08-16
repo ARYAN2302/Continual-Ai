@@ -12,15 +12,50 @@ import requests
 import time
 import hashlib
 import json
+import re
 from bs4 import BeautifulSoup
 from typing import List, Dict
 from urllib.parse import urlparse
 
 
+# --- Known sources for common ML topics ---
+# Used as fallback when DuckDuckGo is blocked (e.g., from Modal's network)
+KNOWN_SOURCES = {
+    "lora": [
+        "https://arxiv.org/abs/2106.09685",
+        "https://arxiv.org/html/2106.09685v2",
+        "https://huggingface.co/docs/peft/en/developer_guides/lora",
+        "https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms",
+    ],
+    "grpo": [
+        "https://arxiv.org/abs/2402.03300",
+        "https://arxiv.org/html/2402.03300v2",
+        "https://huggingface.co/docs/trl/main/en/grpo_trainer",
+        "https://deepseekmodel.github.io/DeepSeek-R1-Report/",
+    ],
+    "diloco": [
+        "https://arxiv.org/abs/2311.08105",
+        "https://arxiv.org/html/2311.08105v2",
+        "https://huggingface.co/blog/diloco",
+        "https://www.fedml.ai/paper/diloco-distributed-optimization",
+    ],
+}
+
+
+def get_known_sources(x: str) -> List[Dict]:
+    """Get known sources for a topic based on keyword matching."""
+    x_lower = x.lower()
+    for keyword, urls in KNOWN_SOURCES.items():
+        if keyword in x_lower:
+            return [{"title": f"Source for {keyword}", "url": url, "snippet": ""} for url in urls]
+    return []
+
+
 # --- Web research ---
 
 def duckduckgo_search(query: str, max_results: int = 5, delay: float = 2.0) -> List[Dict]:
-    """Search DuckDuckGo HTML endpoint. Free, no API key."""
+    """Search DuckDuckGo HTML endpoint. Free, no API key.
+    Falls back gracefully if DuckDuckGo is blocked."""
     print(f"[search] Querying: {query}")
     time.sleep(delay)
 
@@ -31,7 +66,7 @@ def duckduckgo_search(query: str, max_results: int = 5, delay: float = 2.0) -> L
     data = {"q": query, "b": ""}
 
     try:
-        resp = requests.post(url, headers=headers, data=data, timeout=15)
+        resp = requests.post(url, headers=headers, data=data, timeout=10)
         soup = BeautifulSoup(resp.text, "html.parser")
         results = []
 
@@ -40,7 +75,6 @@ def duckduckgo_search(query: str, max_results: int = 5, delay: float = 2.0) -> L
             snippet_elem = item.select_one(".result__snippet")
             if title_elem:
                 title = title_elem.get_text(strip=True)
-                # DuckDuckGo wraps URLs in a redirect
                 raw_url = title_elem.get("href", "")
                 if "uddg=" in raw_url:
                     from urllib.parse import parse_qs, urlparse
@@ -153,6 +187,13 @@ def research_x(model, tokenizer, x: str, config) -> Dict:
         results = duckduckgo_search(q, max_results=config.max_search_results,
                                      delay=config.search_delay)
         all_results.extend(results)
+
+    # Fallback: if DuckDuckGo is blocked, use known sources
+    if not all_results:
+        known = get_known_sources(x)
+        if known:
+            print(f"[absorb] DuckDuckGo unavailable. Using {len(known)} known sources for {x}.")
+            all_results = known
 
     # Deduplicate by URL
     seen_urls = set()
